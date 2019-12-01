@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+    header {
+        height: 400px;
+    }
+
+    .header-text h1 {
+        font-size: 3rem !important;
+    }
+
+    .header-text,
+    section#small-cards {
+        top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-text h1 {
+        font-size: 2.8rem !important;
+    }
+
+    .header-text h3 {
+        align-self: center !important;
+        font-size: 1.5rem !important;
+    }
+
+    .large-card-title {
+        width: 40%;
+        left: 1%;
+    }
+
+    .large-card-desc {
+        padding: 0;
+    }
+}
