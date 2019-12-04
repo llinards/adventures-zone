@@ -1,0 +1,39 @@
+section#attractions {
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 255, 206, 1) 0%, rgba(255, 255, 255, 1) 50%);
+}
+
+section#attractions>.container {
+    position: relative;
+    top: -100px;
+}
+
+.attraction {
+    border: 5px solid $menu-color;
+    border-radius: 5px;
+    position: relative;
+
+    a {
+        text-decoration: none;
+    }
+
+    &-img {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    &-title {
+        background-color: $attraction-title;
+        color: #fff;
+    }
+
+    &-desc {
+        color: $text-color;
+        background-color: #fff;
+    }
+}
+
+.attraction:hover,
+.attraction:active {
+    filter: blur(4px);
+}

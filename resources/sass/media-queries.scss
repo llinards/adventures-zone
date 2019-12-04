@@ -3,32 +3,48 @@
         height: 400px;
     }
 
-    .header-text h1 {
+    .header-text-container h1 {
         font-size: 3rem !important;
     }
 
     .header-text,
-    section#small-cards {
+    section#attractions {
         top: 0;
+    }
+
+    section#attractions>.container {
+        top: -50px;
     }
 }
 
 @media (max-width: 576px) {
-    .header-text h1 {
+    .header-text-container h1 {
         font-size: 2.8rem !important;
     }
 
-    .header-text h3 {
+    .header-text-container h3 {
         align-self: center !important;
         font-size: 1.5rem !important;
     }
 
-    .large-card-title {
-        width: 40%;
+    .services-title {
+        width: 200px;
         left: 1%;
     }
 
-    .large-card-desc {
+    .services-desc {
         padding: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .header-text-container {
+        h1 {
+            font-size: 2rem !important;
+        }
+
+        h3 {
+            font-size: 1.25rem !important;
+        }
     }
 }

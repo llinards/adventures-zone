@@ -1,14 +1,19 @@
 // Bootstrap import
 @import '~bootstrap/scss/bootstrap';
 
-//main stylesheet import
-@import 'main.scss';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 
-//navbar import
-@import 'navbar.scss';
+//main scss import
+@import 'global';
+
+//front-page scss import
+@import 'header';
+@import 'attractions';
+@import 'services';
+@import 'footer';
 
 //home stylesheet import
-@import 'home.scss';
+@import 'home';
 
 //media queries import
-@import 'media-queries.scss';
+@import 'media-queries';

@@ -1,0 +1,95 @@
+.services {
+    position: relative;
+    margin-top: -3rem;
+}
+
+.services-title {
+    color: #fff;
+    background-color: $attraction-title;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.25rem;
+    position: absolute;
+    top: -3%;
+    left: -3%;
+}
+
+.services-title.park-map,
+.services-title.values {
+    background-color: $menu-item-color;
+}
+
+.services-title.values {
+    position: relative;
+}
+
+.services a {
+    text-decoration: none;
+}
+
+.services-desc {
+    color: #000000;
+    padding: 0 10%;
+}
+
+.lists-group.values {
+    padding: 0 10%;
+    // color: #000000;
+    margin-bottom: 0;
+}
+
+ul.values {
+    list-style: none;
+}
+
+.values li {
+    margin-bottom: 0.5rem;
+}
+
+.values li:last-child {
+  margin-bottom: 0;
+}
+
+
+.values-bullet-points {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.values-bullet-points#first {
+    background-color: $attraction-title;
+}
+
+.values-bullet-points#second {
+    background-color: $logo-yellow;
+}
+
+.values-bullet-points#third {
+    background-color: $menu-color;
+}
+
+
+.services-prices,
+.services-google-maps {
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.services-prices {
+    background-color: #662D91;
+
+}
+
+.services-google-maps {
+    background-color: #EE2A7B;
+}
+
+// #last-service {
+//     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 255, 206, 1) 50%);
+// }

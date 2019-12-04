@@ -20,5 +20,3 @@ mix.options({
         enabled: false,
     }
 });
-
-mix.browserSync('adventures-zone.test');
