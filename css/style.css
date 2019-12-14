@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0; }
+
+header {
+  background-image: url("/assets/img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  position: relative; }
+
+.nav {
+  padding: 0.25rem; }
+
+.az-logo--img {
+  width: 300px;
+  height: auto; }
+
+.az-logo--bar {
+  position: absolute;
+  top: 0;
+  width: calc((100% - 300px)/2);
+  height: 53px;
+  background-color: #e91e79; }
+
+#right.az-logo--bar {
+  right: 0; }
+
+@media (max-width: 768px) {
+  .az-logo--img {
+    width: 200px; }
+  .az-logo--bar {
+    width: calc((100% - 200px)/2 + 1px);
+    height: 34.5px; } }
+
+@media (max-width: 425px) {
+  .az-logo--img {
+    width: 125px; }
+  .az-logo--bar {
+    width: calc((100% - 125px)/2 + 1px);
+    height: 21.5px; } }
