@@ -1,23 +1,75 @@
+@media (max-width: 992px) {
+  .az-title-second {
+    font-size: 1.5rem;
+  }
+
+  header .container {
+    padding-top: 19%;
+  }
+}
+
 @media (max-width: 768px) {
   .az-logo--img {
     width: 200px;
-    height: auto;
+    height: 100%;
   }
 
   .az-logo--bar {
     width: calc((100% - 200px)/2 + 1px);
     height: 34.5px;
   }
+
+  header .container {
+    padding-top: 39%;
+  }
+
+  .az-title-main,
+  .az-title-second {
+    align-self: center;
+  }
+
+  .az-title-second {
+    font-size: 1.25rem;
+    right: 0;
+  }
+
+  .az-purchase {
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media (max-width: 425px) {
   .az-logo--img {
     width: 125px;
-    height: auto;
+    height: 100%;
   }
 
   .az-logo--bar {
     width: calc((100% - 125px)/2 + 1px);
     height: 21.5px;
+  }
+
+  header .container {
+    padding-top: 50%;
+  }
+
+  .az-title-second {
+    font-size: 0.75rem;
+  }
+
+  .az-purchase {
+    font-size: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .az-social-icons {
+    width: 30px;
+  }
+
+  #facebook.az-social-icons {
+    width: 15px;
   }
 }
