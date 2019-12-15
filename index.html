@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
   <title>Adventures' Zone</title>
 
   <!-- CSS imports -->
@@ -15,37 +16,54 @@
 </head>
 
 <body>
-  <header>
+  <header class="d-flex flex-column justify-content-start">
     <nav>
       <div class="az-logo d-flex justify-content-center">
         <img class="az-logo--img" src="/assets/img/az-logo.png" alt="">
       </div>
       <div id="left" class="az-logo--bar d-flex justify-content-center align-items-center">
-        <h3 class="text-uppercase text-light pr-3">T/P Alfa</h3>
-        <h6 class="text-uppercase text-light">Brīvības gatve 372, Rīga, 3.stāvs</h6>
+        <!-- <h3 class="text-uppercase text-light pr-3">T/P Alfa</h3>
+        <h6 class="text-uppercase text-light">Brīvības gatve 372, Rīga, 3.stāvs</h6> -->
       </div>
       <div id="right" class="az-logo--bar d-flex justify-content-center align-items-center">
-        <h3 class="text-uppercase text-light pr-5">+371 220 22 333</h3>
+        <!-- <h3 class="text-uppercase text-light pr-5">+371 220 22 333</h3> -->
       </div>
     </nav>
-    <div class="container d-flex flex-column align-items-center">
-      <div class="az-title d-flex flex-column justify-content-center align-items-center">
-        <img class="az-title-main" src="/assets/img/main-title.png" alt="">
-        <h3 class="az-title-second text-uppercase text-light">Piedzīvojumi, kas aizrauj un attīsta</h3>
-      </div>
-      <div class="az-purchase">
-        <a href="https://siguldaadventures.com/adventureszone" class="text-uppercase text-light az-purchase-btn">pirkt
-          dāvanu karti</a>
-      </div>
-      <div class="az-social pt-5 justify-self-end">
-        <a href="#">
-          <img id="facebook" class="az-social-icons mr-3" src="/assets/img/fb.png" alt="facebook-icon">
-        </a>
-        <a href="#">
-          <img id="instagram" class="az-social-icons" src="/assets/img/insta.png" alt="instagram-icon">
-        </a>
+    <div class="container-fluid az-title">
+      <div class="row d-flex flex-column align-items-center">
+        <div class="d-flex flex-column">
+          <img class="az-title-main" src="/assets/img/main-title.png" alt="">
+          <h3 class="az-title-second text-uppercase text-light">Piedzīvojumi, kas aizrauj un attīsta</h3>
+        </div>
+        <div class="az-purchase mt-4">
+          <a href="https://siguldaadventures.com/adventureszone" class="text-uppercase text-light az-purchase-btn">pirkt
+            dāvanu karti</a>
+        </div>
+        <div class="az-social mt-5">
+          <a href="https://www.facebook.com/adventureszone-101751787923186/">
+            <img id="facebook" class="az-social-icons mr-3" src="/assets/img/fb.png" alt="facebook-icon">
+          </a>
+          <a href="https://www.instagram.com/adventures.zone/">
+            <img id="instagram" class="az-social-icons" src="/assets/img/insta.png" alt="instagram-icon">
+          </a>
+        </div>
       </div>
     </div>
+    <footer class="p-lg-3 p-md-2 p-sm-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
+            <h3 class="text-uppercase text-light">T/P Alfa (3.stāvs)</h3>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
+            <h6 class="text-uppercase text-light">Brīvības gatve 372, Rīga</h6>
+          </div>
+          <div class="col-lg-4 col-md d-flex justify-content-center align-items-center">
+            <h3 class="text-uppercase text-light phone-number">+371 220 22 333</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
   </header>
 
 

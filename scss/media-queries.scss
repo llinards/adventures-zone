@@ -2,10 +2,6 @@
   .az-title-second {
     font-size: 1.5rem;
   }
-
-  header .container {
-    padding-top: 19%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -19,13 +15,9 @@
     height: 34.5px;
   }
 
-  header .container {
-    padding-top: 39%;
-  }
-
   .az-title-main,
   .az-title-second {
-    align-self: center;
+    align-self: center !important;
   }
 
   .az-title-second {
@@ -37,6 +29,12 @@
     font-size: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .container-fluid.az-title {
+    top: 40%;
   }
 }
 
@@ -49,10 +47,6 @@
   .az-logo--bar {
     width: calc((100% - 125px)/2 + 1px);
     height: 21.5px;
-  }
-
-  header .container {
-    padding-top: 50%;
   }
 
   .az-title-second {
