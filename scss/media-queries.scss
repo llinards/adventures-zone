@@ -17,7 +17,9 @@
 
   .az-title-main,
   .az-title-second {
-    align-self: center !important;
+    -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important;
   }
 
   .az-title-second {
@@ -32,7 +34,7 @@
   }
 
   .container-fluid.az-title {
-    top: 40%;
+    top: 38%;
   }
 }
 
@@ -58,10 +60,10 @@
   }
 
   .az-social-icons {
-    width: 30px;
+    width: 20px;
   }
 
   #facebook.az-social-icons {
-    width: 15px;
+    width: 10px;
   }
 }

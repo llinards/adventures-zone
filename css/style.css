@@ -22,6 +22,8 @@ a:active {
   text-decoration: none; }
 
 header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(182, 182, 182, 0.05)), to(#b6b6b6)), url("/assets/img/header.jpg");
+  background: -o-linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url("/assets/img/header.jpg");
   background: linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url("/assets/img/header.jpg");
   background-size: cover;
   background-position: center;
@@ -49,14 +51,16 @@ header {
 
 .container-fluid.az-title {
   position: absolute;
-  top: 43%; }
+  top: 41%; }
 
 .az-title-main {
   max-width: 75%;
   height: auto;
+  -ms-flex-item-align: end;
   align-self: flex-end; }
 
 .az-title-second {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   position: relative;
   right: 22px; }
@@ -65,8 +69,8 @@ header {
   background-color: #e91e79;
   padding-left: 4rem;
   padding-right: 4rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-size: 2.8rem;
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
@@ -99,6 +103,8 @@ footer {
     height: 34.5px; }
   .az-title-main,
   .az-title-second {
+    -ms-flex-item-align: center !important;
+    -ms-grid-row-align: center !important;
     align-self: center !important; }
   .az-title-second {
     font-size: 1.25rem;
@@ -108,7 +114,7 @@ footer {
     padding-left: 3rem;
     padding-right: 3rem; }
   .container-fluid.az-title {
-    top: 40%; } }
+    top: 38%; } }
 
 @media (max-width: 425px) {
   .az-logo--img {
@@ -124,6 +130,6 @@ footer {
     padding-left: 2rem;
     padding-right: 2rem; }
   .az-social-icons {
-    width: 30px; }
+    width: 20px; }
   #facebook.az-social-icons {
-    width: 15px; } }
+    width: 10px; } }
