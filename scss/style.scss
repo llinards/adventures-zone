@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700&display=swap');
+
+$az-logo-bar: #e91e79;
+
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url('/assets/img/header.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow: hidden;
+}
+
+.az-logo--img {
+  width: 300px;
+  height: 100%;
+}
+
+.az-logo--bar {
+  position: absolute;
+  top: 0;
+  width: calc((100% - 300px)/2);
+  height: 53px;
+  background-color: $az-logo-bar;
+}
+
+#right.az-logo--bar {
+  right: 0;
+}
+
+#left.az-logo--bar h6 {
+  font-weight: 400;
+}
+
+.container-fluid.az-title {
+  position: absolute;
+  top: 43%;
+}
+
+.az-title-main {
+  max-width: 80%;
+  height: auto;
+  align-self: flex-end;
+}
+
+.az-title-second {
+  align-self: flex-end;
+  position: relative;
+  right: 22px;
+}
+
+.az-purchase {
+  background-color: $az-logo-bar;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 2.8rem;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.az-social-icons {
+  width: 50px;
+}
+
+#facebook.az-social-icons {
+  width: 25px;
+}
+
+footer {
+  width: 100%;
+  background-color: $az-logo-bar;
+  position: absolute;
+  bottom: 0;
+}
+
+.phone-number {
+  font-weight: 700;
+}
+
+
+@import 'media-queries';
