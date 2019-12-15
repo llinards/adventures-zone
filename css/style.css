@@ -113,6 +113,8 @@ footer {
     font-size: 2rem;
     padding-left: 3rem;
     padding-right: 3rem; }
+  .az-location {
+    font-size: 2rem; }
   .container-fluid.az-title {
     top: 38%; } }
 
@@ -129,6 +131,8 @@ footer {
     font-size: 1.25rem;
     padding-left: 2rem;
     padding-right: 2rem; }
+  .az-location {
+    font-size: 1.25rem; }
   .az-social-icons {
     width: 20px; }
   #facebook.az-social-icons {
