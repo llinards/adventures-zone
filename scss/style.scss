@@ -29,9 +29,10 @@ a:active {
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(182, 182, 182, 0.05)), to(#b6b6b6)), url('/assets/img/header.jpg');
-  background: -o-linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url('/assets/img/header.jpg');
-  background: linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url('/assets/img/header.jpg');
+  // background: -webkit-gradient(linear, left top, left bottom, from(rgba(182, 182, 182, 0.05)), to(#b6b6b6)), url('/assets/img/header.jpg');
+  // background: -o-linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url('/assets/img/header.jpg');
+  // background: linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url('/assets/img/header.jpg');
+  background-image: url('/assets/img/header.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -69,15 +70,16 @@ header {
 .az-title-main {
   max-width: 75%;
   height: auto;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  // -ms-flex-item-align: end;
+  // align-self: flex-end;
 }
 
 .az-title-second {
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  position: relative;
-  right: 22px;
+  // -ms-flex-item-align: end;
+  // align-self: flex-end;
+  // position: relative;
+  // right: 22px;
+  text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa;
 }
 
 .az-purchase {
@@ -96,7 +98,7 @@ header {
 }
 
 #facebook.az-social-icons {
-  width: 25px;
+  width: 22px;
 }
 
 footer {
@@ -108,6 +110,11 @@ footer {
 
 .phone-number {
   font-weight: 700;
+}
+
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
 }
 
 
