@@ -22,9 +22,7 @@ a:active {
   text-decoration: none; }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(182, 182, 182, 0.05)), to(#b6b6b6)), url("/assets/img/header.jpg");
-  background: -o-linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url("/assets/img/header.jpg");
-  background: linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url("/assets/img/header.jpg");
+  background-image: url("/assets/img/header.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -57,6 +55,9 @@ header {
   max-width: 75%;
   height: auto; }
 
+.az-title-second {
+  text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa; }
+
 .az-purchase {
   background-color: #e91e79;
   padding-left: 4rem;
@@ -71,7 +72,7 @@ header {
   width: 50px; }
 
 #facebook.az-social-icons {
-  width: 25px; }
+  width: 22px; }
 
 footer {
   width: 100%;
@@ -124,6 +125,6 @@ a[href^="tel"] {
   .az-location {
     font-size: 1.25rem; }
   .az-social-icons {
-    width: 20px; }
+    width: 42px; }
   #facebook.az-social-icons {
-    width: 10px; } }
+    width: 18px; } }
