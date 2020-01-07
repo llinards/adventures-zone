@@ -15,14 +15,8 @@
     height: 34.5px;
   }
 
-  .az-title-main,
-  .az-title-second {
-    align-self: center !important;
-  }
-
   .az-title-second {
     font-size: 1.25rem;
-    right: 0;
   }
 
   .az-purchase {
@@ -31,8 +25,12 @@
     padding-right: 3rem;
   }
 
+  .az-location {
+    font-size: 2rem;
+  }
+
   .container-fluid.az-title {
-    top: 40%;
+    top: 38%;
   }
 }
 
@@ -57,11 +55,15 @@
     padding-right: 2rem;
   }
 
+  .az-location {
+    font-size: 1.25rem;
+  }
+
   .az-social-icons {
-    width: 30px;
+    width: 42px;
   }
 
   #facebook.az-social-icons {
-    width: 15px;
+    width: 18px;
   }
 }

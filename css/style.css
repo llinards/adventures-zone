@@ -22,7 +22,7 @@ a:active {
   text-decoration: none; }
 
 header {
-  background: linear-gradient(rgba(182, 182, 182, 0.05), #b6b6b6), url("/assets/img/header.jpg");
+  background-image: url("/assets/img/header.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -49,24 +49,21 @@ header {
 
 .container-fluid.az-title {
   position: absolute;
-  top: 43%; }
+  top: 41%; }
 
 .az-title-main {
   max-width: 75%;
-  height: auto;
-  align-self: flex-end; }
+  height: auto; }
 
 .az-title-second {
-  align-self: flex-end;
-  position: relative;
-  right: 22px; }
+  text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa; }
 
 .az-purchase {
   background-color: #e91e79;
   padding-left: 4rem;
   padding-right: 4rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-size: 2.8rem;
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
@@ -75,7 +72,7 @@ header {
   width: 50px; }
 
 #facebook.az-social-icons {
-  width: 25px; }
+  width: 22px; }
 
 footer {
   width: 100%;
@@ -85,6 +82,10 @@ footer {
 
 .phone-number {
   font-weight: 700; }
+
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none; }
 
 @media (max-width: 992px) {
   .az-title-second {
@@ -97,18 +98,16 @@ footer {
   .az-logo--bar {
     width: calc((100% - 200px)/2 + 1px);
     height: 34.5px; }
-  .az-title-main,
   .az-title-second {
-    align-self: center !important; }
-  .az-title-second {
-    font-size: 1.25rem;
-    right: 0; }
+    font-size: 1.25rem; }
   .az-purchase {
     font-size: 2rem;
     padding-left: 3rem;
     padding-right: 3rem; }
+  .az-location {
+    font-size: 2rem; }
   .container-fluid.az-title {
-    top: 40%; } }
+    top: 38%; } }
 
 @media (max-width: 425px) {
   .az-logo--img {
@@ -123,7 +122,9 @@ footer {
     font-size: 1.25rem;
     padding-left: 2rem;
     padding-right: 2rem; }
+  .az-location {
+    font-size: 1.25rem; }
   .az-social-icons {
-    width: 30px; }
+    width: 42px; }
   #facebook.az-social-icons {
-    width: 15px; } }
+    width: 18px; } }
