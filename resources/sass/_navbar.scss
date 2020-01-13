@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    #desktop-navbar {
+        display: none;
+    }
+}
+
+.az-logo--img {
+    width: 300px;
+    height: 100%;
+}
+
+.az-menubar {
+    position: absolute;
+    top: 0;
+    width: calc((100% - 300px)/2);
+    height: 53px;
+    background-color: #e91e79;
+}
+
+#right.az-menubar {
+    right: 0;
+}
+
+#left.az-menubar h6 {
+    font-weight: 400;
+}
