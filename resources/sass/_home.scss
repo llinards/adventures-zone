@@ -6,3 +6,39 @@ header {
     min-height: 100vh;
     overflow: hidden;
 }
+
+.container-fluid.az-title {
+    position: absolute;
+    top: 40%;
+}
+
+.az-title-main {
+    max-width: 80%;
+    height: auto;
+}
+
+.az-title-second {
+    text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa;
+}
+
+.az-title-arrow {
+    position: relative;
+    animation: moveUpDown 2s linear infinite;
+    top: 100%;
+
+    img {
+        width: 75px;
+    }
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        top: 100%;
+    }
+
+    50% {
+        top: 90%;
+    }
+}
