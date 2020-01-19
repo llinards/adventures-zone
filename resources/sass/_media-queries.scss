@@ -8,6 +8,17 @@
     }
 
     .container-fluid.az-title {
-      top: 50%;
+        // top: 25%;
+    }
+
+    .section-title-bar {
+        width: 80%;
+        clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    }
+}
+
+@media (min-width: 1440px) {
+    .az-title-main {
+        max-width: 60%;
     }
 }

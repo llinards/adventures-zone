@@ -9,7 +9,7 @@ header {
 
 .container-fluid.az-title {
     position: absolute;
-    top: 40%;
+    top: 400px;
 }
 
 .az-title-main {
@@ -24,7 +24,7 @@ header {
 .az-title-arrow {
     position: relative;
     animation: moveUpDown 2s linear infinite;
-    top: 100%;
+    // top: 100%;
 
     img {
         width: 75px;
@@ -35,10 +35,69 @@ header {
 
     0%,
     100% {
-        top: 100%;
+        top: 30px;
     }
 
     50% {
-        top: 90%;
+        top: 10px;
     }
+}
+
+// Attractions
+#attractions {
+    padding-top: 2rem;
+    height: 500px;
+    background: rgb(233, 30, 121);
+    background: linear-gradient(180deg, rgba(233, 30, 121, 1) 0%, rgba(255, 255, 255, 1) 50%);
+
+    .container {
+        position: relative;
+    }
+}
+
+.section-title-bar {
+    background-color: $section-title-bar;
+    padding: 0.25rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.attraction {
+    margin: 0.5rem;
+
+}
+
+.attraction-img {
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
+}
+
+.attraction-title {
+    background-color: $menu-bg-color;
+}
+
+.slick-arrow.next,
+.slick-arrow.prev {
+    position: absolute;
+    top: 40%;
+}
+
+.slick-arrow.next:hover,
+.slick-arrow.prev:hover {
+    cursor: pointer;
+}
+
+
+.slick-arrow.prev {
+    left: 0;
+}
+
+.slick-arrow.next {
+    right: 0;
+}
+
+.fas.fa-chevron-left,
+.fas.fa-chevron-right {
+    font-size: 3rem;
+    color: $menu-bg-color;
 }
