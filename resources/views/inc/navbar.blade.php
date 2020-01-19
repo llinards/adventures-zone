@@ -4,7 +4,7 @@
   </div>
   <div id="left" class="az-menubar d-flex justify-content-around align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#">Atrakcijas</a>
+        <a class="nav-link text-white text-uppercase" href="#attractions">Atrakcijas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#">ballītes</a>
@@ -38,7 +38,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto text-center">
       <li class="nav-item active">
-        <a class="nav-link text-white text-uppercase" href="#">atrakcijas</a>
+        <a class="nav-link text-white text-uppercase" href="#attractions">atrakcijas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#">ballītes</a>

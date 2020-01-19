@@ -5,4 +5,5 @@
         @include('inc.navbar')
         @include('home.header')
     </header>
+    @include('home.attractions')
 @endsection
