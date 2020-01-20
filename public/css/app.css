@@ -15262,7 +15262,7 @@ header {
 
 .az-title-arrow {
   -webkit-animation: moveUpDown 3000ms linear infinite;
-          animation: moveUpDown 3000ms linear infinite;
+  animation: moveUpDown 3000ms linear infinite;
   position: relative;
 }
 
@@ -15307,7 +15307,7 @@ header {
   margin-bottom: 2rem;
   width: 60%;
   -webkit-clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
 }
 
 .attraction {
@@ -15316,7 +15316,7 @@ header {
 
 .attraction-img {
   -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
-          clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
 }
 
 .attraction-title {
@@ -15375,7 +15375,7 @@ header {
 
 .section-card-readmore {
   -webkit-clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
-          clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
+  clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
 }
 
 .section-card-readmore i.fas {

@@ -4,7 +4,9 @@
   </div>
   <div class="container">
     <div class="row">
-    <img class="img-fluid" src="/storage/img/party.jpg" alt="">
+      <div class="col-12 px-0">
+        <img class="img-fluid" src="/storage/img/party.jpg" alt="">
+      </div>
       <div class="col-md-7 section-card-desc">
         <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eos nihil eveniet impedit libero provident explicabo deleniti nulla sed reprehenderit optio aspernatur.</p>
       </div>
