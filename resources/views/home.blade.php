@@ -7,4 +7,5 @@
     </header>
     @include('home.attractions')
     @include('home.party')
+    @include('home.cafe')
 @endsection
