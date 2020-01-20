@@ -7,7 +7,7 @@
         <a class="nav-link text-white text-uppercase" href="#attractions">Atrakcijas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#">ballītes</a>
+        <a class="nav-link text-white text-uppercase" href="#party">ballītes</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#">vērtības</a>
@@ -41,7 +41,7 @@
         <a class="nav-link text-white text-uppercase" href="#attractions">atrakcijas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#">ballītes</a>
+        <a class="nav-link text-white text-uppercase" href="#party">ballītes</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#">vertības</a>

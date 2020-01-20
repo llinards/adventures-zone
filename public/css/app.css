@@ -15291,8 +15291,7 @@ header {
 }
 
 #attractions {
-  padding-top: 2rem;
-  height: 500px;
+  padding-top: 1rem;
   background: #e91e79;
   background: -webkit-gradient(linear, left top, left bottom, from(#e91e79), color-stop(50%, white));
   background: linear-gradient(180deg, #e91e79 0%, white 50%);
@@ -15349,6 +15348,41 @@ header {
   color: #e91e79;
 }
 
+.section-cards {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-cards .container {
+  position: relative;
+  width: 70%;
+}
+
+.section-cards .section-title-bar {
+  margin-bottom: -2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.section-card-desc,
+.section-card-readmore {
+  background-color: #e91e79;
+}
+
+.section-card-desc {
+  border-right: 2px solid #ffffff;
+}
+
+.section-card-readmore {
+  -webkit-clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
+          clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
+}
+
+.section-card-readmore i.fas {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
 @media (max-width: 575px) {
   .az-title-second {
     font-size: 1rem;
@@ -15358,6 +15392,16 @@ header {
     width: 80%;
     -webkit-clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-cards .container {
+    width: 85%;
+  }
+
+  .section-card-readmore {
+    margin-top: 0.1rem;
   }
 }
 

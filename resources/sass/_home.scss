@@ -51,8 +51,7 @@ header {
 
 // Attractions
 #attractions {
-    padding-top: 2rem;
-    height: 500px;
+    padding-top: 1rem;
     background: rgb(233, 30, 121);
     background: linear-gradient(180deg, rgba(233, 30, 121, 1) 0%, rgba(255, 255, 255, 1) 50%);
 
@@ -106,4 +105,40 @@ header {
 .fas.fa-chevron-right {
     font-size: 3rem;
     color: $menu-bg-color;
+}
+
+// Section cards
+
+.section-cards {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+
+    .container {
+        position: relative;
+        width: 70%;
+    }
+
+    .section-title-bar {
+        margin-bottom: -2rem;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.section-card-desc,
+.section-card-readmore {
+    background-color: $menu-bg-color;
+}
+
+.section-card-desc {
+    border-right: 2px solid #ffffff;
+}
+
+.section-card-readmore {
+    clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
+
+    i.fas {
+        color: #ffffff;
+        font-size: 3rem;
+    }
 }
