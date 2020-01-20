@@ -29,11 +29,24 @@ header {
 }
 
 .az-title-arrow {
-    animation: moveUpDown 3000ms linear infinite;
+    -webkit-animation: moveUpDown 3000ms linear infinite;
+            animation: moveUpDown 3000ms linear infinite;
     position: relative;
 
     img {
         width: 50px;
+    }
+}
+
+@-webkit-keyframes moveUpDown {
+
+    0%,
+    100% {
+        top: 0px;
+    }
+
+    50% {
+        top: 30px;
     }
 }
 
@@ -53,6 +66,8 @@ header {
 #attractions {
     padding-top: 1rem;
     background: rgb(233, 30, 121);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 30, 121, 1)), color-stop(50%, rgba(255, 255, 255, 1)));
+    background: -o-linear-gradient(top, rgba(233, 30, 121, 1) 0%, rgba(255, 255, 255, 1) 50%);
     background: linear-gradient(180deg, rgba(233, 30, 121, 1) 0%, rgba(255, 255, 255, 1) 50%);
 
     .container {
@@ -65,7 +80,8 @@ header {
     padding: 0.25rem;
     margin-bottom: 2rem;
     width: 60%;
-    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
 }
 
 .attraction {
@@ -74,7 +90,8 @@ header {
 }
 
 .attraction-img {
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+            clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
 }
 
 .attraction-title {
@@ -135,7 +152,8 @@ header {
 }
 
 .section-card-readmore {
-    clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
+            clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
 
     i.fas {
         color: #ffffff;
