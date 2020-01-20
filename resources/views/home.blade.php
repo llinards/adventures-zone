@@ -6,4 +6,5 @@
         @include('home.header')
     </header>
     @include('home.attractions')
+    @include('home.party')
 @endsection

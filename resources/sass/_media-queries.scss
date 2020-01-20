@@ -3,15 +3,24 @@
         font-size: 1rem;
     }
 
-    .container-fluid.az-title {
-        // top: 25%;
-    }
-
     .section-title-bar {
         width: 80%;
         clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
     }
 }
+
+@media (max-width: 768px) {
+    .section-cards {
+        .container {
+            width: 85%;
+        }
+    }
+
+    .section-card-readmore {
+        margin-top: 0.1rem;
+    }
+}
+
 
 @media (min-width: 1440px) {
     .az-title-main {

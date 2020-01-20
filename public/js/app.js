@@ -37361,11 +37361,11 @@ $(document).ready(function () {
   $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
+      scrollTop: $($(this).attr('href')).offset().top + 16
     }, 500, 'linear');
   });
   $('.attractions').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
@@ -37380,7 +37380,7 @@ $(document).ready(function () {
         slidesToScroll: 3,
         infinite: true,
         arrows: true,
-        dots: true
+        dots: false
       }
     }, {
       breakpoint: 600,
