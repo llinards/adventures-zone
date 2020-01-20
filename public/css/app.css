@@ -15233,6 +15233,7 @@ header {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 .container-fluid.az-title,
@@ -15241,7 +15242,7 @@ header {
 .az-title.container-lg,
 .az-title.container-xl {
   position: absolute;
-  top: 400px;
+  top: 50%;
 }
 
 .az-title-main {
@@ -15253,33 +15254,39 @@ header {
   text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa;
 }
 
+.az-title-arrows {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+}
+
 .az-title-arrow {
+  -webkit-animation: moveUpDown 3000ms linear infinite;
+          animation: moveUpDown 3000ms linear infinite;
   position: relative;
-  -webkit-animation: moveUpDown 2s linear infinite;
-          animation: moveUpDown 2s linear infinite;
 }
 
 .az-title-arrow img {
-  width: 75px;
+  width: 50px;
 }
 
 @-webkit-keyframes moveUpDown {
   0%, 100% {
-    top: 30px;
+    top: 0px;
   }
 
   50% {
-    top: 10px;
+    top: 30px;
   }
 }
 
 @keyframes moveUpDown {
   0%, 100% {
-    top: 30px;
+    top: 0px;
   }
 
   50% {
-    top: 10px;
+    top: 30px;
   }
 }
 
@@ -15309,8 +15316,8 @@ header {
 }
 
 .attraction-img {
-  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
-          clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
+  -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+          clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
 }
 
 .attraction-title {
@@ -15343,10 +15350,6 @@ header {
 }
 
 @media (max-width: 575px) {
-  .az-title-arrow img {
-    width: 50px;
-  }
-
   .az-title-second {
     font-size: 1rem;
   }

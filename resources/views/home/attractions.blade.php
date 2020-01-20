@@ -7,37 +7,37 @@
     <div class="attractions mx-3">
       <div class="attraction">
         <a href="#">
-          <img class="attraction-img img-fluid" src="/storage/img/attractions/1.jpg" alt="">
+          <img class="attraction-img img-fluid" src="/storage/img/attractions/1_1.jpg" alt="">
           <h4 class="attraction-title text-uppercase text-white text-center">batutu parks<br /> otrajā līmenī</h4>
         </a>
       </div>
       <div class="attraction">
         <a href="#">
-          <img class="attraction-img img-fluid" src="/storage/img/attractions/1.jpg" alt="">
+          <img class="attraction-img img-fluid" src="/storage/img/attractions/1_1.jpg" alt="">
           <h4 class="attraction-title text-uppercase text-white text-center">batutu parks<br /> otrajā līmenī</h4>
         </a>
       </div>
       <div class="attraction">
         <a href="#">
-          <img class="attraction-img img-fluid" src="/storage/img/attractions/1.jpg" alt="">
+          <img class="attraction-img img-fluid" src="/storage/img/attractions/1_1.jpg" alt="">
           <h4 class="attraction-title text-uppercase text-white text-center">batutu parks<br /> otrajā līmenī</h4>
         </a>
       </div>
       <div class="attraction">
         <a href="#">
-          <img class="attraction-img img-fluid" src="/storage/img/attractions/1.jpg" alt="">
+          <img class="attraction-img img-fluid" src="/storage/img/attractions/1_1.jpg" alt="">
           <h4 class="attraction-title text-uppercase text-white text-center">batutu parks<br /> otrajā līmenī</h4>
         </a>
       </div>
       <div class="attraction">
         <a href="#">
-          <img class="attraction-img img-fluid" src="/storage/img/attractions/1.jpg" alt="">
+          <img class="attraction-img img-fluid" src="/storage/img/attractions/1_1.jpg" alt="">
           <h4 class="attraction-title text-uppercase text-white text-center">batutu parks<br /> otrajā līmenī</h4>
         </a>
       </div>
       <div class="attraction">
         <a href="#">
-          <img class="attraction-img img-fluid" src="/storage/img/attractions/1.jpg" alt="">
+          <img class="attraction-img img-fluid" src="/storage/img/attractions/1_1.jpg" alt="">
           <h4 class="attraction-title text-uppercase text-white text-center">batutu parks<br /> otrajā līmenī</h4>
         </a>
       </div>
