@@ -30,7 +30,7 @@ header {
 
 .az-title-arrow {
     -webkit-animation: moveUpDown 3000ms linear infinite;
-            animation: moveUpDown 3000ms linear infinite;
+    animation: moveUpDown 3000ms linear infinite;
     position: relative;
 
     img {
@@ -75,27 +75,19 @@ header {
     }
 }
 
-.section-title-bar {
-    background-color: $section-title-bar;
-    padding: 0.25rem;
-    margin-bottom: 2rem;
-    width: 60%;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
-}
-
 .attraction {
     margin: 0.5rem;
 
 }
 
 .attraction-img {
-    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
-            clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
 }
 
 .attraction-title {
     background-color: $menu-bg-color;
+    padding: 0.5rem;
 }
 
 .slick-arrow.next,
@@ -124,23 +116,7 @@ header {
     color: $menu-bg-color;
 }
 
-// Section cards
-
-.section-cards {
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-
-    .container {
-        position: relative;
-        width: 70%;
-    }
-
-    .section-title-bar {
-        margin-bottom: -2rem;
-        position: absolute;
-        z-index: 1;
-    }
-}
+// Party & Cafe additional elements
 
 .section-card-desc,
 .section-card-readmore {
@@ -149,14 +125,71 @@ header {
 
 .section-card-desc {
     border-right: 2px solid #ffffff;
+    padding: 0.25rem;
 }
 
 .section-card-readmore {
-    -webkit-clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
-            clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
 
     i.fas {
         color: #ffffff;
         font-size: 3rem;
     }
+}
+
+// Pricelist
+
+#pricelist {
+    .section-title-bar {
+        background-color: $menu-bg-color;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    #xs.section-title-bar {
+        width: 40%;
+    }
+
+    // #azone.section-title-bar {
+    //     width: 70%;
+    //     clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+    // }
+}
+
+.pricelist-card {
+    max-width: 150px !important;
+    padding: 0.5rem;
+    position: relative;
+    margin: 0.5rem;
+}
+
+.xs-zone {
+    background-color: $section-title-bar;
+}
+
+.a-zone {
+    background-color: $menu-bg-color;
+}
+
+.pricelist-title {
+    font-weight: 400;
+}
+
+.price-number {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.pricelist-price>.fa-euro-sign {
+    font-size: 1rem;
+}
+
+.pricelist-info {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+
+.pricelist-info>.fa-info {
+    color: #000000;
 }

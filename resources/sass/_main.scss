@@ -30,3 +30,51 @@ li {
     margin: 0;
     list-style: none;
 }
+
+// Section card
+
+.section-cards {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .container {
+        position: relative;
+        width: 70%;
+    }
+
+    .section-title-bar {
+        margin-bottom: -2rem;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.section-title-bar {
+    background-color: $section-title-bar;
+    padding: 0.25rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+}
+
+// buy&reserve btns
+
+.buy-reserve-btns {
+    max-width: 420px;
+    font-size: 3rem;
+    margin: 1rem 0;
+
+    .buy {
+        background-color: $menu-bg-color;
+    }
+
+    .reserve {
+        background-color: $section-title-bar;
+    }
+}
+
+
+// footer 
+
+.footer-bar {
+}

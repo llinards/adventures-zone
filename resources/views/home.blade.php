@@ -8,4 +8,8 @@
     @include('home.attractions')
     @include('home.party')
     @include('home.cafe')
+    @include('home.pricelist')
+    <footer>
+        @include('inc.footer')
+    </footer>
 @endsection
