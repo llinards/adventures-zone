@@ -15175,6 +15175,61 @@ li {
   list-style: none;
 }
 
+.section-cards {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-cards .container {
+  position: relative;
+  width: 70%;
+}
+
+.section-cards .section-title-bar {
+  margin-bottom: -2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.section-title-bar {
+  background-color: #20abe2;
+  padding: 0.25rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+}
+
+.buy-reserve-btns {
+  margin-top: 1rem;
+  max-width: 460px;
+  font-size: 2.5rem;
+}
+
+.buy-reserve-btns.buy {
+  background-color: #e91e79;
+}
+
+.buy-reserve-btns.reserve {
+  background-color: #20abe2;
+}
+
+footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  border-top: 5px solid #e91e79;
+  background-color: #808080;
+}
+
+.footer-logo-img {
+  width: 100px;
+}
+
+.soc-icon {
+  width: 150px;
+}
+
 @media (max-width: 768px) {
   #desktop-navbar {
     display: none;
@@ -15301,26 +15356,18 @@ header {
   position: relative;
 }
 
-.section-title-bar {
-  background-color: #20abe2;
-  padding: 0.25rem;
-  margin-bottom: 2rem;
-  width: 60%;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
-}
-
 .attraction {
   margin: 0.5rem;
 }
 
 .attraction-img {
-  -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
-  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
 }
 
 .attraction-title {
   background-color: #e91e79;
+  padding: 0.5rem;
 }
 
 .slick-arrow.next,
@@ -15348,22 +15395,6 @@ header {
   color: #e91e79;
 }
 
-.section-cards {
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.section-cards .container {
-  position: relative;
-  width: 70%;
-}
-
-.section-cards .section-title-bar {
-  margin-bottom: -2rem;
-  position: absolute;
-  z-index: 1;
-}
-
 .section-card-desc,
 .section-card-readmore {
   background-color: #e91e79;
@@ -15371,16 +15402,91 @@ header {
 
 .section-card-desc {
   border-right: 2px solid #ffffff;
+  padding: 0.25rem;
 }
 
 .section-card-readmore {
-  -webkit-clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
-  clip-path: polygon(49% 0%, 100% 0, 100% 0%, 90% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
 }
 
 .section-card-readmore i.fas {
   color: #ffffff;
   font-size: 3rem;
+}
+
+#pricelist .section-title-bar {
+  background-color: #e91e79;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#pricelist #xs.section-title-bar {
+  width: 40%;
+}
+
+.pricelist-card {
+  max-width: 150px !important;
+  padding: 0.5rem;
+  position: relative;
+  margin: 0.5rem;
+}
+
+.xs-zone {
+  background-color: #20abe2;
+}
+
+.a-zone {
+  background-color: #e91e79;
+}
+
+.pricelist-title {
+  font-weight: 400;
+}
+
+.price-number {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.pricelist-price > .fa-euro-sign {
+  font-size: 1rem;
+}
+
+.pricelist-info {
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+}
+
+.pricelist-info > .fa-info {
+  color: #000000;
+}
+
+.footer-bar {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.footer-bar .green,
+.footer-bar .blue,
+.footer-bar .red {
+  height: 20px;
+}
+
+.footer-bar .green {
+  width: 20%;
+  background-color: #b3c64f;
+}
+
+.footer-bar .blue {
+  width: 40%;
+  background-color: #20abe2;
+}
+
+.footer-bar .red {
+  width: 40%;
+  background-color: #ca4e3a;
 }
 
 @media (max-width: 575px) {
@@ -15390,8 +15496,6 @@ header {
 
   .section-title-bar {
     width: 80%;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
   }
 }
 
@@ -15410,6 +15514,28 @@ header {
 
   .section-card-readmore {
     margin-top: 0.1rem;
+  }
+
+  .footer-logo-img {
+    width: 85px;
+  }
+
+  footer {
+    padding: 0.5rem 0.25rem 0 0.25rem;
+  }
+
+  .footer-soc-icons {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-soc-icons .soc-icon {
+    width: 100px;
+  }
+
+  .footer-soc-icons .working-hours {
+    margin-top: 1rem;
   }
 }
 

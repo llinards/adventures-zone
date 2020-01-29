@@ -10,12 +10,12 @@
         <a class="nav-link text-white text-uppercase" href="#party">ballītes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#">vērtības</a>
+        <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
       </li>
   </div>
   <div id="right" class="az-menubar d-flex justify-content-around align-items-center">
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="#">rezervācijas/cenas</a>
+      <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-item nav-link dropdown-toggle text-white text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,10 +44,10 @@
         <a class="nav-link text-white text-uppercase" href="#party">ballītes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#">vertības</a>
+        <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#">rezervācijas/cenas</a>
+        <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
       </li>
     </ul>
     <div class="navbar-contact-info text-center text-white text-uppercase pt-3">
