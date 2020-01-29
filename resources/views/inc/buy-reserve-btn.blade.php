@@ -1,10 +1,14 @@
 <div class="container">
-  <div class="row">
-    <a class="buy-reserve-btns" href="#">
-      <div class="text-center buy text-white">pērc</div>
-    </a>
-    <a href="#">
-      <div class="text-center buy-reserve-btns reserve text-white">rezervē</div>
-    </a>
+  <div class="row text-center">
+    <div class="col-12">
+      <div class="buy-reserve-btns buy mx-auto">
+        <a class="text-white" href="#">pērc</a>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="buy-reserve-btns reserve mx-auto">
+        <a class="text-white" href="#">rezervē</a>
+      </div>
+    </div>
   </div>
 </div>

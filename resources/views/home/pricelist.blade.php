@@ -2,11 +2,11 @@
   <div class="section-title-bar">
     <h1 class="text-white text-center">cenas</h1>
   </div>
-  <div class="container-fluid">
+  {{-- <div class="container-fluid">
     <div class="row mx-auto justify-content-center">
-      {{-- <div id="xs" class="section-title-bar pricelist-title-bar">
+      <div id="xs" class="section-title-bar pricelist-title-bar">
         <h1 class="text-white text-center">xs zona</h1>
-      </div> --}}
+      </div>
       <div class="col-md-3 xs-zone pricelist-card justify-self-start">
         <a href="#">
           <h3 class="pricelist-title text-center text-white">1 stunda</h3>
@@ -45,6 +45,6 @@
       </div>
 
     </div>
-  </div>
+  </div> --}}
   @include('inc.buy-reserve-btn')
 </section>

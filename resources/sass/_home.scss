@@ -193,3 +193,32 @@ header {
 .pricelist-info>.fa-info {
     color: #000000;
 }
+
+
+// footer bar
+
+.footer-bar {
+    padding-top: 1rem;
+    width: 100%;
+
+    .green,
+    .blue,
+    .red {
+        height: 20px;
+    }
+
+    .green {
+        width: 20%;
+        background-color: rgb(179,198,79);
+    }
+
+    .blue {
+        width: 40%;
+        background-color: #20abe2;
+    }
+
+    .red {
+        width: 40%;
+        background-color: rgb(202,78,58);
+    }
+}

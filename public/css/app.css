@@ -15201,17 +15201,33 @@ li {
 }
 
 .buy-reserve-btns {
-  max-width: 420px;
-  font-size: 3rem;
-  margin: 1rem 0;
+  margin-top: 1rem;
+  max-width: 460px;
+  font-size: 2.5rem;
 }
 
-.buy-reserve-btns .buy {
+.buy-reserve-btns.buy {
   background-color: #e91e79;
 }
 
-.buy-reserve-btns .reserve {
+.buy-reserve-btns.reserve {
   background-color: #20abe2;
+}
+
+footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  border-top: 5px solid #e91e79;
+  background-color: #808080;
+}
+
+.footer-logo-img {
+  width: 100px;
+}
+
+.soc-icon {
+  width: 150px;
 }
 
 @media (max-width: 768px) {
@@ -15447,6 +15463,32 @@ header {
   color: #000000;
 }
 
+.footer-bar {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.footer-bar .green,
+.footer-bar .blue,
+.footer-bar .red {
+  height: 20px;
+}
+
+.footer-bar .green {
+  width: 20%;
+  background-color: #b3c64f;
+}
+
+.footer-bar .blue {
+  width: 40%;
+  background-color: #20abe2;
+}
+
+.footer-bar .red {
+  width: 40%;
+  background-color: #ca4e3a;
+}
+
 @media (max-width: 575px) {
   .az-title-second {
     font-size: 1rem;
@@ -15472,6 +15514,28 @@ header {
 
   .section-card-readmore {
     margin-top: 0.1rem;
+  }
+
+  .footer-logo-img {
+    width: 85px;
+  }
+
+  footer {
+    padding: 0.5rem 0.25rem 0 0.25rem;
+  }
+
+  .footer-soc-icons {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-soc-icons .soc-icon {
+    width: 100px;
+  }
+
+  .footer-soc-icons .working-hours {
+    margin-top: 1rem;
   }
 }
 

@@ -26,6 +26,29 @@
     .section-card-readmore {
         margin-top: 0.1rem;
     }
+
+    .footer-logo-img {
+        width: 85px;
+    }
+
+    footer {
+        padding: 0.5rem 0.25rem 0 0.25rem;
+    }
+
+    .footer-soc-icons {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+
+        .soc-icon {
+            width: 100px;
+        }
+
+        .working-hours {
+            margin-top: 1rem;
+        }
+    }
+
 }
 
 @media (min-width: 1440px) {
