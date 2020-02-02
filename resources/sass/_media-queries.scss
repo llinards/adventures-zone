@@ -48,7 +48,9 @@
 
 
     #xs.section-title-bar,
-    #azone.section-title-bar {
+    #azone.section-title-bar,
+    #party.section-title-bar,
+    #membership.section-title-bar {
         width: 70% !important;
         margin-bottom: 0.5rem;
         clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);

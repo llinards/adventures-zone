@@ -12,7 +12,7 @@
         <div class="row mx-auto justify-content-end">
           
           <a class="col-md-12 xs-zone pricelist-card" href="#">
-            <h3 class="pricelist-title text-center text-white">1 stunda</h3>
+            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
@@ -31,7 +31,7 @@
       <div class="container-fluid">
         <div class="row mx-auto justify-content-start">
           <a class="col-md-12 a-zone pricelist-card" href="#">
-            <h3 class="pricelist-title text-center text-white">1 stunda</h3>
+            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
@@ -39,7 +39,7 @@
           </a>
 
           <a class="col-md-12 a-zone pricelist-card" href="#">
-            <h3 class="pricelist-title text-center text-white">1 stunda</h3>
+            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
@@ -47,7 +47,7 @@
           </a>
           
           <a class="col-md-12 a-zone pricelist-card" href="#">
-            <h3 class="pricelist-title text-center text-white">1 stunda</h3>
+            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
@@ -68,7 +68,7 @@
         <div class="row mx-auto justify-content-end">
           
           <a class="col-md-12 party pricelist-card" href="#">
-            <h3 class="pricelist-title text-center text-white">1 stunda</h3>
+            <h4 class="pricelist-title text-center text-white">ballīšu telpa</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
@@ -88,7 +88,7 @@
       <div class="container-fluid">
         <div class="row mx-auto justify-content-start">
           <a class="col-md-12 membership pricelist-card" href="#">
-            <h3 class="pricelist-title text-center text-white">1 stunda</h3>
+            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
@@ -97,7 +97,7 @@
           </a>
 
           <a class="col-md-12 membership pricelist-card" href="#">
-            <h3 class="pricelist-title text-center text-white">1 stunda</h3>
+            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
@@ -106,7 +106,7 @@
           </a>
           
           <a class="col-md-12 membership pricelist-card" href="#">
-            <h3 class="pricelist-title text-center text-white">1 stunda</h3>
+            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
