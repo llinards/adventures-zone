@@ -15175,61 +15175,6 @@ li {
   list-style: none;
 }
 
-.section-cards {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.section-cards .container {
-  position: relative;
-  width: 70%;
-}
-
-.section-cards .section-title-bar {
-  margin-bottom: -2rem;
-  position: absolute;
-  z-index: 1;
-}
-
-.section-title-bar {
-  background-color: #20abe2;
-  padding: 0.25rem;
-  margin-bottom: 2rem;
-  width: 60%;
-  -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
-}
-
-.buy-reserve-btns {
-  margin-top: 1rem;
-  max-width: 460px;
-  font-size: 2.5rem;
-}
-
-.buy-reserve-btns.buy {
-  background-color: #e91e79;
-}
-
-.buy-reserve-btns.reserve {
-  background-color: #20abe2;
-}
-
-footer {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  width: 100%;
-  border-top: 5px solid #e91e79;
-  background-color: #808080;
-}
-
-.footer-logo-img {
-  width: 100px;
-}
-
-.soc-icon {
-  width: 150px;
-}
-
 @media (max-width: 768px) {
   #desktop-navbar {
     display: none;
@@ -15395,6 +15340,31 @@ header {
   color: #e91e79;
 }
 
+.section-cards {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-cards .container {
+  position: relative;
+  width: 70%;
+}
+
+.section-cards .section-title-bar {
+  margin-bottom: -2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.section-title-bar {
+  background-color: #20abe2;
+  padding: 0.25rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+}
+
 .section-card-desc,
 .section-card-readmore {
   background-color: #e91e79;
@@ -15461,6 +15431,36 @@ header {
 
 .pricelist-info > .fa-info {
   color: #000000;
+}
+
+.buy-reserve-btns {
+  margin-top: 1rem;
+  max-width: 460px;
+  font-size: 2.5rem;
+}
+
+.buy-reserve-btns.buy {
+  background-color: #e91e79;
+}
+
+.buy-reserve-btns.reserve {
+  background-color: #20abe2;
+}
+
+footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  border-top: 5px solid #e91e79;
+  background-color: #808080;
+}
+
+.footer-logo-img {
+  width: 100px;
+}
+
+.soc-icon {
+  width: 150px;
 }
 
 .footer-bar {

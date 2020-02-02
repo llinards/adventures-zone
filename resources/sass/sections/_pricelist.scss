@@ -1,0 +1,54 @@
+#pricelist {
+    .section-title-bar {
+        background-color: $menu-bg-color;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    #xs.section-title-bar {
+        width: 40%;
+    }
+
+    // #azone.section-title-bar {
+    //     width: 70%;
+    //     clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+    // }
+}
+
+.pricelist-card {
+    max-width: 150px !important;
+    padding: 0.5rem;
+    position: relative;
+    margin: 0.5rem;
+}
+
+.xs-zone {
+    background-color: $section-title-bar;
+}
+
+.a-zone {
+    background-color: $menu-bg-color;
+}
+
+.pricelist-title {
+    font-weight: 400;
+}
+
+.price-number {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.pricelist-price>.fa-euro-sign {
+    font-size: 1rem;
+}
+
+.pricelist-info {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+
+.pricelist-info>.fa-info {
+    color: #000000;
+}
