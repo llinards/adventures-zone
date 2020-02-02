@@ -4,22 +4,71 @@
         position: relative;
         margin-bottom: 2rem;
     }
+}
 
-    #xs.section-title-bar {
-        width: 40%;
+.pricelist-block {
+    width: 100%;
+}
+
+#second-row.pricelist-block {
+    margin-top: 2rem;
+}
+
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+
+    .section-title-bar {
+        clip-path:
+            polygon(0% 100%,
+                /* top left */
+                40px 0%,
+                /* top left */
+                100% 0%,
+                /* top right */
+                100% 100%,
+                /* top right */
+                0% 100%,
+                /* bottom left */
+                0 calc(100% - 40px)
+                /* bottom left */
+            );
+
     }
+}
 
-    // #azone.section-title-bar {
-    //     width: 70%;
-    //     clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
-    // }
+.left,
+.right {
+    .section-title-bar {
+        width: 100%;
+    }
+}
+
+#xs.section-title-bar {
+    background-color: $section-title-bar;
+}
+
+#party.section-title-bar,
+.party {
+    background-color: $party-section-card;
+}
+
+#membership.section-title-bar,
+.membership {
+    background-color: $membership-section-card;
 }
 
 .pricelist-card {
-    max-width: 150px !important;
+    max-width: 140px !important;
+    height: 140px !important;
     padding: 0.5rem;
     position: relative;
     margin: 0.5rem;
+    clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 26px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 calc(100% - 20px))
 }
 
 .xs-zone {
