@@ -1,0 +1,63 @@
+header {
+    background-image: url("/storage/img/_header.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-fluid.az-title {
+    position: absolute;
+    top: 50%;
+}
+
+.az-title-main {
+    max-width: 80%;
+    height: auto;
+}
+
+.az-title-second {
+    text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa;
+}
+
+.az-title-arrows {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+.az-title-arrow {
+    -webkit-animation: moveUpDown 3000ms linear infinite;
+    animation: moveUpDown 3000ms linear infinite;
+    position: relative;
+
+    img {
+        width: 50px;
+    }
+}
+
+@-webkit-keyframes moveUpDown {
+
+    0%,
+    100% {
+        top: 0px;
+    }
+
+    50% {
+        top: 30px;
+    }
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        top: 0px;
+    }
+
+    50% {
+        top: 30px;
+    }
+}

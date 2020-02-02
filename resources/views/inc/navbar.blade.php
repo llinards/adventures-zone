@@ -56,6 +56,8 @@
     </div>
     <h5 class="text-uppercase text-white text-center pt-3"><strong>Adrese:</strong></h5>
     <p class="text-uppercase text-white text-center pt-1">T/P Alfa 3.stāvs, Brīvības gatve 2353</p>
-    <h4 class="text-uppercase text-white text-center">+371 265 25 233</h4>
+    <h4 class="text-uppercase text-white text-center">
+      <a href="tel:+37126525233">+371 265 25 233</a>
+    </h4>
   </div>
 </nav>

@@ -2,15 +2,15 @@
     .az-title-second {
         font-size: 1rem;
     }
-
-    .section-title-bar {
-        width: 80%;
-    }
 }
 
 @media (max-width: 768px) {
     .az-title-arrows {
         bottom: 20%;
+    }
+
+    .section-title-bar {
+        width: 70%;
     }
 
     .section-cards {
@@ -27,12 +27,41 @@
         margin-top: 0.1rem;
     }
 
+    .pricelist-block {
+        flex-wrap: wrap;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .row {
+            justify-content: center !important;
+        }
+    }
+
+    #pricelist>.section-title-bar {
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+
+    #xs.section-title-bar,
+    #azone.section-title-bar,
+    #party.section-title-bar,
+    #membership.section-title-bar {
+        width: 70% !important;
+        margin-bottom: 0.5rem;
+        clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+    }
+
     .footer-logo-img {
         width: 85px;
     }
 
     footer {
-        padding: 0.5rem 0.25rem 0 0.25rem;
+        // padding: 0.5rem 0.25rem 0 0.25rem;
     }
 
     .footer-soc-icons {
