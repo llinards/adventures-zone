@@ -5,6 +5,11 @@
 }
 
 @media (max-width: 768px) {
+    .az-title-main {
+        max-width: 95%;
+    }
+
+
     .az-title-arrows {
         bottom: 20%;
     }
@@ -51,7 +56,7 @@
     #azone.section-title-bar,
     #party.section-title-bar,
     #membership.section-title-bar {
-        width: 70% !important;
+        width: 85% !important;
         margin-bottom: 0.5rem;
         clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
     }

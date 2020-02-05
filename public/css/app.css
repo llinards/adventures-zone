@@ -15144,6 +15144,7 @@ a.text-dark:focus {
 
 body {
   position: relative;
+  background-color: #ffffff;
 }
 
 h1,
@@ -15442,8 +15443,8 @@ header {
   padding: 0.5rem;
   position: relative;
   margin: 0.5rem;
-  -webkit-clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 26px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 calc(100% - 20px));
-          clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 26px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 calc(100% - 20px));
+  -webkit-clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 100%, 0px 100%);
+          clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 100%, 0px 100%);
 }
 
 .xs-zone {
@@ -15468,13 +15469,32 @@ header {
 }
 
 .pricelist-info {
+  background-color: #ffffff;
+  border-radius: 0;
+  display: inline-block;
+  padding: 2rem;
   position: absolute;
-  right: 1%;
-  bottom: 1%;
+  bottom: -33px;
+  right: -28px;
+  -webkit-clip-path: polygon(12px 56px, 45px 19px, 62.8% 64.26%);
+  clip-path: polygon(12px 56px, 45px 19px, 62.8% 64.26%);
 }
 
 .pricelist-info > .fa-info {
   color: #000000;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.modal-header {
+  border: none;
+}
+
+.close {
+  font-size: 2rem;
 }
 
 .buy-reserve-btns {
@@ -15540,6 +15560,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .az-title-main {
+    max-width: 95%;
+  }
+
   .az-title-arrows {
     bottom: 20%;
   }
@@ -15586,7 +15610,7 @@ footer {
   #azone.section-title-bar,
   #party.section-title-bar,
   #membership.section-title-bar {
-    width: 70% !important;
+    width: 85% !important;
     margin-bottom: 0.5rem;
     -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
