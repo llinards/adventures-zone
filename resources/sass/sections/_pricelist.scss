@@ -69,7 +69,7 @@
     position: relative;
     margin: 0.5rem;
     // clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 26px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 calc(100% - 20px))
-    clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 100%, 0px 100%);
+    clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
 }
 
 .xs-zone {
