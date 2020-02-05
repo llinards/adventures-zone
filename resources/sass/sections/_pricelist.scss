@@ -68,7 +68,8 @@
     padding: 0.5rem;
     position: relative;
     margin: 0.5rem;
-    clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 26px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 calc(100% - 20px))
+    // clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 26px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 calc(100% - 20px))
+    clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 100%, 0px 100%);
 }
 
 .xs-zone {
@@ -93,9 +94,18 @@
 }
 
 .pricelist-info {
+    // position: absolute;
+    // right: 1%;
+    // bottom: 1%;
+    background-color: #ffffff;
+    border-radius: 0;
+    display: inline-block;
+    padding: 2rem;
     position: absolute;
-    right: 1%;
-    bottom: 1%;
+    bottom: -33px;
+    right: -28px;
+    -webkit-clip-path: polygon(12px 56px, 45px 19px, 62.80% 64.26%);
+    clip-path: polygon(12px 56px, 45px 19px, 62.80% 64.26%);
 }
 
 .pricelist-info>.fa-info {
