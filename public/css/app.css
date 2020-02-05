@@ -15484,6 +15484,19 @@ header {
   color: #000000;
 }
 
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.modal-header {
+  border: none;
+}
+
+.close {
+  font-size: 2rem;
+}
+
 .buy-reserve-btns {
   margin-top: 1rem;
   max-width: 460px;

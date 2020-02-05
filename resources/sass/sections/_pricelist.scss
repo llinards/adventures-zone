@@ -111,3 +111,24 @@
 .pricelist-info>.fa-info {
     color: #000000;
 }
+
+
+// pricelist modal
+
+.modal-dialog {
+
+}
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+    // clip-path: polygon(-8px -15px, -13px 131px, 508px 123px, 102.2% -10.35%);
+}
+
+.modal-header {
+    border: none;
+}
+
+.close {
+    font-size: 2rem;
+}

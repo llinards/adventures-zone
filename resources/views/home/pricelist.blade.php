@@ -10,8 +10,7 @@
 
       <div class="container-fluid">
         <div class="row mx-auto justify-content-end">
-          
-          <a class="col-md-12 xs-zone pricelist-card" href="#">
+          <a class="col-md-12 xs-zone pricelist-card" href="#" data-toggle="modal" data-target="#xsOneHour">
             <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
@@ -30,7 +29,7 @@
 
       <div class="container-fluid">
         <div class="row mx-auto justify-content-start">
-          <a class="col-md-12 a-zone pricelist-card" href="#">
+          <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
@@ -38,7 +37,7 @@
             </div>
           </a>
 
-          <a class="col-md-12 a-zone pricelist-card" href="#">
+          <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
@@ -46,7 +45,7 @@
             </div>
           </a>
           
-          <a class="col-md-12 a-zone pricelist-card" href="#">
+          <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
@@ -67,7 +66,7 @@
       <div class="container-fluid">
         <div class="row mx-auto justify-content-end">
           
-          <a class="col-md-12 party pricelist-card" href="#">
+          <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">ballīšu telpa</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
@@ -87,7 +86,7 @@
 
       <div class="container-fluid">
         <div class="row mx-auto justify-content-start">
-          <a class="col-md-12 membership pricelist-card" href="#">
+          <a class="col-md-12 membership pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
@@ -96,7 +95,7 @@
             <h6 class="text-center text-white">2h apmeklējums</h6>
           </a>
 
-          <a class="col-md-12 membership pricelist-card" href="#">
+          <a class="col-md-12 membership pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
@@ -105,7 +104,7 @@
             <h6 class="text-center text-white">2h apmeklējums</h6>
           </a>
           
-          <a class="col-md-12 membership pricelist-card" href="#">
+          <a class="col-md-12 membership pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">1 stunda</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
@@ -117,6 +116,7 @@
       </div>
     </div>
   </div>
+  @include('inc.pricelist-modal')
 
   @include('inc.buy-reserve-btn')
 </section>
