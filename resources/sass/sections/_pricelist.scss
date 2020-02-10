@@ -112,12 +112,25 @@
     color: #000000;
 }
 
+.xs-zone .pricelist-info i {
+    color: $section-title-bar;
+}
+
+.a-zone .pricelist-info i {
+    color: $menu-bg-color;
+}
+
+.party .pricelist-info i {
+    color: $party-section-card;
+}
+
+.membership .pricelist-info i {
+    color: $membership-section-card;
+}
 
 // pricelist modal
 
-.modal-dialog {
-
-}
+.modal-dialog {}
 
 .modal-content {
     border: none;
