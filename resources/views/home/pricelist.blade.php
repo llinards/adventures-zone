@@ -31,23 +31,23 @@
         <div class="row mx-auto justify-content-start">
           <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">1 stunda</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">12</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
           </a>
 
           <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
-            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h4 class="pricelist-title text-center text-white">2 stundas</h4>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">19</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
           </a>
           
           <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
-            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h4 class="pricelist-title text-center text-white">visa diena</h4>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">29</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
@@ -68,7 +68,7 @@
           
           <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
             <h4 class="pricelist-title text-center text-white">ballīšu telpa</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">29</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
@@ -87,8 +87,8 @@
       <div class="container-fluid">
         <div class="row mx-auto justify-content-start">
           <a class="col-md-12 membership pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
-            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h4 class="pricelist-title text-center text-white">3 reizes</h4>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">39</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
@@ -96,8 +96,8 @@
           </a>
 
           <a class="col-md-12 membership pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
-            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h4 class="pricelist-title text-center text-white">5 reizes</h4>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">59</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
@@ -105,8 +105,8 @@
           </a>
           
           <a class="col-md-12 membership pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
-            <h4 class="pricelist-title text-center text-white">1 stunda</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h4 class="pricelist-title text-center text-white">10 reizes</h4>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">99</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>

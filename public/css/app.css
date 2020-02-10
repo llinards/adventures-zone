@@ -15169,6 +15169,10 @@ a:active {
   text-decoration: none;
 }
 
+a:focus {
+  outline: 0;
+}
+
 ul,
 li {
   padding: 0;
@@ -15217,7 +15221,6 @@ a[href^=tel] {
 .nav-link {
   padding: 0.5rem;
   font-size: 0.9rem;
-  border-bottom: none !important;
 }
 
 #mobile-navbar {
@@ -15320,6 +15323,7 @@ header {
 .attraction-title {
   background-color: #e91e79;
   padding: 0.5rem;
+  height: 58px;
 }
 
 .slick-arrow.next,
@@ -15568,6 +15572,17 @@ footer {
 .footer-bar .red {
   width: 40%;
   background-color: #ca4e3a;
+}
+
+.productpage.az-menubar,
+#mobile-navbar.productpage {
+  background-color: #20abe2;
+}
+
+.product-page-title .az-title-second {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 575px) {

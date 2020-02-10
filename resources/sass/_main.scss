@@ -25,6 +25,10 @@ a:active {
     text-decoration: none;
 }
 
+a:focus {
+    outline: 0;
+}
+
 ul,
 li {
     padding: 0;
