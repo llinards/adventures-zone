@@ -1,0 +1,92 @@
+@media (max-width: 575px) {
+    .az-title-second {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .az-title-main {
+        max-width: 95%;
+    }
+
+
+    .az-title-arrows {
+        bottom: 20%;
+    }
+
+    .section-title-bar {
+        width: 70%;
+    }
+
+    .section-cards {
+        .container {
+            width: 85%;
+        }
+    }
+
+    .section-card-desc {
+        border: none;
+    }
+
+    .section-card-readmore {
+        margin-top: 0.1rem;
+    }
+
+    .pricelist-block {
+        flex-wrap: wrap;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .row {
+            justify-content: center !important;
+        }
+    }
+
+    #pricelist>.section-title-bar {
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+
+    #xs.section-title-bar,
+    #azone.section-title-bar,
+    #party.section-title-bar,
+    #membership.section-title-bar {
+        width: 85% !important;
+        margin-bottom: 0.5rem;
+        clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+    }
+
+    .footer-logo-img {
+        width: 85px;
+    }
+
+    footer {
+        // padding: 0.5rem 0.25rem 0 0.25rem;
+    }
+
+    .footer-soc-icons {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+
+        .soc-icon {
+            width: 100px;
+        }
+
+        .working-hours {
+            margin-top: 1rem;
+        }
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .az-title-main {
+        max-width: 60%;
+    }
+}

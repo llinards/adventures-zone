@@ -4,17 +4,23 @@
     }
 }
 
+@media (min-width: 768px) {
+    #mobile-navbar {
+        display: none;
+    }
+}
+
 .az-logo--img {
-    width: 300px;
+    width: 227px;
     height: 100%;
 }
 
 .az-menubar {
     position: absolute;
     top: 0;
-    width: calc((100% - 300px)/2);
-    height: 53px;
-    background-color: #e91e79;
+    width: calc((100% - 225px)/2);
+    height: 40px;
+    background-color: $menu-bg-color
 }
 
 #right.az-menubar {
@@ -23,4 +29,23 @@
 
 #left.az-menubar h6 {
     font-weight: 400;
+}
+
+.nav-link {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-bottom: none !important;
+}
+
+#mobile-navbar {
+    background-color: $menu-bg-color;
+    z-index: 10;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none !important;
+}
+
+.nav-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
 }

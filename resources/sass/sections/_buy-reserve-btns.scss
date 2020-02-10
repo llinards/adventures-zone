@@ -1,0 +1,13 @@
+.buy-reserve-btns {
+    margin-top: 1rem;
+    max-width: 460px;
+    font-size: 2.5rem;
+
+    &.buy {
+        background-color: $menu-bg-color;
+    }
+
+    &.reserve {
+        background-color: $section-title-bar;
+    }
+}
