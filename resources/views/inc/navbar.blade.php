@@ -4,7 +4,7 @@
   </div>
   <div id="left" class="az-menubar d-flex justify-content-around align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#attractions">Atrakcijas</a>
+        <a class="nav-link text-white text-uppercase" href="#attractions">{{ __('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#party">ballītes</a>
@@ -18,12 +18,29 @@
       <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-item nav-link dropdown-toggle text-white text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        LV
-      </a>
+      @foreach (config('app.available_locales') as $locale)
+        @if (app()->getLocale() == $locale) 
+          <a 
+            class="nav-item nav-link dropdown-toggle text-white text-uppercase" 
+            href="#" id="navbarDropdown" 
+            role="button" 
+            data-toggle="dropdown" 
+            aria-haspopup="true" 
+            aria-expanded="false">
+            {{$locale}}
+          </a>
+        @endif
+      @endforeach
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">EN</a>
-        <a class="dropdown-item" href="#">RUS</a>
+        @foreach (config('app.available_locales') as $locale)
+          <a 
+            href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), $locale) }}" 
+            class="dropdown-item"
+            @if (app()->getLocale() == $locale) 
+              style="font-weight: bold; text-decoration: underline" 
+            @endif>{{ strtoupper($locale) }}
+          </a>
+        @endforeach
       </div>
     </li>
   </div>
