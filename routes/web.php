@@ -21,7 +21,9 @@ Route::group([
 ], function() {
 
   Route::get('/', 'HomeController@index')->name('home');
+  Route::get('/ballites', 'PartyController@index')->name('party');
 });
+
 
 
 
