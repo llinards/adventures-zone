@@ -83,7 +83,8 @@ return [
     'locale' => 'lv',
     'available_locales' => [
         'lv',
-        'en'
+        'en',
+        'ru'
     ],
 
     /*

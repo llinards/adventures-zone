@@ -1,6 +1,6 @@
 <section id="attractions">
     <div class="section-title-bar">
-      <h1 class="text-white text-center">atrakcijas</h1>
+      <h1 class="text-white text-center text-lowercase">{{ __('atrakcijas')}}</h1>
     </div>
     <div class="container">
     <div class="slick-arrow prev"><i class="fas fa-chevron-left"></i></div>
