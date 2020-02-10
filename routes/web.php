@@ -11,9 +11,6 @@
 |
 */
 
-
-// Auth::routes();
-
 Route::group([
   'prefix' => '{locale}',
   'where' => ['locale' => '[a-zA-Z]{2}'],

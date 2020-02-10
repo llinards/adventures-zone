@@ -1,19 +1,21 @@
 <nav id="desktop-navbar">
   <div class="az-logo d-flex justify-content-center">
-      <img class="az-logo--img" src="/storage/img/logo_pink.png" alt="az-logo-pink">
+      <a href="/">
+        <img class="az-logo--img" src="/storage/img/logo_pink.png" alt="az-logo-pink">
+      </a>
   </div>
-  <div id="left" class="az-menubar d-flex justify-content-around align-items-center">
+  <div id="left" class="@isset($id){{ $id }}@endisset az-menubar d-flex justify-content-around align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#attractions">{{ __('atrakcijas')}}</a>
+        <a class="nav-link text-white text-uppercase" href="#attractions">{{__('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#party">ballītes</a>
+        <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
       </li>
   </div>
-  <div id="right" class="az-menubar d-flex justify-content-around align-items-center">
+  <div id="right" class="@isset($id){{ $id }}@endisset az-menubar d-flex justify-content-around align-items-center">
     <li class="nav-item">
       <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
     </li>
@@ -46,7 +48,7 @@
   </div>
 </nav>
 
-<nav id="mobile-navbar" class="navbar navbar-expand-md navbar-dark">
+<nav id="mobile-navbar" class="navbar navbar-expand-md navbar-dark @isset($id){{ $id }}@endisset">
   <img src="/storage/img/logo_pink.png" width="50px"alt="">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
