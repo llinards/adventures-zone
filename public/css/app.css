@@ -15217,6 +15217,7 @@ a[href^=tel] {
 .nav-link {
   padding: 0.5rem;
   font-size: 0.9rem;
+  border-bottom: none !important;
 }
 
 #mobile-navbar {
@@ -15482,6 +15483,22 @@ header {
 
 .pricelist-info > .fa-info {
   color: #000000;
+}
+
+.xs-zone .pricelist-info i {
+  color: #20abe2;
+}
+
+.a-zone .pricelist-info i {
+  color: #e91e79;
+}
+
+.party .pricelist-info i {
+  color: #662d85;
+}
+
+.membership .pricelist-info i {
+  color: #808080;
 }
 
 .modal-content {
