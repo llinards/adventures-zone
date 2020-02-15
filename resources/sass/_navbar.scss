@@ -8,6 +8,10 @@
     #mobile-navbar {
         display: none;
     }
+
+    .nav-link {
+        border-bottom: none !important;
+    }
 }
 
 .az-logo--img {
@@ -34,7 +38,7 @@
 .nav-link {
     padding: 0.5rem;
     font-size: 0.9rem;
-    border-bottom: none !important;
+    // border-bottom: none !important;
 }
 
 #mobile-navbar {

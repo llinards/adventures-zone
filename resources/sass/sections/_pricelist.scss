@@ -23,21 +23,7 @@
     width: 60%;
 
     .section-title-bar {
-        clip-path:
-            polygon(0% 100%,
-                /* top left */
-                40px 0%,
-                /* top left */
-                100% 0%,
-                /* top right */
-                100% 100%,
-                /* top right */
-                0% 100%,
-                /* bottom left */
-                0 calc(100% - 40px)
-                /* bottom left */
-            );
-
+        clip-path: $second-general-clip-path
     }
 }
 
@@ -46,6 +32,15 @@
     .section-title-bar {
         width: 100%;
     }
+}
+
+.second-lvl {
+    width: 100%;
+}
+
+.left.second-lvl,
+.right.second-lvl {
+    width: 50%;
 }
 
 #xs.section-title-bar {
@@ -58,9 +53,32 @@
 }
 
 #membership.section-title-bar,
-.membership {
+.membership,
+#thirty-days.section-title-bar,
+#visit-count.section-title-bar {
     background-color: $membership-section-card;
 }
+
+#membership.section-title-bar {
+    margin-bottom: 0.5rem;
+}
+
+#visit-count.section-title-bar,
+#thirty-days.section-title-bar {
+    margin-bottom: 0.75rem;
+}
+
+
+
+#visit-count.section-title-bar {
+    // clip-path: polygon(0% 100%, 30px 0%, 100% 0%, 91% 100%, 0% 100%, 0 calc(100% - 40px));
+    clip-path: $second-lvl-clip-path;
+}
+
+#thirty-days.section-title-bar {
+    clip-path: $second-second-lvl-clip-path;
+}
+
 
 .pricelist-card {
     max-width: 140px !important;
@@ -72,12 +90,19 @@
     clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
 }
 
+.pricelist-card.small {
+    height: 30px !important;
+    max-width: 95% !important;
+    clip-path: $third-lvl-clip-path;
+}
+
 .xs-zone {
     background-color: $section-title-bar;
 }
 
-.a-zone {
-    background-color: $menu-bg-color;
+.a-zone,
+#azone.section-title-bar {
+    background-color: $a-zone-pricelist;
 }
 
 .pricelist-title {
@@ -87,6 +112,12 @@
 .price-number {
     font-size: 4rem;
     font-weight: 700;
+}
+
+.second-lvl {
+    .price-number {
+        font-size: 1.5rem;
+    }
 }
 
 .pricelist-price>.fa-euro-sign {
@@ -108,6 +139,11 @@
     clip-path: polygon(12px 56px, 45px 19px, 62.80% 64.26%);
 }
 
+.pricelist-info-small {
+    color: #fff;
+    font-size: 1rem;
+}
+
 .pricelist-info>.fa-info {
     color: #000000;
 }
@@ -117,7 +153,7 @@
 }
 
 .a-zone .pricelist-info i {
-    color: $menu-bg-color;
+    color: $a-zone-pricelist;
 }
 
 .party .pricelist-info i {
