@@ -2,6 +2,7 @@
 
 @section('content')
     <header>
+        <video autoplay muted loop src="/storage/img/header_video.mp4" ></video>
         @include('inc.navbar')
         @include('home.header')
     </header>

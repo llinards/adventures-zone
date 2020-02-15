@@ -11,15 +11,15 @@
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
-      </li>
   </div>
   <div id="right" class="@isset($id){{ $id }}@endisset az-menubar d-flex justify-content-around align-items-center">
     <li class="nav-item">
+      <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
     </li>
-    <li class="nav-item dropdown">
+    {{-- <li class="nav-item dropdown">
       @foreach (config('app.available_locales') as $locale)
         @if (app()->getLocale() == $locale) 
           <a 
@@ -44,7 +44,7 @@
           </a>
         @endforeach
       </div>
-    </li>
+    </li> --}}
   </div>
 </nav>
 

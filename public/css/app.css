@@ -15195,6 +15195,10 @@ a[href^=tel] {
   #mobile-navbar {
     display: none;
   }
+
+  .nav-link {
+    border-bottom: none !important;
+  }
 }
 
 .az-logo--img {
@@ -15237,13 +15241,27 @@ a[href^=tel] {
 }
 
 header {
-  background-image: url("/storage/img/_header.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container-fluid.az-title,
@@ -15393,7 +15411,7 @@ header {
 
 .section-card-readmore i.fas {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #pricelist .section-title-bar {
@@ -15419,13 +15437,22 @@ header {
 }
 
 .right .section-title-bar {
-  -webkit-clip-path: polygon(0% 100%, 40px 0%, 100% 0%, 100% 100%, 0% 100%, 0 calc(100% - 40px));
-          clip-path: polygon(0% 100%, 40px 0%, 100% 0%, 100% 100%, 0% 100%, 0 calc(100% - 40px));
+  -webkit-clip-path: polygon(calc(0% + 40px) 0, 100% 0%, 100% 100%, 0 100%);
+          clip-path: polygon(calc(0% + 40px) 0, 100% 0%, 100% 100%, 0 100%);
 }
 
 .left .section-title-bar,
 .right .section-title-bar {
   width: 100%;
+}
+
+.second-lvl {
+  width: 100%;
+}
+
+.left.second-lvl,
+.right.second-lvl {
+  width: 50%;
 }
 
 #xs.section-title-bar {
@@ -15438,8 +15465,29 @@ header {
 }
 
 #membership.section-title-bar,
-.membership {
+.membership,
+#thirty-days.section-title-bar,
+#visit-count.section-title-bar {
   background-color: #808080;
+}
+
+#membership.section-title-bar {
+  margin-bottom: 0.5rem;
+}
+
+#visit-count.section-title-bar,
+#thirty-days.section-title-bar {
+  margin-bottom: 0.75rem;
+}
+
+#visit-count.section-title-bar {
+  -webkit-clip-path: polygon(30px 0, 100% 0%, calc(100% - 30px) 100%, 0 100%);
+          clip-path: polygon(30px 0, 100% 0%, calc(100% - 30px) 100%, 0 100%);
+}
+
+#thirty-days.section-title-bar {
+  -webkit-clip-path: polygon(30px 0, 100% 0%, 100% 100%, 0 100%);
+          clip-path: polygon(30px 0, 100% 0%, 100% 100%, 0 100%);
 }
 
 .pricelist-card {
@@ -15452,12 +15500,20 @@ header {
           clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
 }
 
+.pricelist-card.small {
+  height: 30px !important;
+  max-width: 95% !important;
+  -webkit-clip-path: polygon(25px 0, 100% 0%, calc(100% - 25px) 100%, 0 100%);
+          clip-path: polygon(25px 0, 100% 0%, calc(100% - 25px) 100%, 0 100%);
+}
+
 .xs-zone {
   background-color: #20abe2;
 }
 
-.a-zone {
-  background-color: #e91e79;
+.a-zone,
+#azone.section-title-bar {
+  background-color: #5cd823;
 }
 
 .pricelist-title {
@@ -15467,6 +15523,10 @@ header {
 .price-number {
   font-size: 4rem;
   font-weight: 700;
+}
+
+.second-lvl .price-number {
+  font-size: 1.5rem;
 }
 
 .pricelist-price > .fa-euro-sign {
@@ -15485,6 +15545,11 @@ header {
   clip-path: polygon(12px 56px, 45px 19px, 62.8% 64.26%);
 }
 
+.pricelist-info-small {
+  color: #fff;
+  font-size: 1rem;
+}
+
 .pricelist-info > .fa-info {
   color: #000000;
 }
@@ -15494,7 +15559,7 @@ header {
 }
 
 .a-zone .pricelist-info i {
-  color: #e91e79;
+  color: #5cd823;
 }
 
 .party .pricelist-info i {
@@ -15616,7 +15681,8 @@ footer {
     margin-top: 0.1rem;
   }
 
-  .pricelist-block {
+  .pricelist-block,
+  .second-lvl {
     flex-wrap: wrap;
   }
 
@@ -15632,10 +15698,23 @@ footer {
             justify-content: center !important;
   }
 
+  .left.second-lvl,
+  .right.second-lvl {
+    width: 100%;
+  }
+
   #pricelist > .section-title-bar {
     width: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+
+  #visit-count.section-title-bar,
+  #thirty-days.section-title-bar {
+    -webkit-clip-path: none;
+            clip-path: none;
+    width: 100%;
+    margin: 0.5rem auto;
   }
 
   #xs.section-title-bar,
