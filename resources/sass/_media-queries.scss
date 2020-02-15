@@ -32,7 +32,8 @@
         margin-top: 0.1rem;
     }
 
-    .pricelist-block {
+    .pricelist-block,
+    .second-lvl {
         flex-wrap: wrap;
     }
 
@@ -46,11 +47,27 @@
         }
     }
 
+
+    .left.second-lvl,
+    .right.second-lvl {
+        width: 100%;
+    }
+
+
+
     #pricelist>.section-title-bar {
         width: 100%;
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     }
 
+
+    #visit-count.section-title-bar,
+    #thirty-days.section-title-bar {
+        clip-path: none;
+        // clip-path: $third-lvl-clip-path; 
+        width: 100%;
+        margin: 0.5rem auto;
+    }
 
     #xs.section-title-bar,
     #azone.section-title-bar,
