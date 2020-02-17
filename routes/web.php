@@ -18,6 +18,7 @@ Route::group([
 ], function() {
 
   Route::get('/', 'HomeController@index')->name('home');
+  Route::get('/{attraction}', 'AttractionsController@index')->name('showAttraction');
   Route::get('/ballites', 'PartyController@index')->name('party');
 });
 
