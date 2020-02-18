@@ -16,15 +16,30 @@
             </div>
           </div>
           <div class="az-title-arrows d-flex justify-content-around">
-            <a class="az-title-arrow" href="#attractions">
+            <a class="az-title-arrow" href="#description">
               <img src="/storage/img/arrow-down.png" alt="arrow-down" class="">
             </a>
-            <a class="az-title-arrow" href="#attractions">
+            <a class="az-title-arrow" href="#description">
               <img src="/storage/img/arrow-down.png" alt="arrow-down" class="">
             </a>
           </div>
           {{-- end of header --}}
     </header>
+    {{-- product description --}}
+    <section id="description">
+        <div class="container">
+            <div class="row meta product-description">
+                {{-- {$attraction[0]->meta_description } --}}
+                <h4 class="text-uppercase">
+                Klinšu kāpšanas sports un izklaide ar sienām 8 metru augstumā. Lieliska ģimenes vai draugu aktīvā atpūta un veids kā pavadīt brīvo laiku kopā.
+                </h4>
+            </div>
+            <div class="row product-description">
+                {!! $attraction[0]->description !!}
+            </div>
+        </div>
+    </section>
+    {{-- end of product description --}}
     {{-- gallery --}}
     <section id="gallery">
         <div class="container">
@@ -48,15 +63,6 @@
         </div>
     </section>
     {{-- end of gallery --}}
-    {{-- product description --}}
-    <section id="description">
-        <div class="container">
-            <div class="row product-description">
-                {!! $attraction[0]->description !!}
-            </div>
-        </div>
-    </section>
-    {{-- end of product description --}}
     @include('inc.attractions', ['attractions' => $attractions, 'id' => 'product-page'])
     @include('inc.buy-reserve-btn')
     <footer>

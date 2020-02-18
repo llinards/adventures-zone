@@ -9,14 +9,17 @@
       </a>
   </div>
   <div id="left" class="@isset($id){{ $id }}@endisset az-menubar d-flex justify-content-around align-items-center">
+      @if( !empty($id))
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="#description">apraksts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="#gallery">galerija</a>
+      </li>
+      @else
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#attractions">{{__('atrakcijas')}}</a>
       </li>
-      @if( !empty($id))
-      <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/">{{__('ballites')}}</a>
-      </li>
-      @else
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>
       </li>
@@ -25,10 +28,10 @@
   <div id="right" class="@isset($id){{ $id }}@endisset az-menubar d-flex justify-content-around align-items-center">
     @if(!empty($id))
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="/">kafejnīca</a>
+      <a class="nav-link text-white text-uppercase" href="#buy-btns">citas atrakcijas</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="/">rezervācijas/cenas</a>
+      <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt/rezervēt</a>
     </li>
     @else
     <li class="nav-item">
@@ -79,7 +82,21 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto text-center">
-      <li class="nav-item active">
+      @if(!empty($id))
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="#description">apraksts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="#gallery">galerija</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="#buy-btns">citas atrakcijas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt/rezervēt</a>
+      </li>
+      @else
+      <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#attractions">atrakcijas</a>
       </li>
       <li class="nav-item">
@@ -91,6 +108,7 @@
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
       </li>
+      @endif
     </ul>
     <div class="navbar-contact-info text-center text-white text-uppercase pt-3">
       <h5>darba laiks:</h5>

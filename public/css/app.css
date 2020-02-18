@@ -15863,9 +15863,13 @@ footer {
 #gallery {
   padding-top: 1rem;
   margin-bottom: 1rem;
-  min-height: 500px;
+}
+
+#description {
   background: -webkit-gradient(linear, left top, left bottom, from(#20abe2), color-stop(50%, white));
   background: linear-gradient(180deg, #20abe2 0%, white 50%);
+  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .grid {
@@ -15891,6 +15895,10 @@ footer {
 .product-description {
   margin-bottom: 1rem;
   padding: 0 0.5rem;
+}
+
+.meta.product-description {
+  font-weight: 700;
 }
 
 .section-title-bar.product-page {

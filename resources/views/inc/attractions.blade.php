@@ -1,6 +1,14 @@
+@if(!empty($id))
+<section id="attractions product-page">
+@else
 <section id="attractions">
+@endif
   <div class="section-title-bar @isset($id){{ $id }}@endisset">
-    <h1 class="text-white text-center text-lowercase">{{ __('atrakcijas')}}</h1>
+    @if(!empty($id))
+      <h1 class="text-white text-center text-lowercase">{{ __('citas_atrakcijas')}}</h1>
+    @else
+      <h1 class="text-white text-center text-lowercase">{{ __('atrakcijas')}}</h1>
+    @endif
   </div>
   <div class="container">
     <div class="slick-arrow prev"><i class="fas fa-chevron-left"></i></div>
