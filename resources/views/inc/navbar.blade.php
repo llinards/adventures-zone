@@ -1,24 +1,43 @@
 <nav id="desktop-navbar">
   <div class="az-logo d-flex justify-content-center">
       <a href="/">
-        <img class="az-logo--img" src="/storage/img/logo_pink.png" alt="az-logo-pink">
+        @if( !empty($id))
+          <img class="az-logo--img" src="/storage/img/logo_blue.png" alt="az-logo-blue">
+        @else
+          <img class="az-logo--img" src="/storage/img/logo_pink.png" alt="az-logo-pink">
+        @endif
       </a>
   </div>
   <div id="left" class="@isset($id){{ $id }}@endisset az-menubar d-flex justify-content-around align-items-center">
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#attractions">{{__('atrakcijas')}}</a>
       </li>
+      @if( !empty($id))
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="/">{{__('ballites')}}</a>
+      </li>
+      @else
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>
       </li>
+      @endif
   </div>
   <div id="right" class="@isset($id){{ $id }}@endisset az-menubar d-flex justify-content-around align-items-center">
+    @if(!empty($id))
+    <li class="nav-item">
+      <a class="nav-link text-white text-uppercase" href="/">kafejnīca</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white text-uppercase" href="/">rezervācijas/cenas</a>
+    </li>
+    @else
     <li class="nav-item">
       <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
     </li>
     <li class="nav-item">
       <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
     </li>
+    @endif
     {{-- <li class="nav-item dropdown">
       @foreach (config('app.available_locales') as $locale)
         @if (app()->getLocale() == $locale) 
@@ -49,7 +68,11 @@
 </nav>
 
 <nav id="mobile-navbar" class="navbar navbar-expand-md navbar-dark @isset($id){{ $id }}@endisset">
-  <img src="/storage/img/logo_pink.png" width="50px"alt="">
+  @if( !empty($id))
+    <img src="/storage/img/logo_blue.png" width="50px"alt="">
+  @else
+    <img src="/storage/img/logo_pink.png" width="50px"alt="">
+  @endif
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
