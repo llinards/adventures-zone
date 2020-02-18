@@ -30,9 +30,9 @@
         <div class="container">
             <div class="row meta product-description">
                 {{-- {$attraction[0]->meta_description } --}}
-                <h4 class="text-uppercase">
+                <h5 class="text-uppercase">
                 Klinšu kāpšanas sports un izklaide ar sienām 8 metru augstumā. Lieliska ģimenes vai draugu aktīvā atpūta un veids kā pavadīt brīvo laiku kopā.
-                </h4>
+                </h5>
             </div>
             <div class="row product-description">
                 {!! $attraction[0]->description !!}

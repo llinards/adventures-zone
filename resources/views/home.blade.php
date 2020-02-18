@@ -37,7 +37,7 @@
                 <div class="col-md-8 section-card-desc">
                     <p class="text-white text-center">Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.</p>
                 </div>
-                <a href="#" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+                <a href="{{app()->getLocale()}}/parties" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
                     <h5 class="text-white">uzzināt vairāk</h5>
                     <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
                 </a>
@@ -56,9 +56,9 @@
               <img class="img-fluid" src="/storage/img/cafe-min.jpg" alt="kafejnīca">
             </div>
             <div class="col-md-8 section-card-desc">
-              <p class="text-white text-center">Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.</p>
+              <p class="text-white text-center">ADVENTURES’ ZONE kafejnīca ir vieta, kur baudīt veselīgus našķus un dzērienus nesteidzīgi, kamēr bērni bauda rotaļu laukuma un piedzīvojuma parka atrakcijas. Kafejnīcas sortimentā dabīgi un veselīga uztura produkti.</p>
             </div>
-            <a href="#" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+            <a href="{{app()->getLocale()}}/cafe" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
               <h5 class="text-white">uzzināt vairāk</h5>
               <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
             </a>
