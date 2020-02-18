@@ -16,10 +16,11 @@ Route::group([
   'where' => ['locale' => '[a-zA-Z]{2}'],
   'middleware' => 'setlocale'
 ], function() {
-
   Route::get('/', 'HomeController@index')->name('home');
+  Route::get('/parties', 'PartiesController@index')->name('party');
+  Route::get('/cafe', 'CafeController@index')->name('cafe');
   Route::get('/{attraction}', 'AttractionsController@index')->name('showAttraction');
-  Route::get('/ballites', 'PartyController@index')->name('party');
+
 });
 
 

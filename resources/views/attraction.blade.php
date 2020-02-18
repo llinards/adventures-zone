@@ -16,15 +16,30 @@
             </div>
           </div>
           <div class="az-title-arrows d-flex justify-content-around">
-            <a class="az-title-arrow" href="#attractions">
+            <a class="az-title-arrow" href="#description">
               <img src="/storage/img/arrow-down.png" alt="arrow-down" class="">
             </a>
-            <a class="az-title-arrow" href="#attractions">
+            <a class="az-title-arrow" href="#description">
               <img src="/storage/img/arrow-down.png" alt="arrow-down" class="">
             </a>
           </div>
           {{-- end of header --}}
     </header>
+    {{-- product description --}}
+    <section id="description">
+        <div class="container">
+            <div class="row meta product-description">
+                {{-- {$attraction[0]->meta_description } --}}
+                <h5 class="text-uppercase">
+                Klinšu kāpšanas sports un izklaide ar sienām 8 metru augstumā. Lieliska ģimenes vai draugu aktīvā atpūta un veids kā pavadīt brīvo laiku kopā.
+                </h5>
+            </div>
+            <div class="row product-description">
+                {!! $attraction[0]->description !!}
+            </div>
+        </div>
+    </section>
+    {{-- end of product description --}}
     {{-- gallery --}}
     <section id="gallery">
         <div class="container">
@@ -34,8 +49,8 @@
                         @foreach($images as $image)
                             <div class="item photo">
                                 <div class="content">
-                                    <a href="/storage/img/attractions/{{$image->photo_url}}" data-lightbox="{{ $attraction[0]->id }}">
-                                        <img class="photothumb" src="/storage/img/attractions/{{$image->photo_url}}">
+                                    <a href="/storage/img/attractions/{{$attraction[0]->attraction_slug}}/{{$image->photo_url}}" data-lightbox="{{ $attraction[0]->id }}">
+                                        <img class="photothumb" src="/storage/img/attractions/{{$attraction[0]->attraction_slug}}/{{$image->photo_url}}">
                                     </a>
                                 </div>
                             </div>
@@ -48,15 +63,6 @@
         </div>
     </section>
     {{-- end of gallery --}}
-    {{-- product description --}}
-    <section id="description">
-        <div class="container">
-            <div class="row product-description">
-                {!! $attraction[0]->description !!}
-            </div>
-        </div>
-    </section>
-    {{-- end of product description --}}
     @include('inc.attractions', ['attractions' => $attractions, 'id' => 'product-page'])
     @include('inc.buy-reserve-btn')
     <footer>
