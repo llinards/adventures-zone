@@ -49,8 +49,8 @@
                         @foreach($images as $image)
                             <div class="item photo">
                                 <div class="content">
-                                    <a href="/storage/img/attractions/{{$image->photo_url}}" data-lightbox="{{ $attraction[0]->id }}">
-                                        <img class="photothumb" src="/storage/img/attractions/{{$image->photo_url}}">
+                                    <a href="/storage/img/attractions/{{$attraction[0]->attraction_slug}}/{{$image->photo_url}}" data-lightbox="{{ $attraction[0]->id }}">
+                                        <img class="photothumb" src="/storage/img/attractions/{{$attraction[0]->attraction_slug}}/{{$image->photo_url}}">
                                     </a>
                                 </div>
                             </div>
