@@ -2,7 +2,7 @@
 
 @section('content')
     <header>
-        <video autoplay muted loop src="/storage/img/header_video.mp4" ></video>
+        <video autoplay muted loop playsinline src="/storage/img/header_video.mp4" ></video>
         @include('inc.navbar')
         {{-- header --}}
         <div class="container-fluid az-title">
