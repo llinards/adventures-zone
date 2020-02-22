@@ -1,35 +1,37 @@
-@if(!empty($id))
+@if(!empty($product_page))
 <section id="attractions product-page">
+  <div class="section-title-bar product-page">
+    <h1 class="text-white text-center text-lowercase">{{ __('citas_atrakcijas')}}</h1>
+  </div>
 @else
 <section id="attractions">
-@endif
-  <div class="section-title-bar @isset($id){{ $id }}@endisset">
-    @if(!empty($id))
-      <h1 class="text-white text-center text-lowercase">{{ __('citas_atrakcijas')}}</h1>
-    @else
-      <h1 class="text-white text-center text-lowercase">{{ __('atrakcijas')}}</h1>
-    @endif
+  <div class="section-title-bar">
+    <h1 class="text-white text-center text-lowercase">{{ __('atrakcijas')}}</h1>
   </div>
-  <div class="container">
+@endif
+  <div class="container position-relative">
     <div class="slick-arrow prev"><i class="fas fa-chevron-left"></i></div>
     <div class="attractions mx-3">
       @if (count($attractions) > 0)
         @foreach ($attractions as $attraction)
-          @if(!empty($id))
           <div class="attraction">
+            @if(!empty($product_page))
             <a href="{{$attraction->attraction_slug}}">
-              <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name}}">
-              <h5 class="attraction-title text-uppercase text-white text-center">{{$attraction->name}}</h5>
-            </a>
-          </div>
-          @else
-          <div class="attraction">
+            @else
             <a href="{{app()->getLocale() }}/{{$attraction->attraction_slug}}">
-              <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name}}">
-              <h5 class="attraction-title text-uppercase text-white text-center">{{$attraction->name}}</h5>
+            @endif
+              @if(app()->getLocale() == 'en')
+                <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_eng}}">
+                <h5 class="attraction-title text-uppercase text-white text-center">{{$attraction->name_eng}}</h5>
+              @elseif(app()->getLocale() == 'ru')
+                <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_rus}}">
+                <h5 class="attraction-title text-uppercase text-white text-center">{{$attraction->name_rus}}</h5>
+              @else
+                <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_lat}}">
+                <h5 class="attraction-title text-uppercase text-white text-center">{{$attraction->name_lat}}</h5>
+              @endif
             </a>
           </div>
-          @endif
         @endforeach
       @else
       <div class="alert alert-danger" role="alert">
