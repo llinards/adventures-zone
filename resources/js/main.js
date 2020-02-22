@@ -15,7 +15,7 @@ $(document).ready(function () {
         infinite: true,
         speed: 300,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         arrows: true,
         nextArrow: $('.next'),
         prevArrow: $('.prev'),
@@ -23,7 +23,7 @@ $(document).ready(function () {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                     arrows: true,
                     dots: false
@@ -34,7 +34,7 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     arrows: true,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
