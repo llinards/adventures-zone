@@ -52,7 +52,7 @@
             <h6 class="text-center text-white">kopā 24 <i class="fas fa-euro-sign"></i></h6>
           </a>
           
-          <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
+          <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#aOneHourFullDay">
             <h4 class="pricelist-title text-center text-white">visa diena</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">+5</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">

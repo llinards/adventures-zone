@@ -15,12 +15,18 @@ class CreateAttractionsTable extends Migration
     {
         Schema::create('attractions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string('name_lat');
+            $table->string('name_rus');
+            $table->string('name_eng');
             $table->string('attraction_slug');
             $table->string('cover_photo_url');
             $table->string('header_photo_url');
-            $table->text('description');
-            $table->text('meta-description');
+            $table->text('description_lat');
+            $table->text('description_rus');
+            $table->text('description_eng');
+            $table->text('meta_description_lat');
+            $table->text('meta_description_rus');
+            $table->text('meta_description_eng');
             $table->timestamps();
         });
     }

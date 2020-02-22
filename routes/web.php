@@ -17,10 +17,7 @@ Route::group([
   'middleware' => 'setlocale'
 ], function() {
   Route::get('/', 'HomeController@index')->name('home');
-  Route::get('/parties', 'PartiesController@index')->name('party');
-  Route::get('/cafe', 'CafeController@index')->name('cafe');
   Route::get('/{attraction}', 'AttractionsController@index')->name('showAttraction');
-
 });
 
 

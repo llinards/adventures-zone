@@ -2,7 +2,7 @@
 
 @section('content')
     <header>
-        <video autoplay muted loop src="/storage/img/header_video_2.mp4" ></video>
+        <video autoplay muted loop src="/storage/img/header_video.mp4" ></video>
         @include('inc.navbar')
         {{-- header --}}
         <div class="container-fluid az-title">
@@ -32,12 +32,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 px-0">
-                    <img class="img-fluid" src="/storage/img/party-min.jpg" alt="ballītes">
+                    <img class="img-fluid" src="storage/img/attractions/ballites/party-min.jpg" alt="ballītes">
                 </div>
                 <div class="col-md-8 section-card-desc">
-                    <p class="text-white text-center">Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.</p>
+                    <p class="text-white text-center">
+                        @if(app()->getLocale() == 'en')
+                        Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.
+                        @elseif(app()->getLocale() == 'ru')
+                        Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.
+                        @else
+                        Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.
+                        @endif
+                    </p>
                 </div>
-                <a href="{{app()->getLocale()}}/parties" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+                <a href="{{app()->getLocale()}}/ballites" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
                     <h5 class="text-white">uzzināt vairāk</h5>
                     <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
                 </a>
@@ -53,12 +61,20 @@
         <div class="container">
           <div class="row">
             <div class="col-12 px-0">
-              <img class="img-fluid" src="/storage/img/cafe-min.jpg" alt="kafejnīca">
+              <img class="img-fluid" src="storage/img/attractions/kafejnica/cafe-min.jpg" alt="kafejnīca">
             </div>
             <div class="col-md-8 section-card-desc">
-              <p class="text-white text-center">ADVENTURES’ ZONE kafejnīca ir vieta, kur baudīt veselīgus našķus un dzērienus nesteidzīgi, kamēr bērni bauda rotaļu laukuma un piedzīvojuma parka atrakcijas. Kafejnīcas sortimentā dabīgi un veselīga uztura produkti.</p>
+                <p class="text-white text-center">
+                    @if(app()->getLocale() == 'en')
+                    ADVENTURES’ ZONE kafejnīca ir vieta, kur baudīt veselīgus našķus un dzērienus nesteidzīgi, kamēr bērni bauda rotaļu laukuma un piedzīvojuma parka atrakcijas. Kafejnīcas sortimentā dabīgi un veselīga uztura produkti.
+                    @elseif(app()->getLocale() == 'ru')
+                    ADVENTURES’ ZONE kafejnīca ir vieta, kur baudīt veselīgus našķus un dzērienus nesteidzīgi, kamēr bērni bauda rotaļu laukuma un piedzīvojuma parka atrakcijas. Kafejnīcas sortimentā dabīgi un veselīga uztura produkti.
+                    @else
+                    ADVENTURES’ ZONE kafejnīca ir vieta, kur baudīt veselīgus našķus un dzērienus nesteidzīgi, kamēr bērni bauda rotaļu laukuma un piedzīvojuma parka atrakcijas. Kafejnīcas sortimentā dabīgi un veselīga uztura produkti.
+                    @endif
+                </p>
             </div>
-            <a href="{{app()->getLocale()}}/cafe" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+            <a href="{{app()->getLocale()}}/kafejnica" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
               <h5 class="text-white">uzzināt vairāk</h5>
               <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
             </a>
