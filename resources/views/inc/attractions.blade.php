@@ -22,13 +22,19 @@
             @endif
               @if(app()->getLocale() == 'en')
                 <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_eng}}">
-                <h5 class="attraction-title text-uppercase text-white text-center">{{$attraction->name_eng}}</h5>
+                <div class="attraction-title d-flex align-items-center justify-content-center">
+                  <h4 class="text-uppercase text-white text-center">{{$attraction->name_eng}}</h4>
+                </div>
               @elseif(app()->getLocale() == 'ru')
                 <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_rus}}">
-                <h5 class="attraction-title text-uppercase text-white text-center">{{$attraction->name_rus}}</h5>
-              @else
+                <div class="attraction-title d-flex align-items-center justify-content-center">
+                  <h4 class="text-uppercase text-white text-center">{{$attraction->name_rus}}</h4>
+                </div>
+                @else
                 <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_lat}}">
-                <h5 class="attraction-title text-uppercase text-white text-center">{{$attraction->name_lat}}</h5>
+                <div class="attraction-title d-flex align-items-center justify-content-center">
+                  <h4 class="text-uppercase text-white text-center">{{$attraction->name_lat}}</h4>
+                </div>
               @endif
             </a>
           </div>
