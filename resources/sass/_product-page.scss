@@ -14,7 +14,7 @@
     z-index: -1;
     object-position: center;
     object-fit: cover;
-    opacity: 0.8;
+    // opacity: 0.8;
 }
 
 .product-page-title {
@@ -63,6 +63,18 @@
 .product-description {
     margin-bottom: 1rem;
     padding: 0 0.5rem;
+    display: block !important;
+
+    p {
+        margin: 1rem;
+    }
+
+    ul,
+    li {
+        list-style: square;
+        margin: 1rem;
+
+    }
 }
 
 .meta.product-description {

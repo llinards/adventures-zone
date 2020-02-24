@@ -1,3 +1,14 @@
+@media (max-width: 991px) {
+    #left.az-menubar,
+    #right.az-menubar {
+        justify-content: space-around !important;
+
+        li.nav-item {
+            margin: 0 !important;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     #desktop-navbar {
         display: none;
@@ -52,4 +63,12 @@
 
 .nav-link {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+#left.az-menubar>li.nav-item {
+    margin: 0 1rem;
+}
+
+#right.az-menubar>li.nav-item {
+    margin: 0 1rem;
 }

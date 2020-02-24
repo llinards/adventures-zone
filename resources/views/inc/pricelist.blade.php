@@ -74,8 +74,8 @@
       <div class="container-fluid">
         <div class="row mx-auto justify-content-end">
           
-          <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal" data-target="#aOneHour">
-            <h4 class="pricelist-title text-center text-white">ballīšu telpa</h4>
+          <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal" data-target="#partyRoom">
+            <h4 class="pricelist-title text-center text-white">telpas noma</h4>
             <h3 class="pricelist-price text-center text-white"><span class="price-number">49</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
@@ -99,7 +99,7 @@
           <div class="container-fluid">
             <div class="row mx-auto justify-content-start">
               
-              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#aOneHour">
+              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#membershipThree">
                 <h3 class="pricelist-price text-center text-white"><span class="price-number">39</span> <i class="fas fa-euro-sign"></i></h3>
                 <h6 class="pricelist-title text-center text-white">3 x 2h</h6>
                 <div class="pricelist-info-small">
@@ -107,7 +107,7 @@
                 </div>
               </a>
 
-              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#aOneHour">
+              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#membershipFive">
                 <h3 class="pricelist-price text-center text-white"><span class="price-number">59</span> <i class="fas fa-euro-sign"></i></h3>
                 <h6 class="pricelist-title text-center text-white">5 x 2h</h6>
                 <div class="pricelist-info-small">
@@ -115,7 +115,7 @@
                 </div>
               </a>
 
-              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#aOneHour">
+              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#membershipTen">
                 <h3 class="pricelist-price text-center text-white"><span class="price-number">99</span> <i class="fas fa-euro-sign"></i></h3>
                 <h6 class="pricelist-title text-center text-white">10 x 2h</h6>
                 <div class="pricelist-info-small">
