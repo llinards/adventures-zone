@@ -32,7 +32,8 @@ video {
 }
 
 .az-title-second {
-    text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa;
+    // text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa;
+    -webkit-text-stroke: 2px rgba(105,96,89,0.5);
 }
 
 .az-title-arrows {

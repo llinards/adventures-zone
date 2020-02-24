@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $attractions = Attraction::whereNotIn('attraction_slug', array('ballites', 'kafejnica'))->get();
+        $attractions = Attraction::whereNotIn('attraction_slug', array('ballites', 'kafejnica', 'vertibas'))->get();
         return view('home', compact('attractions'));
     }
 }

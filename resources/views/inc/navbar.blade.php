@@ -22,7 +22,7 @@
         <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#values">vērtibas</a>
+        <a class="nav-link text-white text-uppercase" href="#values">vērtības</a>
       </li>
       @endif
   </div>
