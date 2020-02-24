@@ -82,6 +82,9 @@
         width: 85% !important;
         margin-bottom: 0.5rem;
         clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .footer-logo-img {
@@ -97,12 +100,9 @@
         width: 100%;
         text-align: center;
 
-        .soc-icon {
-            width: 100px;
-        }
-
         .working-hours {
             margin-top: 1rem;
+            padding-left: 0;
         }
     }
 

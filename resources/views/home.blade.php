@@ -82,6 +82,35 @@
         </div>
     </section>
     {{-- end of cafe section --}}
+    {{-- cafe section --}}
+    <section id="values" class="section-cards">
+        <div class="section-title-bar">
+          <h1 class="text-white text-center">vērtības</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 px-0">
+              <img class="img-fluid" src="storage/img/attractions/vertibas/header.jpg" alt="vērtības">
+            </div>
+            <div class="col-md-8 section-card-desc">
+                <p class="text-white text-center">
+                    @if(app()->getLocale() == 'en')
+                    Atrakciju un piedzīvojumu parks sniedz iespēju aktīvi pavadīt brīvo laiku  kopā ar ģimeni, bērniem, draugiem un kolēģiem Rīgā, svinēt pie mums svētkus un nomāt bērnu ballīšu telpas. Izcila izklaides vieta skolēniem un visai klasei.
+                    @elseif(app()->getLocale() == 'ru')
+                    Atrakciju un piedzīvojumu parks sniedz iespēju aktīvi pavadīt brīvo laiku  kopā ar ģimeni, bērniem, draugiem un kolēģiem Rīgā, svinēt pie mums svētkus un nomāt bērnu ballīšu telpas. Izcila izklaides vieta skolēniem un visai klasei.
+                    @else
+                    Atrakciju un piedzīvojumu parks sniedz iespēju aktīvi pavadīt brīvo laiku  kopā ar ģimeni, bērniem, draugiem un kolēģiem Rīgā, svinēt pie mums svētkus un nomāt bērnu ballīšu telpas. Izcila izklaides vieta skolēniem un visai klasei.
+                    @endif
+                </p>
+            </div>
+            <a href="{{app()->getLocale()}}/vertibas" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+              <h5 class="text-white">uzzināt vairāk</h5>
+              <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
+            </a>
+          </div>
+        </div>
+    </section>
+    {{-- end of cafe section --}}
     @include('inc.pricelist')
     <footer>
         @include('inc.footer')

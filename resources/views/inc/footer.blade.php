@@ -7,12 +7,17 @@
     </div>
     <div class="footer-address text-white">
       <h5><strong>Adrese:</strong></h5>
-      <p>T/P "Alfa", 3.stāvs</p>
-      <p>Brīvības gatve 235, Rīga</p>
+      <a target="_blank" href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">  
+        <p>T/P "Alfa", 3.stāvs</p>
+        <p>Brīvības gatve 235, Rīga</p>
+      </a>
       <h5><strong><a href="tel:+37125625233">+371 256 25 233</a></strong></h5>
     </div>
     <div class="footer-soc-icons">
       <div class="icon-bar">
+        <a href="https://api.whatsapp.com/send?phone=37125625233">
+          <img class="img-fluid soc-icon" src="/storage/img/whatsapp.png" alt="">
+        </a>
         <a href="#">
           <img class="img-fluid soc-icon" src="/storage/img/tiktok.png" alt="">
         </a>

@@ -14,12 +14,15 @@
         <a class="nav-link text-white text-uppercase" href="/">sākums</a>
       </li>
       @else
-    <div id="left" class="az-menubar d-flex justify-content-around align-items-center">
+    <div id="left" class="az-menubar d-flex justify-content-end align-items-center">
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#attractions">{{__('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="#values">vērtibas</a>
       </li>
       @endif
   </div>
@@ -29,7 +32,7 @@
       <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt/rezervēt</a>
     </li>
     @else
-  <div id="right" class="az-menubar d-flex justify-content-around align-items-center">
+  <div id="right" class="az-menubar d-flex justify-content-start align-items-center">
     <li class="nav-item">
       <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
     </li>
@@ -99,6 +102,9 @@
         <a class="nav-link text-white text-uppercase" href="#party">ballītes</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="#values">vērtibas</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
       </li>
       <li class="nav-item">
@@ -106,7 +112,7 @@
       </li>
       @endif
     </ul>
-    <div class="navbar-contact-info text-center text-white text-uppercase pt-3">
+    <div class="navbar-contact-info text-center text-white text-uppercase pt-4">
       <h5>darba laiks:</h5>
       <p>katru dienu: <strong>10:00 - 22:00</strong></p>
     </div>
