@@ -1,5 +1,4 @@
 header {
-    // background-image: url("/storage/img/_header.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -17,7 +16,9 @@ video {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+    -o-object-position: center;
     object-position: center;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -32,8 +33,7 @@ video {
 }
 
 .az-title-second {
-    // text-shadow: -1px 0 #b6b0aa, 0 1px #b6b0aa, 1px 0 #b6b0aa, 0 -1px #b6b0aa;
-    -webkit-text-stroke: 2px rgba(105,96,89,0.5);
+    -webkit-text-stroke: 2px rgba(105, 96, 89, 0.5);
 }
 
 .az-title-arrows {

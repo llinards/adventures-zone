@@ -15477,9 +15477,9 @@ video {
   min-height: 100%;
   z-index: -1;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .container-fluid.az-title,
@@ -15609,7 +15609,7 @@ video {
   margin-bottom: 2rem;
   width: 60%;
   -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
 }
 
 .section-card-desc,
@@ -15624,7 +15624,7 @@ video {
 
 .section-card-readmore {
   -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
 }
 
 .section-card-readmore i.fas {
@@ -15656,7 +15656,7 @@ video {
 
 .right .section-title-bar {
   -webkit-clip-path: polygon(calc(0% + 40px) 0, 100% 0%, 100% 100%, 0 100%);
-          clip-path: polygon(calc(0% + 40px) 0, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(calc(0% + 40px) 0, 100% 0%, 100% 100%, 0 100%);
 }
 
 .left .section-title-bar,
@@ -15702,7 +15702,7 @@ video {
 #visit-count.section-title-bar,
 #thirty-days.section-title-bar {
   -webkit-clip-path: polygon(30px 0, 100% 0%, calc(100% - 30px) 100%, 0 100%);
-          clip-path: polygon(30px 0, 100% 0%, calc(100% - 30px) 100%, 0 100%);
+  clip-path: polygon(30px 0, 100% 0%, calc(100% - 30px) 100%, 0 100%);
 }
 
 #azone.section-title-bar,
@@ -15718,7 +15718,7 @@ video {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   padding-right: 10%;
 }
 
@@ -15729,14 +15729,14 @@ video {
   position: relative;
   margin: 0.5rem;
   -webkit-clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
-          clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
+  clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
 }
 
 .pricelist-card.small {
   height: 30px !important;
   max-width: 95% !important;
   -webkit-clip-path: polygon(25px 0, 100% 0%, calc(100% - 25px) 100%, 0 100%);
-          clip-path: polygon(25px 0, 100% 0%, calc(100% - 25px) 100%, 0 100%);
+  clip-path: polygon(25px 0, 100% 0%, calc(100% - 25px) 100%, 0 100%);
 }
 
 .xs-zone {
@@ -15900,9 +15900,9 @@ footer {
   min-height: 100%;
   z-index: -1;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .product-page-title .az-title-second {
@@ -15924,6 +15924,7 @@ footer {
 }
 
 .grid {
+  display: -ms-grid;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -15965,7 +15966,7 @@ footer {
 
 .section-title-bar.product-page {
   -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   width: 100%;
   background-color: #e91e79;
   margin-bottom: 1rem;
@@ -16024,7 +16025,7 @@ footer {
   .left .row,
   .right .row {
     -webkit-box-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
   }
 
   .left.second-lvl,
@@ -16035,13 +16036,13 @@ footer {
   #pricelist > .section-title-bar {
     width: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
   }
 
   #visit-count.section-title-bar,
   #thirty-days.section-title-bar {
     -webkit-clip-path: none;
-            clip-path: none;
+    clip-path: none;
     width: 100%;
     margin: 0.5rem auto;
   }
@@ -16053,7 +16054,7 @@ footer {
     width: 85% !important;
     margin-bottom: 0.5rem;
     -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
     display: block;
     padding-left: 0;
     padding-right: 0;

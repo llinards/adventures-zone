@@ -40,6 +40,7 @@
 
     .pricelist-block,
     .second-lvl {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -49,6 +50,8 @@
         margin-bottom: 1rem;
 
         .row {
+            -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
             justify-content: center !important;
         }
     }
@@ -63,14 +66,15 @@
 
     #pricelist>.section-title-bar {
         width: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     }
 
 
     #visit-count.section-title-bar,
     #thirty-days.section-title-bar {
+        -webkit-clip-path: none;
         clip-path: none;
-        // clip-path: $third-lvl-clip-path; 
         width: 100%;
         margin: 0.5rem auto;
     }
@@ -81,6 +85,7 @@
     #membership.section-title-bar {
         width: 85% !important;
         margin-bottom: 0.5rem;
+        -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
         clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
         display: block;
         padding-left: 0;
@@ -89,10 +94,6 @@
 
     .footer-logo-img {
         width: 85px;
-    }
-
-    footer {
-        // padding: 0.5rem 0.25rem 0 0.25rem;
     }
 
     .footer-soc-icons {

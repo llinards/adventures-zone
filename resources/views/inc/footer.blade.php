@@ -18,7 +18,7 @@
         <a href="https://api.whatsapp.com/send?phone=37125625233">
           <img class="img-fluid soc-icon" src="/storage/img/whatsapp.png" alt="">
         </a>
-        <a href="#">
+        <a href="https://www.tiktok.com/@adventures.zone">
           <img class="img-fluid soc-icon" src="/storage/img/tiktok.png" alt="">
         </a>
         <a href="https://www.instagram.com/adventures.zone/">
