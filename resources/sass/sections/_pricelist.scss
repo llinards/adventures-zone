@@ -23,6 +23,7 @@
     width: 60%;
 
     .section-title-bar {
+        -webkit-clip-path: $second-general-clip-path;
         clip-path: $second-general-clip-path
     }
 }
@@ -70,20 +71,27 @@
 }
 
 #visit-count.section-title-bar,
-#thirty-days.section-title-bar{
-    // clip-path: polygon(0% 100%, 30px 0%, 100% 0%, 91% 100%, 0% 100%, 0 calc(100% - 40px));
+#thirty-days.section-title-bar {
+    -webkit-clip-path: $second-lvl-clip-path;
     clip-path: $second-lvl-clip-path;
 }
 
 #azone.section-title-bar,
 #membership.section-title-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 10%;
 }
 
 #xs.section-title-bar,
 #party.section-title-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     padding-right: 10%;
 }
@@ -95,13 +103,14 @@
     padding: 0.5rem;
     position: relative;
     margin: 0.5rem;
-    // clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 26px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 calc(100% - 20px))
+    -webkit-clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
     clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
 }
 
 .pricelist-card.small {
     height: 30px !important;
     max-width: 95% !important;
+    -webkit-clip-path: $third-lvl-clip-path;
     clip-path: $third-lvl-clip-path;
 }
 
@@ -134,9 +143,6 @@
 }
 
 .pricelist-info {
-    // position: absolute;
-    // right: 1%;
-    // bottom: 1%;
     background-color: #ffffff;
     border-radius: 0;
     display: inline-block;
@@ -180,7 +186,6 @@
 .modal-content {
     border: none;
     border-radius: 0;
-    // clip-path: polygon(-8px -15px, -13px 131px, 508px 123px, 102.2% -10.35%);
 }
 
 .modal-header {

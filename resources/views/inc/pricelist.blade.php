@@ -134,14 +134,14 @@
           </div> 
           <div class="container-fluid">
             <div class="row mx-auto justify-content-start">
-              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#aOneHour">
+              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#membershipKlusais">
                 <h3 class="pricelist-price text-center text-white"><span class="price-number">59</span> <i class="fas fa-euro-sign"></i></h3>
                 <h6 class="pricelist-title text-center text-white">"klusais laiks"</h6>
                 <div class="pricelist-info-small">
                   <i class="fas fa-info text-black"></i>
                 </div>
               </a>
-              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#aOneHour">
+              <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#membershipAktivais">
                 <h3 class="pricelist-price text-center text-white"><span class="price-number">99</span> <i class="fas fa-euro-sign"></i></h3>
                 <h6 class="pricelist-title text-center text-white">"aktīvais laiks"</h6>
                 <div class="pricelist-info-small">

@@ -1,6 +1,8 @@
 @media (max-width: 991px) {
+
     #left.az-menubar,
     #right.az-menubar {
+        -ms-flex-pack: distribute !important;
         justify-content: space-around !important;
 
         li.nav-item {
@@ -49,7 +51,6 @@
 .nav-link {
     padding: 0.5rem;
     font-size: 0.9rem;
-    // border-bottom: none !important;
 }
 
 #mobile-navbar {

@@ -19,6 +19,7 @@
     padding: 0.25rem;
     margin-bottom: 2rem;
     width: 60%;
+    -webkit-clip-path: $general-clip-path;
     clip-path: $general-clip-path;
 }
 
@@ -33,6 +34,7 @@
 }
 
 .section-card-readmore {
+    -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
 
     i.fas {

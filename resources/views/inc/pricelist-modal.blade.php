@@ -70,7 +70,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="pb-2">Cenā ietilpst vienas ballīšu telpas noma ar tajā esošo telpas aprīkojumu divām stundām. 
+        <p class="pb-2">Cenā ietilpst vienas ballīšu telpas noma ar tajā esošo telpas aprīkojumu divām stundām.</p>
+        <p class="pb-2">
           Nomājot ballīšu telpu, biļetes ADVENTURES' zone atrakciju izmantošanai ir jāiegādājas atsevišķi, 
           atrakciju izmantošana neietilpst ballīšu telpas nomas cenā.</p>
         <p>Par papildu samaksu ballītei nodrošinām svētku galdu un iespējams piesaistīt arī animatoru.  </p>
@@ -144,6 +145,46 @@
           <li><i class="fas fa-caret-right"></i> Kreativitāti attīstošas spēles</li>
         </ul>
         <p>Abonements ir derīgs izmantošanai 3 gadus kopš iegādes brīža, to var izmantot trīs atsevišķām 2 stundu parka apmeklējuma reizēm vai 3 personām.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="membershipKlusais" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="pb-2">Abonements ir derīgs vienu mēnesi kopš tā pirmās izmantošanas dienas jeb reizes. Šī abonementa izmantošanas noteikumi paredz, ka abonementu drīkst izmantot:</p>
+        <ul class="pb-2">
+          <li><i class="fas fa-caret-right"></i> tikai <strong>darba dienās no plkst. 10:00 līdz 16:00;</strong></li>
+          <li><i class="fas fa-caret-right"></i> tikai <strong>viena</strong> persona;</li>
+          <li><i class="fas fa-caret-right"></i> neierobežotu skaitu reižu tikai tā derīguma termiņa ietvaros.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="membershipAktivais" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="pb-2">Abonements ir derīgs vienu mēnesi kopš tā pirmās izmantošanas dienas jeb reizes. Šī abonementa izmantošanas noteikumi paredz, ka abonementu drīkst izmantot:</p>
+        <ul class="pb-2">
+          <li><i class="fas fa-caret-right"></i> jebkurā dienā un laikā piedzīvojuma parka darba laika ietvaros;</li>
+          <li><i class="fas fa-caret-right"></i> tikai <strong>viena</strong> persona;</li>
+          <li><i class="fas fa-caret-right"></i> neierobežotu skaitu reižu tikai tā derīguma termiņa ietvaros.</li>
+        </ul>
       </div>
     </div>
   </div>
