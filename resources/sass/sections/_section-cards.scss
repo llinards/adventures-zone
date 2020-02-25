@@ -1,0 +1,44 @@
+.section-cards {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .container {
+        position: relative;
+        width: 70%;
+    }
+
+    .section-title-bar {
+        margin-bottom: -2rem;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.section-title-bar {
+    background-color: $section-title-bar;
+    padding: 0.25rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    -webkit-clip-path: $general-clip-path;
+    clip-path: $general-clip-path;
+}
+
+.section-card-desc,
+.section-card-readmore {
+    background-color: $menu-bg-color;
+}
+
+.section-card-desc {
+    border-right: 2px solid #ffffff;
+    padding: 0.25rem;
+}
+
+.section-card-readmore {
+    -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
+
+    i.fas {
+        color: #ffffff;
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,42 @@
+body {
+    position: relative;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+}

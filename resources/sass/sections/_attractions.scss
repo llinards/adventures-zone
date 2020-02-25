@@ -1,0 +1,53 @@
+#attractions {
+    padding-top: 1rem;
+    background: rgb(233, 30, 121);
+    background: -o-linear-gradient(top, rgba(233, 30, 121, 1) 0%, rgba(255, 255, 255, 1) 50%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 30, 121, 1)), color-stop(50%, rgba(255, 255, 255, 1)));
+    background: linear-gradient(180deg, rgba(233, 30, 121, 1) 0%, rgba(255, 255, 255, 1) 50%);
+
+    .container {
+        position: relative;
+    }
+}
+
+.attraction {
+    margin: 0.5rem;
+
+}
+
+.attraction-img {
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+}
+
+.attraction-title {
+    background-color: $menu-bg-color;
+    padding: 0.5rem;
+    height: 58px;
+}
+
+.slick-arrow.next,
+.slick-arrow.prev {
+    position: absolute;
+    top: 40%;
+}
+
+.slick-arrow.next:hover,
+.slick-arrow.prev:hover {
+    cursor: pointer;
+}
+
+
+.slick-arrow.prev {
+    left: 0;
+}
+
+.slick-arrow.next {
+    right: 0;
+}
+
+.fas.fa-chevron-left,
+.fas.fa-chevron-right {
+    font-size: 3rem;
+    color: $menu-bg-color;
+}

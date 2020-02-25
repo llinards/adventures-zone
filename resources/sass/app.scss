@@ -1,0 +1,33 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700&display=swap");
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Animate
+@import 'assets/animate';
+
+// Slick
+@import 'assets/slick/slick';
+@import 'assets/slick/slick-theme';
+
+// Lightbox
+@import 'assets/lightbox';
+
+// Main SCSS
+@import 'main';
+
+//Navbar
+@import 'navbar';
+
+// Index page
+@import 'home';
+
+//Product page;
+@import 'product-page';
+
+// Media queries
+@import 'media-queries';

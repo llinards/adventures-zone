@@ -1,0 +1,203 @@
+#pricelist {
+    .section-title-bar {
+        background-color: $menu-bg-color;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+}
+
+.pricelist-block {
+    width: 100%;
+}
+
+#second-row.pricelist-block {
+    margin-top: 2rem;
+}
+
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+
+    .section-title-bar {
+        -webkit-clip-path: $second-general-clip-path;
+        clip-path: $second-general-clip-path
+    }
+}
+
+.left,
+.right {
+    .section-title-bar {
+        width: 100%;
+    }
+}
+
+.second-lvl {
+    width: 100%;
+    max-width: 665px;
+}
+
+.left.second-lvl,
+.right.second-lvl {
+    width: 48%;
+}
+
+#xs.section-title-bar {
+    background-color: $section-title-bar;
+}
+
+#party.section-title-bar,
+.party {
+    background-color: $party-section-card;
+}
+
+#membership.section-title-bar,
+.membership,
+#thirty-days.section-title-bar,
+#visit-count.section-title-bar {
+    background-color: $membership-section-card;
+}
+
+#membership.section-title-bar {
+    margin-bottom: 0.5rem;
+}
+
+#visit-count.section-title-bar,
+#thirty-days.section-title-bar {
+    margin-bottom: 0.75rem;
+}
+
+#visit-count.section-title-bar,
+#thirty-days.section-title-bar {
+    -webkit-clip-path: $second-lvl-clip-path;
+    clip-path: $second-lvl-clip-path;
+}
+
+#azone.section-title-bar,
+#membership.section-title-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 10%;
+}
+
+#xs.section-title-bar,
+#party.section-title-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    padding-right: 10%;
+}
+
+
+.pricelist-card {
+    max-width: 140px !important;
+    height: 140px !important;
+    padding: 0.5rem;
+    position: relative;
+    margin: 0.5rem;
+    -webkit-clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
+    clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
+}
+
+.pricelist-card.small {
+    height: 30px !important;
+    max-width: 95% !important;
+    -webkit-clip-path: $third-lvl-clip-path;
+    clip-path: $third-lvl-clip-path;
+}
+
+.xs-zone {
+    background-color: $section-title-bar;
+}
+
+.a-zone,
+#azone.section-title-bar {
+    background-color: $a-zone-pricelist;
+}
+
+.pricelist-title {
+    font-weight: 400;
+}
+
+.price-number {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.second-lvl {
+    .price-number {
+        font-size: 1.5rem;
+    }
+}
+
+.pricelist-price>.fa-euro-sign {
+    font-size: 1rem;
+}
+
+.pricelist-info {
+    background-color: #ffffff;
+    border-radius: 0;
+    display: inline-block;
+    padding: 2rem;
+    position: absolute;
+    bottom: -33px;
+    right: -28px;
+    -webkit-clip-path: polygon(12px 56px, 45px 19px, 62.80% 64.26%);
+    clip-path: polygon(12px 56px, 45px 19px, 62.80% 64.26%);
+}
+
+.pricelist-info-small {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.pricelist-info>.fa-info {
+    color: #000000;
+}
+
+.xs-zone .pricelist-info i {
+    color: $section-title-bar;
+}
+
+.a-zone .pricelist-info i {
+    color: $a-zone-pricelist;
+}
+
+.party .pricelist-info i {
+    color: $party-section-card;
+}
+
+.membership .pricelist-info i {
+    color: $membership-section-card;
+}
+
+// pricelist modal
+
+.modal-dialog {}
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+
+.modal-header {
+    border: none;
+}
+
+.close {
+    font-size: 2rem;
+}
+
+.alert-danger {
+    background-color: $menu-bg-color;
+    color: #fff;
+    border: none;
+}
