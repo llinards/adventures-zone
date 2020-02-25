@@ -37,6 +37,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    <!--[if IE]>
+        Jūs izmantojat Internet Explorer un tas netiek atbalstīts šajā mājaslapā. Vislabāko pieredzi iegūsiet ar Google Chrome.
+    <![endif]-->
     @yield('content')
 </body>
 </html>
