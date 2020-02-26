@@ -15847,6 +15847,10 @@ footer {
   width: 100px;
 }
 
+.footer-address {
+  padding-right: 25%;
+}
+
 .footer-address a {
   color: #fff;
 }
@@ -15979,6 +15983,12 @@ footer {
 
 #attractions#product-page {
   background: none;
+}
+
+@media (max-width: 992px) {
+  .footer-address {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 768px) {

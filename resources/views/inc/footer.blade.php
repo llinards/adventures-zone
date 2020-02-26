@@ -9,7 +9,7 @@
       <h5><strong>Adrese:</strong></h5>
       <a target="_blank" href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">  
         <p>t/c "Alfa", 3.stāvs</p>
-        <p>Brīvības gatve 372, Rīga</p>
+        <p><u>Brīvības gatve 372, Rīga</u></p>
       </a>
       <h5><strong><a href="tel:+37122022333">+371 220 22 333</a></strong></h5>
     </div>
