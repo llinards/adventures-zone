@@ -37,11 +37,11 @@
                 <div class="col-md-8 section-card-desc">
                     <p class="text-white text-center">
                         @if(app()->getLocale() == 'en')
-                        Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.
+                        Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
                         @elseif(app()->getLocale() == 'ru')
-                        Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.
+                        Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
                         @else
-                        Izcila ideja, kur svinēt bērnu ballīti. Dzimšanas diena, vārda diena, izlaidums vai citi svētki – nomā bērnu ballītes telpu pasākumam pie mums. Atrakciju parka personāls palīdzēs noorganizēt bērnu ballīti un svētkus.
+                        Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
                         @endif
                     </p>
                 </div>
@@ -66,11 +66,11 @@
             <div class="col-md-8 section-card-desc">
                 <p class="text-white text-center">
                     @if(app()->getLocale() == 'en')
-                    ADVENTURES’ ZONE kafejnīca ir vieta, kur baudīt veselīgus našķus un dzērienus nesteidzīgi, kamēr bērni bauda rotaļu laukuma un piedzīvojuma parka atrakcijas. Kafejnīcas sortimentā dabīgi un veselīga uztura produkti.
+                    Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
                     @elseif(app()->getLocale() == 'ru')
-                    ADVENTURES’ ZONE kafejnīca ir vieta, kur baudīt veselīgus našķus un dzērienus nesteidzīgi, kamēr bērni bauda rotaļu laukuma un piedzīvojuma parka atrakcijas. Kafejnīcas sortimentā dabīgi un veselīga uztura produkti.
+                    Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
                     @else
-                    ADVENTURES’ ZONE kafejnīca ir vieta, kur baudīt veselīgus našķus un dzērienus nesteidzīgi, kamēr bērni bauda rotaļu laukuma un piedzīvojuma parka atrakcijas. Kafejnīcas sortimentā dabīgi un veselīga uztura produkti.
+                    Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
                     @endif
                 </p>
             </div>
@@ -95,11 +95,11 @@
             <div class="col-md-8 section-card-desc">
                 <p class="text-white text-center">
                     @if(app()->getLocale() == 'en')
-                    Atrakciju un piedzīvojumu parks sniedz iespēju aktīvi pavadīt brīvo laiku  kopā ar ģimeni, bērniem, draugiem un kolēģiem Rīgā, svinēt pie mums svētkus un nomāt bērnu ballīšu telpas. Izcila izklaides vieta skolēniem un visai klasei.
+                    ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
                     @elseif(app()->getLocale() == 'ru')
-                    Atrakciju un piedzīvojumu parks sniedz iespēju aktīvi pavadīt brīvo laiku  kopā ar ģimeni, bērniem, draugiem un kolēģiem Rīgā, svinēt pie mums svētkus un nomāt bērnu ballīšu telpas. Izcila izklaides vieta skolēniem un visai klasei.
+                    ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
                     @else
-                    Atrakciju un piedzīvojumu parks sniedz iespēju aktīvi pavadīt brīvo laiku  kopā ar ģimeni, bērniem, draugiem un kolēģiem Rīgā, svinēt pie mums svētkus un nomāt bērnu ballīšu telpas. Izcila izklaides vieta skolēniem un visai klasei.
+                    ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
                     @endif
                 </p>
             </div>
