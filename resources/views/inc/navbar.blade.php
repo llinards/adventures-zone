@@ -29,7 +29,7 @@
   @if(!empty($product_page))
   <div id="right" class="product-page az-menubar d-flex justify-content-around align-items-center">
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt/rezervēt</a>
+      <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt</a>
     </li>
     @else
   <div id="right" class="az-menubar d-flex justify-content-start align-items-center">
@@ -92,7 +92,7 @@
         <a class="nav-link text-white text-uppercase" href="/">sākums</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt/rezervēt</a>
+        <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt</a>
       </li>
       @else
       <li class="nav-item">
@@ -117,9 +117,9 @@
       <p>katru dienu: <strong>10:00 - 22:00</strong></p>
     </div>
     <h5 class="text-uppercase text-white text-center pt-3"><strong>Adrese:</strong></h5>
-    <p class="text-uppercase text-white text-center pt-1">T/P Alfa 3.stāvs, Brīvības gatve 2353</p>
+    <p class="text-uppercase text-white text-center pt-1">t/c Alfa 3.stāvs, Brīvības gatve 2353</p>
     <h4 class="text-uppercase text-white text-center">
-      <a href="tel:+37126525233">+371 265 25 233</a>
+      <a href="tel:+37122022333">+371 220 22 333</a>
     </h4>
   </div>
 </nav>
