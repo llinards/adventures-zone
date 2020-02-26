@@ -69,6 +69,8 @@
     display: block !important;
     font-family: 'Red Hat Display', sans-serif;
     text-align: justify;
+    color: $menu-bg-color;
+    font-weight: 600;
 
     p {
         margin: 1rem;

@@ -15956,6 +15956,8 @@ footer {
   display: block !important;
   font-family: "Red Hat Display", sans-serif;
   text-align: justify;
+  color: #e91e79;
+  font-weight: 600;
 }
 
 .product-description p {
