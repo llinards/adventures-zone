@@ -16100,10 +16100,6 @@ footer {
   .product-page-title .az-title-second {
     font-size: 2.75rem;
   }
-
-  .az-title-arrows {
-    bottom: 10%;
-  }
 }
 
 @media (min-width: 1440px) {
