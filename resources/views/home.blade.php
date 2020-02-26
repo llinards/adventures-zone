@@ -34,17 +34,17 @@
                 <div class="col-12 px-0">
                     <img class="img-fluid" src="storage/img/attractions/ballites/header.jpg" alt="ballītes">
                 </div>
-                <div class="col-md-8 section-card-desc">
-                    <p class="text-white text-center">
-                        @if(app()->getLocale() == 'en')
-                        Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
-                        @elseif(app()->getLocale() == 'ru')
-                        Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
-                        @else
-                        Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
-                        @endif
-                    </p>
-                </div>
+                <a href="{{app()->getLocale()}}/ballites" class="col-md-8 section-card-desc">
+                  <p class="text-white text-center">
+                      @if(app()->getLocale() == 'en')
+                      Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                      @elseif(app()->getLocale() == 'ru')
+                      Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                      @else
+                      Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                      @endif
+                  </p>
+                </a>
                 <a href="{{app()->getLocale()}}/ballites" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
                     <h5 class="text-white">uzzināt vairāk</h5>
                     <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
@@ -63,17 +63,17 @@
             <div class="col-12 px-0">
               <img class="img-fluid" src="storage/img/attractions/kafejnica/header.jpg" alt="kafejnīca">
             </div>
-            <div class="col-md-8 section-card-desc">
-                <p class="text-white text-center">
-                    @if(app()->getLocale() == 'en')
-                    Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
-                    @elseif(app()->getLocale() == 'ru')
-                    Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
-                    @else
-                    Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
-                    @endif
-                </p>
-            </div>
+            <a href="{{app()->getLocale()}}/kafejnica" class="col-md-8 section-card-desc">
+              <p class="text-white text-center">
+                  @if(app()->getLocale() == 'en')
+                  Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
+                  @elseif(app()->getLocale() == 'ru')
+                  Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
+                  @else
+                  Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
+                  @endif
+              </p>
+            </a>
             <a href="{{app()->getLocale()}}/kafejnica" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
               <h5 class="text-white">uzzināt vairāk</h5>
               <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
@@ -92,17 +92,17 @@
             <div class="col-12 px-0">
               <img class="img-fluid" src="storage/img/attractions/vertibas/header.jpg" alt="vērtības">
             </div>
-            <div class="col-md-8 section-card-desc">
-                <p class="text-white text-center">
-                    @if(app()->getLocale() == 'en')
-                    ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
-                    @elseif(app()->getLocale() == 'ru')
-                    ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
-                    @else
-                    ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
-                    @endif
-                </p>
-            </div>
+            <a href="{{app()->getLocale()}}/vertibas" class="col-md-8 section-card-desc">
+              <p class="text-white text-center">
+                  @if(app()->getLocale() == 'en')
+                  ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
+                  @elseif(app()->getLocale() == 'ru')
+                  ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
+                  @else
+                  ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
+                  @endif
+              </p>
+            </a>
             <a href="{{app()->getLocale()}}/vertibas" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
               <h5 class="text-white">uzzināt vairāk</h5>
               <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
