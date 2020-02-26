@@ -1,9 +1,3 @@
-@media (max-width: 575px) {
-    .az-title-second {
-        font-size: 1rem;
-    }
-}
-
 @media (max-width: 768px) {
     .az-title-main {
         max-width: 95%;
@@ -11,13 +5,16 @@
 
     .product-page-title {
         .az-title-second {
-            font-size: 2rem;
+            font-size: 4rem;
         }
     }
 
-
     .az-title-arrows {
         bottom: 20%;
+
+        img {
+            width: 30px;
+        }
     }
 
     .section-title-bar {
@@ -107,6 +104,22 @@
         }
     }
 
+}
+
+@media (max-width: 575px) {
+    .az-title-second {
+        font-size: 1rem;
+    }
+
+    .product-page-title {
+        .az-title-second {
+            font-size: 2.75rem;
+        }
+    }
+
+    .az-title-arrows {
+        bottom: 10%;
+    }
 }
 
 @media (min-width: 1440px) {

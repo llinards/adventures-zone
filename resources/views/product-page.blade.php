@@ -10,7 +10,7 @@
         {{-- header --}}
         <div class="container-fluid az-title product-page-title">
             <div class="row">
-                <h1 class="az-title-second text-uppercase text-light text-center">
+                <h1 class="az-title-second product-page-title text-uppercase text-light text-center">
                     {{ $attraction['name'] }}
                 </h1>
             </div>
