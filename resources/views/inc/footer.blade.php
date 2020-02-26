@@ -11,7 +11,7 @@
         <p>T/P "Alfa", 3.stāvs</p>
         <p>Brīvības gatve 235, Rīga</p>
       </a>
-      <h5><strong><a href="tel:+37125625233">+371 256 25 233</a></strong></h5>
+      <h5><strong><a href="tel:+37122022333">+371 220 22 333</a></strong></h5>
     </div>
     <div class="footer-soc-icons">
       <div class="icon-bar">
