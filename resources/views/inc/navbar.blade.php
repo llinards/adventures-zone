@@ -117,7 +117,9 @@
       <p>katru dienu: <strong>10:00 - 22:00</strong></p>
     </div>
     <h5 class="text-uppercase text-white text-center pt-3"><strong>Adrese:</strong></h5>
-    <p class="text-uppercase text-white text-center pt-1">t/c Alfa 3.stāvs, Brīvības gatve 2353</p>
+    <a class="text-uppercase text-white text-center pt-1" target="_blank" href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">  
+      <p><u>t/c "Alfa", 3.stāvs Brīvības gatve 372, Rīga</u></p>
+    </a>
     <h4 class="text-uppercase text-white text-center">
       <a href="tel:+37122022333">+371 220 22 333</a>
     </h4>
