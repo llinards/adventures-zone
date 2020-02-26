@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 px-0">
-                    <img class="img-fluid" src="storage/img/attractions/ballites/party-min.jpg" alt="ballītes">
+                    <img class="img-fluid" src="storage/img/attractions/ballites/header.jpg" alt="ballītes">
                 </div>
                 <div class="col-md-8 section-card-desc">
                     <p class="text-white text-center">
@@ -61,7 +61,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 px-0">
-              <img class="img-fluid" src="storage/img/attractions/kafejnica/cafe-min.jpg" alt="kafejnīca">
+              <img class="img-fluid" src="storage/img/attractions/kafejnica/header.jpg" alt="kafejnīca">
             </div>
             <div class="col-md-8 section-card-desc">
                 <p class="text-white text-center">
