@@ -37,7 +37,7 @@
       <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
+      <a class="nav-link text-white text-uppercase" href="#pricelist">cenas</a>
     </li>
     @endif
     {{-- <li class="nav-item dropdown">
@@ -108,7 +108,7 @@
         <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#pricelist">rezervācijas/cenas</a>
+        <a class="nav-link text-white text-uppercase" href="#pricelist">cenas</a>
       </li>
       @endif
     </ul>
