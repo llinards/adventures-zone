@@ -15919,8 +15919,8 @@ footer {
 }
 
 #description {
-  background: -webkit-gradient(linear, left top, left bottom, from(#20abe2), color-stop(50%, white));
-  background: linear-gradient(180deg, #20abe2 0%, white 50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#20abe2), color-stop(75%, white));
+  background: linear-gradient(180deg, #20abe2 0%, white 75%);
   padding-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -15950,10 +15950,13 @@ footer {
   margin-bottom: 1rem;
   padding: 0 0.5rem;
   display: block !important;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: justify;
 }
 
 .product-description p {
   margin: 1rem;
+  font-weight: 500;
 }
 
 .product-description ul,
