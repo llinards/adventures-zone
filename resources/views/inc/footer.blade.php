@@ -15,7 +15,7 @@
     </div>
     <div class="footer-soc-icons">
       <div class="icon-bar">
-        <a href="https://api.whatsapp.com/send?phone=37125625233">
+        <a href="https://api.whatsapp.com/send?phone=37122022333">
           <img class="img-fluid soc-icon" src="/storage/img/whatsapp.png" alt="">
         </a>
         <a href="https://www.tiktok.com/@adventures.zone">
