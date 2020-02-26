@@ -21,7 +21,7 @@
         <a href="https://www.tiktok.com/@adventures.zone">
           <img class="img-fluid soc-icon" src="/storage/img/tiktok.png" alt="">
         </a>
-        <a href="https://www.instagram.com/adventures.zone/">
+        <a href="https://www.facebook.com/ADVENTURES.zone/">
           <img class="img-fluid soc-icon" src="/storage/img/fb.png" alt="">
         </a>
         <a href="https://www.instagram.com/adventures.zone/">
