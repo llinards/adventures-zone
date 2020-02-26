@@ -15412,7 +15412,7 @@ a[href^=tel] {
 }
 
 .az-logo--img {
-  width: 227px;
+  width: 229px;
   height: 100%;
 }
 
@@ -15907,6 +15907,7 @@ footer {
   object-position: center;
   -o-object-fit: cover;
   object-fit: cover;
+  opacity: 0.9;
 }
 
 .product-page-title .az-title-second {

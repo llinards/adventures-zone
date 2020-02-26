@@ -3,6 +3,8 @@
     background-color: $product-page-menu-bg-color;
 }
 
+
+
 .header-img {
     position: absolute;
     top: 0;
@@ -16,6 +18,7 @@
     object-position: center;
     -o-object-fit: cover;
     object-fit: cover;
+    opacity: 0.9;
 }
 
 .product-page-title {
