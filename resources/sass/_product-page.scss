@@ -35,14 +35,19 @@
 #gallery {
     padding-top: 1rem;
     margin-bottom: 1rem;
+
+    .row.gallery {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
 }
 
 #description {
     background: -webkit-gradient(linear, left top, left bottom, from(#20abe2), color-stop(75%, rgba(255, 255, 255, 1)));
     background: -o-linear-gradient(top, #20abe2 0%, rgba(255, 255, 255, 1) 75%);
     background: linear-gradient(180deg, #20abe2 0%, rgba(255, 255, 255, 1) 75%);
-    padding-top: 2rem;
     margin-bottom: 1rem;
+    padding-top: 2rem;
 }
 
 .grid {
@@ -68,7 +73,7 @@
 
 .product-description {
     margin-bottom: 1rem;
-    padding: 0 0.5rem;
+    padding: 0 8rem;
     display: block !important;
     font-family: 'Red Hat Display', sans-serif;
     text-align: justify;

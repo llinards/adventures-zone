@@ -37,7 +37,7 @@
     {{-- gallery --}}
     <section id="gallery">
         <div class="container">
-            <div class="row">
+            <div class="row gallery">
                 <div class="grid">
                     @if(!$images->isEmpty())
                         @foreach($images as $image)

@@ -24,6 +24,10 @@
     background-color: $menu-bg-color;
     padding: 0.5rem;
     height: 58px;
+
+    h4 {
+        font-size: 1.15rem;
+    }
 }
 
 .slick-arrow.next,
