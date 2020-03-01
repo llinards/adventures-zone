@@ -37936,7 +37936,7 @@ $(document).ready(function () {
     infinite: true,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    swipeToSlide: true,
     arrows: true,
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
@@ -37944,7 +37944,7 @@ $(document).ready(function () {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
+        swipeToSlide: true,
         infinite: true,
         arrows: true,
         dots: false
@@ -37954,14 +37954,14 @@ $(document).ready(function () {
       settings: {
         slidesToShow: 2,
         arrows: true,
-        slidesToScroll: 1
+        swipeToSlide: true
       }
     }, {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
         arrows: true,
-        slidesToScroll: 1
+        swipeToSlide: true
       }
     } // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
