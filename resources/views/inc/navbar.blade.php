@@ -9,9 +9,15 @@
       </a>
   </div>
     @if(!empty($product_page))
-    <div id="left" class="product-page az-menubar d-flex justify-content-around align-items-center">
+    <div id="left" class="product-page az-menubar d-flex justify-content-end align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/">sākums</a>
+        <a class="nav-link text-white text-uppercase" href="/#attractions">{{__('atrakcijas')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="/#party">{{__('ballites')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="/#values">vērtības</a>
       </li>
       @else
     <div id="left" class="az-menubar d-flex justify-content-end align-items-center">
@@ -27,9 +33,12 @@
       @endif
   </div>
   @if(!empty($product_page))
-  <div id="right" class="product-page az-menubar d-flex justify-content-around align-items-center">
+  <div id="right" class="product-page az-menubar d-flex justify-content-start align-items-center">
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt</a>
+      <a class="nav-link text-white text-uppercase" href="/#cafe">kafejnīca</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white text-uppercase" href="/#pricelist">cenas</a>
     </li>
     @else
   <div id="right" class="az-menubar d-flex justify-content-start align-items-center">
@@ -89,10 +98,19 @@
     <ul class="navbar-nav mx-auto text-center">
       @if(!empty($product_page))
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/">sākums</a>
+        <a class="nav-link text-white text-uppercase" href="/#attractions">atrakcijas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#buy-btns">pirkt</a>
+        <a class="nav-link text-white text-uppercase" href="/#party">ballītes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="/#values">vērtibas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="/#cafe">kafejnīca</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white text-uppercase" href="/#pricelist">cenas</a>
       </li>
       @else
       <li class="nav-item">

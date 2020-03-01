@@ -37903,11 +37903,33 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $('a[href*="#"]').on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top + 16
-    }, 500, 'linear');
+  (function ($) {
+    $(document).on("ready", function () {
+      var urlHash = window.location.href.split("#")[1];
+      $('html,body').animate({
+        scrollTop: $('.' + urlHash + ', #' + urlHash + ',[name=' + urlHash + ']').first().offset().top
+      }, 500);
+    });
+  })(jQuery);
+
+  (function ($) {
+    $('a[href*=\\#]').click(function () {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  })(jQuery);
+
+  $('.navbar-collapse a').click(function () {
+    $(".navbar-collapse").collapse('hide');
   });
   $('.attractions').slick({
     dots: false,
