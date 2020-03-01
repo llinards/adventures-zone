@@ -38,7 +38,7 @@
       <a class="nav-link text-white text-uppercase" href="/#cafe">kafejnīca</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="/#pricelist">cenas</a>
+      <a class="nav-link text-white text-uppercase" href="/#pricelist">cenas/pirkt</a>
     </li>
     @else
   <div id="right" class="az-menubar d-flex justify-content-start align-items-center">
@@ -46,7 +46,7 @@
       <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="#pricelist">cenas</a>
+      <a class="nav-link text-white text-uppercase" href="#pricelist">cenas/pirkt</a>
     </li>
     @endif
     {{-- <li class="nav-item dropdown">
@@ -110,7 +110,7 @@
         <a class="nav-link text-white text-uppercase" href="/#cafe">kafejnīca</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#pricelist">cenas</a>
+        <a class="nav-link text-white text-uppercase" href="/#pricelist">cenas/pirkt</a>
       </li>
       @else
       <li class="nav-item">
@@ -126,7 +126,7 @@
         <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#pricelist">cenas</a>
+        <a class="nav-link text-white text-uppercase" href="#pricelist">cenas/pirkt</a>
       </li>
       @endif
     </ul>
