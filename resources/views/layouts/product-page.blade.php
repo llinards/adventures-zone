@@ -11,7 +11,8 @@
     <meta property="og:url" content=" {{Request::url()}}" />
     <meta property="og:type"          content="article" />
     <meta property="og:title"         content="{{ $parameters['name'] }} | Adventure's Zone" />
-    <meta property="og:description"   content="{{ $parameters['meta_description'] }}" />   
+    <meta property="og:description"   content="{{ $parameters['meta_description'] }}" />  
+    <meta property="og:image" content="{{ $parameters['header_photo_url'] }}" />  
     <title>
         @isset($parameters)
             {{ $parameters['name'] }} | 
