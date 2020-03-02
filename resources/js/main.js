@@ -102,7 +102,6 @@ for (x = 0; x < allItems.length; x++) {
 ;
 (function ($) {
     $('.swipebox').swipebox( {
-        loopAtEnd: true,
-        removeBarsOnMobile: true
+        loopAtEnd: true
     });
 })(jQuery);
