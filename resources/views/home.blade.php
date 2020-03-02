@@ -112,7 +112,5 @@
     </section>
     {{-- end of cafe section --}}
     @include('inc.pricelist')
-    <footer>
-        @include('inc.footer')
-    </footer>
+    @include('inc.footer')
 @endsection

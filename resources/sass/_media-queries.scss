@@ -1,8 +1,4 @@
-@media (max-width: 992px) {
-    .footer-address {
-        padding-right: 0;
-    }
-}
+@media (max-width: 992px) {}
 
 @media (max-width: 768px) {
     .az-title-main {
@@ -108,6 +104,15 @@
         display: block;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .footer-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-address {
+        padding-left: 10%;
     }
 
     .footer-logo-img {

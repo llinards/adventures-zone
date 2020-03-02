@@ -15857,7 +15857,7 @@ footer {
 }
 
 .footer-address {
-  padding-right: 25%;
+  padding-left: 15%;
 }
 
 .footer-address a {
@@ -16003,12 +16003,6 @@ footer {
   background: none;
 }
 
-@media (max-width: 992px) {
-  .footer-address {
-    padding-right: 0;
-  }
-}
-
 @media (max-width: 768px) {
   .az-title-main {
     max-width: 95%;
@@ -16103,6 +16097,16 @@ footer {
     display: block;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .footer-right {
+    width: 100%;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+
+  .footer-address {
+    padding-left: 10%;
   }
 
   .footer-logo-img {
