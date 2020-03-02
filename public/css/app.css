@@ -15504,7 +15504,8 @@ video {
 }
 
 .az-title-second {
-  -webkit-text-stroke: 2px rgba(105, 96, 89, 0.5);
+  -webkit-text-stroke: 1px #808080;
+  font-family: "Din2014", sans-serif;
 }
 
 .az-title-arrows {
