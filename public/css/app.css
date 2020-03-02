@@ -16065,6 +16065,10 @@ footer {
     padding: 0 0.5rem;
   }
 
+  .product-page-title .az-title-second {
+    -webkit-text-stroke: 1px #808080;
+  }
+
   #gallery {
     padding-left: 0;
     padding-right: 0;
