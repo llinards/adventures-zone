@@ -26,9 +26,10 @@
         position: relative;
         width: 100%;
         font-size: 6rem;
-        font-family: "DIN2014-ExtraBold", sans-serif;
+        font-family: "Din2014", sans-serif;
         // padding-top: 10%;
         font-weight: 700;
+        -webkit-text-stroke: 0.25px rgba(105, 96, 89, 1);
     }
 }
 
