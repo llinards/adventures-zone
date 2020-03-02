@@ -15839,7 +15839,7 @@ video {
 #membership.section-title-bar {
   display: -webkit-box;
   display: flex;
-  padding-left: 10%;
+  padding-left: 6%;
 }
 
 #xs.section-title-bar,
@@ -16051,6 +16051,7 @@ footer {
   font-family: "Din2014", sans-serif;
   font-weight: 700;
   -webkit-text-stroke: 0.2px #808080;
+  letter-spacing: -1.5px;
 }
 
 #gallery {
@@ -16093,7 +16094,7 @@ footer {
 
 .product-description {
   margin-bottom: 1rem;
-  padding: 0 8rem;
+  padding: 0 8.5rem;
   display: block !important;
   font-family: "Red Hat Display", sans-serif;
   text-align: justify;
@@ -16105,6 +16106,7 @@ footer {
   margin: 1rem;
   font-weight: 500;
   font-size: 1.25rem;
+  line-height: 1;
 }
 
 .product-description ul,
