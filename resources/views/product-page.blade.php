@@ -59,7 +59,5 @@
     {{-- end of gallery --}}
     @include('inc.attractions', ['attractions' => $attractions, 'product_page' => true])
     @include('inc.buy-reserve-btn')
-    <footer>
-        @include('inc.footer')
-    </footer>
+    @include('inc.footer')
 @endsection

@@ -29,7 +29,8 @@
         font-family: "Din2014", sans-serif;
         // padding-top: 10%;
         font-weight: 700;
-        -webkit-text-stroke: 0.25px rgba(105, 96, 89, 1);
+        // -webkit-text-stroke: 0.25px rgba(105, 96, 89, 1);
+        -webkit-text-stroke: 0.2px #808080;
     }
 }
 
@@ -84,11 +85,12 @@
     p {
         margin: 1rem;
         font-weight: 500;
+        font-size: 1.25rem;
     }
 
     ul,
     li {
-        list-style: square;
+        list-style: circle;
         margin: 1rem;
 
     }

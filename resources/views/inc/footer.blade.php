@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="row justify-content-between align-items-center">
-      <div class="footer-right d-flex">
+      <div class="footer-right d-flex align-items-center">
         <div class="footer-logo">
           <a href="/">
             <img class="footer-logo-img" src="/storage/img/logo_white.png" alt="adventures-zone-logo-white">
