@@ -15622,7 +15622,6 @@ video {
 }
 
 .az-title-second {
-  -webkit-text-stroke: 1px #808080;
   font-family: "Din2014", sans-serif;
 }
 
@@ -16050,7 +16049,6 @@ footer {
   font-size: 6rem;
   font-family: "Din2014", sans-serif;
   font-weight: 700;
-  -webkit-text-stroke: 0.2px #808080;
   letter-spacing: -1.5px;
 }
 
