@@ -16603,6 +16603,12 @@ footer {
   .product-page-title .az-title-second {
     font-size: 2.75rem;
   }
+
+  .square {
+    width: 150px;
+    height: 150px;
+    padding: 0.2rem;
+  }
 }
 
 @media (min-width: 1440px) {
