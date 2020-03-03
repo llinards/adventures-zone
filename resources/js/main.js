@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    jQuery(document).ready(function ($) {
+        $('a[data-rel^=lightcase]').lightcase({
+            showSequenceInfo: false
+        });
+    });
+
     (function ($) {
         $(document).on("ready", function () {
             var urlHash = window.location.href.split("#")[1];
