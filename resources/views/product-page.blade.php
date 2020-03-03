@@ -35,7 +35,7 @@
     </section>
     {{-- end of product description --}}
     {{-- gallery --}}
-    <section id="gallery">
+    {{-- <section id="gallery">
         <div class="container">
             <div class="row gallery">
                 <div class="grid">
@@ -53,6 +53,25 @@
                         <p>No pictures found!</p>
                     @endif
                 </div>
+            </div>
+        </div>
+    </section> --}}
+    <section id="gallery">
+        <div class="container">
+            <div class="row d-flex flex-wrap justify-content-center">
+                @if(!$images->isEmpty())
+                    @foreach($images as $image)
+                        <div class="square">
+                            <a data-rel="lightcase:myCollection" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
+                                <img class="" src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
+                            </a>
+                        </div>
+                        
+                    @endforeach
+                @else
+                    <p>No pictures found!</p>
+                @endif
+               
             </div>
         </div>
     </section>
