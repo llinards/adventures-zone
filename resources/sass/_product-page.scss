@@ -53,6 +53,8 @@
     padding-top: 2rem;
 }
 
+
+
 .grid {
     display: -ms-grid;
     display: grid;
@@ -61,24 +63,10 @@
     grid-auto-rows: 20px;
 }
 
-.photothumb {
-    width: 100%;
-}
-
-.lb-outerContainer {
-    border-radius: 0 !important;
-}
-
-.lightbox .lb-image {
-    border: none;
-    border-radius: 0 !important;
-}
-
 .product-description {
     margin-bottom: 1rem;
-    padding: 0 8.5rem;
+    padding: 0 11rem;
     display: block !important;
-    font-family: 'Red Hat Display', sans-serif;
     text-align: justify;
     color: $menu-bg-color;
     font-weight: 600;
@@ -86,7 +74,7 @@
     p {
         margin: 1rem;
         font-weight: 500;
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         line-height: 1;
     }
 

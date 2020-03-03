@@ -1,6 +1,6 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700&display=swap");
-// @import url("https://db.onlinewebfonts.com/c/8ac3a2a414b04c47ec7b7cf3a8f2ee0e?family=DIN2014-ExtraBold");
+// @import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Text:500,700&display=swap');
 @font-face {
   font-family: 'Din2014';
   src: url('assets/fonts/DIN2014ExtraBold.woff2') format('woff'), 
@@ -19,9 +19,6 @@
 // Slick
 @import 'assets/slick/slick';
 @import 'assets/slick/slick-theme';
-
-// Swipebox
-@import 'assets/swipebox';
 
 // Main SCSS
 @import 'main';

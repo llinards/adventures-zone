@@ -98,8 +98,3 @@ allItems = document.getElementsByClassName("item");
 for (x = 0; x < allItems.length; x++) {
     imagesLoaded(allItems[x], resizeInstance);
 }
-
-;
-(function ($) {
-    $('.swipebox').swipebox({});
-})(jQuery);
