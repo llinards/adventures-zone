@@ -103,6 +103,11 @@
     margin-bottom: 1rem;
 }
 
+a[class*=lightcase-icon-].lightcase-icon-next,
+a[class*=lightcase-icon-].lightcase-icon-prev {
+    // color: $menu-bg-color !important;
+}
+
 #attractions#product-page {
     background: none;
 }

@@ -39304,7 +39304,8 @@ $(document).ready(function () {
   jQuery(document).ready(function ($) {
     $('a[data-rel^=lightcase]').lightcase({
       slideshowAutoStart: false,
-      swipe: true
+      swipe: true,
+      useKeys: true
     });
   });
 
