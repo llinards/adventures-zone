@@ -39303,7 +39303,8 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 $(document).ready(function () {
   jQuery(document).ready(function ($) {
     $('a[data-rel^=lightcase]').lightcase({
-      showSequenceInfo: false
+      slideshowAutoStart: false,
+      swipe: true
     });
   });
 

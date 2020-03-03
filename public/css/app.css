@@ -15945,7 +15945,7 @@ video {
 .az-title-second {
   font-family: "Din2014", sans-serif;
   letter-spacing: -1.5px;
-  text-shadow: -2px -2px 0 #808080, 2px -2px 0 #808080, -2px 2px 0 #808080, 2px 2px 0 #808080;
+  text-shadow: -1px -1px 0 #808080, 1px -1px 0 #808080, -1px 1px 0 #808080, 1px 1px 0 #808080;
 }
 
 .az-title-arrows {
@@ -16569,6 +16569,10 @@ footer {
   .footer-soc-icons .working-hours {
     margin-top: 1rem;
     padding-left: 0;
+  }
+
+  .product-page-title .az-title-second {
+    text-shadow: -1px -1px 0 #808080, 1px -1px 0 #808080, -1px 1px 0 #808080, 1px 1px 0 #808080;
   }
 
   .product-description p {

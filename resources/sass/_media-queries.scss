@@ -135,6 +135,15 @@
             padding-left: 0;
         }
     }
+    .product-page-title {
+        .az-title-second {
+            text-shadow:
+                -1px -1px 0 #808080,
+                1px -1px 0 #808080,
+                -1px 1px 0 #808080,
+                1px 1px 0 #808080;
+        }
+    }
 
     .product-description p {
         font-size: 1rem;
