@@ -34,7 +34,6 @@
     <!-- Scripts -->
     <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
