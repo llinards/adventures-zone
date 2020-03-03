@@ -35,6 +35,12 @@ video {
 .az-title-second {
     // -webkit-text-stroke: 1px #808080;
     font-family: "Din2014", sans-serif;
+    letter-spacing: -1.5px;
+    text-shadow:
+        -2px -2px 0 #808080,
+        2px -2px 0 #808080,
+        -2px 2px 0 #808080,
+        2px 2px 0 #808080;
 }
 
 .az-title-arrows {

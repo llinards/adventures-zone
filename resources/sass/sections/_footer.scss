@@ -10,8 +10,13 @@ footer {
     width: 100px;
 }
 
+.footer-righ {
+    position: relative;
+}
+
 .footer-address {
-    padding-left: 15%;
+    position: relative;
+    left: 30px;
 }
 
 .footer-address a {
