@@ -43,7 +43,7 @@
                         @foreach($images as $image)
                             <div class="item photo">
                                 <div class="content">
-                                    <a data-rel="lightcase:myCollection:slideshow" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
+                                    <a data-rel="lightcase:myCollection" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
                                         <img class="img-fluid" src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
                                     </a>
                                 </div>
