@@ -39305,7 +39305,9 @@ $(document).ready(function () {
     $('a[data-rel^=lightcase]').lightcase({
       slideshowAutoStart: false,
       swipe: true,
-      useKeys: true
+      useKeys: true,
+      maxWidth: 1500,
+      maxHeight: 1500
     });
   });
 
