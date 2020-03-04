@@ -64,7 +64,10 @@
                 @if(!$images->isEmpty())
                     @foreach($images as $image)
                         <div class="square">
-                            <a data-rel="lightcase:myCollection" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
+                            {{-- <a data-rel="lightcase:myCollection" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
+                                <img class="" src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
+                            </a> --}}
+                            <a data-toggle="lightbox" data-gallery="products" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
                                 <img class="" src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
                             </a>
                         </div>
