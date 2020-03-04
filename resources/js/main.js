@@ -8,7 +8,7 @@ $(document).ready(function () {
             maxWidth: 1500,
             maxHeight: 1500,
             showSequenceInfo: false,
-            closeOnOnverlayClick: false,
+            closeOnOverlayClick: false,
             transition: 'elastic',
             cssTransitions: true,
             speedIn: 250,
