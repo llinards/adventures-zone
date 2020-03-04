@@ -6,7 +6,13 @@ $(document).ready(function () {
             swipe: true,
             useKeys: true,
             maxWidth: 1500,
-            maxHeight: 1500
+            maxHeight: 1500,
+            showSequenceInfo: false,
+            closeOnOnverlayClick: false,
+            transition: 'elastic',
+            cssTransitions: true,
+            speedIn: 250,
+            speedOut: 250
         });
     });
 
