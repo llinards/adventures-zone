@@ -44,6 +44,10 @@
     padding-top: 1rem;
     margin-bottom: 1rem;
 
+    .container {
+        position: relative;
+    }
+
     .row.gallery {
         margin-left: 8rem;
         margin-right: 8rem;
@@ -111,9 +115,9 @@ a[class*=lightcase-icon-].lightcase-icon-prev {
 .square {
     position: relative;
     overflow: hidden;
-    width: 250px;
-    height: 250px;
-    padding: 0.25rem;
+    width: 200px;
+    height: 200px;
+    padding: 0.125rem;
 
     img {
         width: 100%;
@@ -121,7 +125,7 @@ a[class*=lightcase-icon-].lightcase-icon-prev {
         object-fit: cover;
 
     }
- }
+}
 
 #attractions#product-page {
     background: none;

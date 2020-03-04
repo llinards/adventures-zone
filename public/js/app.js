@@ -39382,6 +39382,43 @@ $(document).ready(function () {
     // instead of a settings object
     ]
   });
+  $('.product-gallery').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    swipeToSlide: true,
+    arrows: true,
+    nextArrow: $('.next'),
+    prevArrow: $('.prev'),
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        swipeToSlide: true,
+        infinite: true,
+        arrows: true,
+        dots: false
+      }
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        arrows: true,
+        swipeToSlide: true
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        arrows: true,
+        swipeToSlide: true
+      }
+    } // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });
 });
 
 /***/ }),

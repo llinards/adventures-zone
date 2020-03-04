@@ -58,7 +58,9 @@
     </section> --}}
     <section id="gallery">
         <div class="container">
-            <div class="row d-flex flex-wrap justify-content-center">
+            {{-- <div class="row d-flex flex-wrap justify-content-center"> --}}
+                <div class="slick-arrow prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="product-gallery mx-3">
                 @if(!$images->isEmpty())
                     @foreach($images as $image)
                         <div class="square">
@@ -71,7 +73,8 @@
                 @else
                     <p>No pictures found!</p>
                 @endif
-               
+                </div>
+                <div class="slick-arrow next"><i class="fas fa-chevron-right"></i></div>
             </div>
         </div>
     </section>
