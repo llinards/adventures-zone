@@ -54,6 +54,12 @@
     }
 }
 
+.ekko-lightbox-nav-overlay a span,
+.ekko-lightbox-nav-overlay a:last-child span {
+    color: $menu-bg-color;
+    font-size: 3rem;
+}
+
 #description {
     background: -webkit-gradient(linear, left top, left bottom, from(#20abe2), color-stop(75%, rgba(255, 255, 255, 1)));
     background: -o-linear-gradient(top, #20abe2 0%, rgba(255, 255, 255, 1) 75%);
