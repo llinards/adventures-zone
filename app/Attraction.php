@@ -13,5 +13,4 @@ class Attraction extends Model
     public function getRouteKeyName() {
         return 'attraction_slug';
     }
-    
 }

@@ -1,13 +1,14 @@
 @extends('layouts.product-page', ['parameters' => $attraction])
 
 @section('content')
+    {{-- header --}}
     <header id="party">
         <img 
             class="header-img" 
             src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$attraction['header_photo_url']}}" 
             alt="{{$attraction['name']}}">
         @include('inc.navbar', ['product_page' => true])
-        {{-- header --}}
+      
         <div class="container-fluid az-title product-page-title">
             <div class="row">
                 <h1 class="az-title-second product-page-title text-uppercase text-light text-center">
@@ -23,8 +24,8 @@
               <img src="/storage/img/arrow-down.png" alt="arrow-down" class="">
             </a>
           </div>
-          {{-- end of header --}}
     </header>
+    {{-- end of header --}}
     {{-- product description --}}
     <section id="description">
         <div class="container">
@@ -37,7 +38,7 @@
     {{-- gallery --}}
     <section id="gallery">
         <div class="container">
-                <div class="slick-arrow prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="slick-arrow prevGallery"><i class="fas fa-chevron-left"></i></div>
                 <div class="product-gallery mx-3">
                 @if(!$images->isEmpty())
                     @foreach($images as $image)
@@ -52,7 +53,7 @@
                     <p>No pictures found!</p>
                 @endif
                 </div>
-                <div class="slick-arrow next"><i class="fas fa-chevron-right"></i></div>
+                <div class="slick-arrow nextGallery"><i class="fas fa-chevron-right"></i></div>
             </div>
         </div>
     </section>

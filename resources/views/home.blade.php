@@ -24,6 +24,35 @@
         {{-- end of header --}}
     </header>
     @include('inc.attractions', ['attractions' => $attractions])
+    {{-- xs zone section --}}
+    <section id="xs-zone" class="section-cards">
+      <div class="section-title-bar">
+        <h1 class="text-white text-center">XS zona</h1>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-12 px-0">
+                  <img class="img-fluid" src="storage/img/attractions/xs-zona/header.jpg" alt="ballītes">
+              </div>
+              <a href="{{app()->getLocale()}}/ballites" class="col-md-8 section-card-desc">
+                <p class="text-white text-center">
+                    @if(app()->getLocale() == 'en')
+                    Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                    @elseif(app()->getLocale() == 'ru')
+                    Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                    @else
+                    Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                    @endif
+                </p>
+              </a>
+              <a href="{{app()->getLocale()}}/xs-zona" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+                  <h5 class="text-white">uzzināt vairāk</h5>
+                  <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
+              </a>
+          </div>
+      </div>
+    </section>
+    {{-- end of xs zone section --}}
     {{-- party section --}}
     <section id="party" class="section-cards">
         <div class="section-title-bar">

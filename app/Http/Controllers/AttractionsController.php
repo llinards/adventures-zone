@@ -36,7 +36,7 @@ class AttractionsController extends Controller
         ];
 
         $attraction_id = $attraction['id'];
-        $attractions = Attraction::whereNotIn('id', array($attraction_id,'8','9','10'))->get();
+        $attractions = Attraction::whereNotIn('id', array($attraction_id,'6','8','9','10'))->get();
         $images = DB::table('images')->select('photo_url')->where('attraction_id', $attraction_id)->get();
         return view('product-page', compact('attraction', 'attractions', 'images'));
     }

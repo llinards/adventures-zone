@@ -31,22 +31,28 @@
 }
 
 .slick-arrow.next,
-.slick-arrow.prev {
+.slick-arrow.nextGallery,
+.slick-arrow.prev,
+.slick-arrow.prevGallery {
     position: absolute;
     top: 40%;
 }
 
 .slick-arrow.next:hover,
-.slick-arrow.prev:hover {
+.slick-arrow.nextGallery:hover,
+.slick-arrow.prev:hover,
+.slick-arrow.prevGallery:hover {
     cursor: pointer;
 }
 
 
-.slick-arrow.prev {
+.slick-arrow.prev,
+.slick-arrow.prevGallery {
     left: 0;
 }
 
-.slick-arrow.next {
+.slick-arrow.next,
+.slick-arrow.nextGallery {
     right: 0;
 }
 

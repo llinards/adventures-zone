@@ -11,7 +11,7 @@
     @if(!empty($product_page))
     <div id="left" class="product-page az-menubar d-flex justify-content-end align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#attractions">{{__('atrakcijas')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/#attractions">atrakcijas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="/#party">{{__('ballites')}}</a>
@@ -22,7 +22,7 @@
       @else
     <div id="left" class="az-menubar d-flex justify-content-end align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#attractions">{{__('atrakcijas')}}</a>
+        <a class="nav-link text-white text-uppercase" href="#attractions">atrakcijas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>

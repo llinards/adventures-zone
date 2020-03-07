@@ -40134,8 +40134,8 @@ $(document).ready(function () {
     slidesToShow: 4,
     swipeToSlide: true,
     arrows: true,
-    nextArrow: $('.next'),
-    prevArrow: $('.prev'),
+    nextArrow: $('.nextGallery'),
+    prevArrow: $('.prevGallery'),
     responsive: [{
       breakpoint: 1024,
       settings: {
