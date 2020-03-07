@@ -37,11 +37,11 @@
               <a href="{{app()->getLocale()}}/ballites" class="col-md-8 section-card-desc">
                 <p class="text-white text-center">
                     @if(app()->getLocale() == 'en')
-                    Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                    Mēs saprotam, ka dažādu vecuma bērniem ir gan dažādas intereses, gan arī prasības pret laukuma drošību. Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu.
                     @elseif(app()->getLocale() == 'ru')
-                    Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                    Mēs saprotam, ka dažādu vecuma bērniem ir gan dažādas intereses, gan arī prasības pret laukuma drošību. Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu. 
                     @else
-                    Dzimšanas dienas, vārda dienas, izlaidums un citi atzīmēšanas vērti notikumi  – svini svētku ballīti pie mums! Mēs iznomājam divas neparastas, īpaši noformētas ballīšu telpas ar ietilpību līdz pat 15 personām. 
+                    Mēs saprotam, ka dažādu vecuma bērniem ir gan dažādas intereses, gan arī prasības pret laukuma drošību. Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu. 
                     @endif
                 </p>
               </a>
