@@ -35,38 +35,13 @@
     </section>
     {{-- end of product description --}}
     {{-- gallery --}}
-    {{-- <section id="gallery">
-        <div class="container">
-            <div class="row gallery">
-                <div class="grid">
-                    @if(!$images->isEmpty())
-                        @foreach($images as $image)
-                            <div class="item photo">
-                                <div class="content">
-                                    <a data-rel="lightcase:myCollection" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
-                                        <img class="img-fluid" src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
-                                    </a>
-                                </div>
-                            </div>
-                        @endforeach
-                    @else
-                        <p>No pictures found!</p>
-                    @endif
-                </div>
-            </div>
-        </div>
-    </section> --}}
     <section id="gallery">
         <div class="container">
-            {{-- <div class="row d-flex flex-wrap justify-content-center"> --}}
                 <div class="slick-arrow prev"><i class="fas fa-chevron-left"></i></div>
                 <div class="product-gallery mx-3">
                 @if(!$images->isEmpty())
                     @foreach($images as $image)
                         <div class="square">
-                            {{-- <a data-rel="lightcase:myCollection" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
-                                <img class="" src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
-                            </a> --}}
                             <a data-toggle="lightbox" data-gallery="products" href="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
                                 <img class="" src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$image->photo_url}}">
                             </a>

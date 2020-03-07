@@ -1,27 +1,5 @@
 $(document).ready(function () {
 
-    // jQuery(document).ready(function ($) {
-    //     $('a[data-rel^=lightcase]').lightcase({
-    //         slideshowAutoStart: false,
-    //         swipe: true,
-    //         useKeys: true,
-    //         maxWidth: 1500,
-    //         maxHeight: 1500,
-    //         showSequenceInfo: false,
-    //         closeOnOverlayClick: false,
-    //         transition: 'elastic',
-    //         cssTransitions: true,
-    //         speedIn: 250,
-    //         speedOut: 250
-    //     });
-    // });
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox({
-            // alwaysShowClose: true
-        });
-    });
-
     (function ($) {
         $(document).on("ready", function () {
             var urlHash = window.location.href.split("#")[1];
@@ -86,10 +64,14 @@ $(document).ready(function () {
                     swipeToSlide: true,
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
+    });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({
+            // alwaysShowClose: true
+        });
     });
 
     $('.product-gallery').slick({
@@ -127,9 +109,6 @@ $(document).ready(function () {
                     swipeToSlide: true,
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 });
