@@ -15810,6 +15810,66 @@ video {
   border: none;
 }
 
+.modal.pricelist {
+  color: #fff;
+}
+
+.modal.pricelist .close {
+  text-shadow: none;
+  color: #fff;
+  opacity: 1;
+}
+
+#xsOneHour .modal-content {
+  background-image: url("/storage/img/modal-bg/blue.jpg");
+}
+
+#aOneHour .modal-content,
+#aOneHourFullDay .modal-content {
+  background-image: url("/storage/img/modal-bg/green.jpg");
+}
+
+#partyRoom .modal-content {
+  background-image: url("/storage/img/modal-bg/v.jpg");
+}
+
+#membershipThree .modal-content,
+#membershipFive .modal-content,
+#membershipTen .modal-content,
+#membershipKlusais .modal-content,
+#membershipAktivais .modal-content {
+  background-image: url("/storage/img/modal-bg/p.jpg");
+}
+
+#aOneHour .modal-content,
+#xsOneHour .modal-content,
+#aOneHourFullDay .modal-content,
+#partyRoom .modal-content,
+#membershipThree .modal-content,
+#membershipFive .modal-content,
+#membershipTen .modal-content,
+#membershipKlusais .modal-content,
+#membershipAktivais .modal-content {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#aOneHour .modal-body li::before,
+#xsOneHour .modal-body li::before,
+#aOneHourFullDay .modal-body li::before,
+#partyRoom .modal-body li::before,
+#membershipThree .modal-body li::before,
+#membershipFive .modal-body li::before,
+#membershipTen .modal-body li::before,
+#membershipKlusais .modal-body li::before,
+#membershipAktivais .modal-body li::before {
+  content: "\2022";
+  display: inline-block;
+  width: 1em;
+  color: #e91e79;
+}
+
 .buy-reserve-btns {
   margin-top: 1rem;
   max-width: 460px;

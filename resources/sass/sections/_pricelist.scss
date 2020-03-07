@@ -207,3 +207,67 @@
     color: #fff;
     border: none;
 }
+
+.modal.pricelist {
+    color: #fff;
+
+    .close {
+        text-shadow: none;
+        color: #fff;
+        opacity: 1;
+    }
+}
+
+#xsOneHour {
+    .modal-content {
+        background-image: url('/storage/img/modal-bg/blue.jpg');
+    }
+}
+
+#aOneHour,
+#aOneHourFullDay {
+    .modal-content {
+        background-image: url('/storage/img/modal-bg/green.jpg');
+    }
+}
+
+#partyRoom {
+    .modal-content {
+        background-image: url('/storage/img/modal-bg/v.jpg');
+    }
+}
+
+#membershipThree,
+#membershipFive,
+#membershipTen,
+#membershipKlusais,
+#membershipAktivais {
+    .modal-content {
+        background-image: url('/storage/img/modal-bg/p.jpg');
+    }
+}
+
+#aOneHour,
+#xsOneHour,
+#aOneHourFullDay,
+#partyRoom,
+#membershipThree,
+#membershipFive,
+#membershipTen,
+#membershipKlusais,
+#membershipAktivais {
+    .modal-content {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .modal-body {
+        li::before {
+            content: "•";
+            display: inline-block;
+            width: 1em;
+            color: $menu-bg-color;
+        }
+    }
+}
