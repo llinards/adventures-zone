@@ -10,9 +10,25 @@ footer {
     width: 100px;
 }
 
+.footer-righ {
+    position: relative;
+}
+
+.footer-address {
+    position: relative;
+    left: 30px;
+}
+
+.footer-address a {
+    color: #fff;
+}
 
 .soc-icon {
-    width: 150px;
+    width: 60px;
+}
+
+.working-hours {
+    padding-left: 8px;
 }
 
 .footer-bar {

@@ -1,8 +1,8 @@
 #attractions {
     padding-top: 1rem;
     background: rgb(233, 30, 121);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 30, 121, 1)), color-stop(50%, rgba(255, 255, 255, 1)));
     background: -o-linear-gradient(top, rgba(233, 30, 121, 1) 0%, rgba(255, 255, 255, 1) 50%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 30, 121, 1)), color-stop(50%, rgba(255, 255, 255, 1)));
     background: linear-gradient(180deg, rgba(233, 30, 121, 1) 0%, rgba(255, 255, 255, 1) 50%);
 
     .container {
@@ -23,25 +23,36 @@
 .attraction-title {
     background-color: $menu-bg-color;
     padding: 0.5rem;
+    height: 58px;
+
+    h4 {
+        font-size: 1.15rem;
+    }
 }
 
 .slick-arrow.next,
-.slick-arrow.prev {
+.slick-arrow.nextGallery,
+.slick-arrow.prev,
+.slick-arrow.prevGallery {
     position: absolute;
     top: 40%;
 }
 
 .slick-arrow.next:hover,
-.slick-arrow.prev:hover {
+.slick-arrow.nextGallery:hover,
+.slick-arrow.prev:hover,
+.slick-arrow.prevGallery:hover {
     cursor: pointer;
 }
 
 
-.slick-arrow.prev {
+.slick-arrow.prev,
+.slick-arrow.prevGallery {
     left: 0;
 }
 
-.slick-arrow.next {
+.slick-arrow.next,
+.slick-arrow.nextGallery {
     right: 0;
 }
 

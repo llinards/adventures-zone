@@ -1,5 +1,11 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Text:500,700&display=swap');
+@font-face {
+  font-family: 'Din2014';
+  src: url('assets/fonts/DIN2014ExtraBold.woff2') format('woff'), 
+       url('assets/fonts/DIN2014ExtraBold.woff') format('woff');
+}
 
 // Variables
 @import 'variables';
@@ -14,6 +20,9 @@
 @import 'assets/slick/slick';
 @import 'assets/slick/slick-theme';
 
+// Bootstrap lightbox
+@import 'assets/lightbox';
+
 // Main SCSS
 @import 'main';
 
@@ -22,6 +31,9 @@
 
 // Index page
 @import 'home';
+
+//Product page;
+@import 'product-page';
 
 // Media queries
 @import 'media-queries';

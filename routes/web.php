@@ -11,22 +11,16 @@
 |
 */
 
-
-// Auth::routes();
-
 Route::group([
   'prefix' => '{locale}',
   'where' => ['locale' => '[a-zA-Z]{2}'],
   'middleware' => 'setlocale'
 ], function() {
-
   Route::get('/', 'HomeController@index')->name('home');
+  Route::get('/{attraction}', 'AttractionsController@index')->name('showAttraction');
 });
 
-
-
-
-Auth::routes();
+// Auth::routes();
 
 Route::get('/', function() {
   return redirect(app()->getLocale());

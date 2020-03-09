@@ -23,21 +23,8 @@
     width: 60%;
 
     .section-title-bar {
-        clip-path:
-            polygon(0% 100%,
-                /* top left */
-                40px 0%,
-                /* top left */
-                100% 0%,
-                /* top right */
-                100% 100%,
-                /* top right */
-                0% 100%,
-                /* bottom left */
-                0 calc(100% - 40px)
-                /* bottom left */
-            );
-
+        -webkit-clip-path: $second-general-clip-path;
+        clip-path: $second-general-clip-path
     }
 }
 
@@ -46,6 +33,16 @@
     .section-title-bar {
         width: 100%;
     }
+}
+
+.second-lvl {
+    width: 100%;
+    max-width: 665px;
+}
+
+.left.second-lvl,
+.right.second-lvl {
+    width: 48%;
 }
 
 #xs.section-title-bar {
@@ -58,9 +55,47 @@
 }
 
 #membership.section-title-bar,
-.membership {
+.membership,
+#thirty-days.section-title-bar,
+#visit-count.section-title-bar {
     background-color: $membership-section-card;
 }
+
+#membership.section-title-bar {
+    margin-bottom: 0.5rem;
+}
+
+#visit-count.section-title-bar,
+#thirty-days.section-title-bar {
+    margin-bottom: 0.75rem;
+}
+
+#visit-count.section-title-bar,
+#thirty-days.section-title-bar {
+    -webkit-clip-path: $second-lvl-clip-path;
+    clip-path: $second-lvl-clip-path;
+}
+
+#azone.section-title-bar,
+#membership.section-title-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 6%;
+}
+
+#xs.section-title-bar,
+#party.section-title-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    padding-right: 10%;
+}
+
 
 .pricelist-card {
     max-width: 140px !important;
@@ -68,20 +103,34 @@
     padding: 0.5rem;
     position: relative;
     margin: 0.5rem;
-    // clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% 26px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 calc(100% - 20px))
+    -webkit-clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
     clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
+}
+
+.pricelist-card.small {
+    height: 30px !important;
+    max-width: 95% !important;
+    -webkit-clip-path: $third-lvl-clip-path;
+    clip-path: $third-lvl-clip-path;
 }
 
 .xs-zone {
     background-color: $section-title-bar;
 }
 
-.a-zone {
-    background-color: $menu-bg-color;
+.a-zone,
+#azone.section-title-bar {
+    background-color: $a-zone-pricelist;
 }
 
 .pricelist-title {
     font-weight: 400;
+}
+
+.party.pricelist-card {
+    .pricelist-title {
+        font-size: 1.3rem;
+    }
 }
 
 .price-number {
@@ -89,14 +138,17 @@
     font-weight: 700;
 }
 
+.second-lvl {
+    .price-number {
+        font-size: 1.5rem;
+    }
+}
+
 .pricelist-price>.fa-euro-sign {
     font-size: 1rem;
 }
 
 .pricelist-info {
-    // position: absolute;
-    // right: 1%;
-    // bottom: 1%;
     background-color: #ffffff;
     border-radius: 0;
     display: inline-block;
@@ -108,6 +160,11 @@
     clip-path: polygon(12px 56px, 45px 19px, 62.80% 64.26%);
 }
 
+.pricelist-info-small {
+    color: #fff;
+    font-size: 1rem;
+}
+
 .pricelist-info>.fa-info {
     color: #000000;
 }
@@ -117,7 +174,7 @@
 }
 
 .a-zone .pricelist-info i {
-    color: $menu-bg-color;
+    color: $a-zone-pricelist;
 }
 
 .party .pricelist-info i {
@@ -135,7 +192,6 @@
 .modal-content {
     border: none;
     border-radius: 0;
-    // clip-path: polygon(-8px -15px, -13px 131px, 508px 123px, 102.2% -10.35%);
 }
 
 .modal-header {
@@ -144,4 +200,88 @@
 
 .close {
     font-size: 2rem;
+}
+
+.alert-danger {
+    background-color: $menu-bg-color;
+    color: #fff;
+    border: none;
+}
+
+.modal.pricelist {
+    color: #fff;
+
+    .close {
+        text-shadow: none;
+        color: #fff;
+        opacity: 1;
+    }
+}
+
+#xsOneHour,
+#aOneHour,
+#aOneHourFullDay,
+#partyRoom,
+#membershipThree,
+#membershipFive,
+#membershipTen,
+#membershipKlusais,
+#membershipAktivais {
+    .modal-content {
+        background-image: url('/storage/img/modal-bg/modal-bg-min.png');
+    }
+}
+
+#xsOneHour {
+    .modal-content {
+        background-color: $product-page-menu-bg-color;
+    }
+}
+
+#aOneHour,
+#aOneHourFullDay {
+    .modal-content {
+        background-color: $a-zone-pricelist;
+    }
+}
+
+#partyRoom {
+    .modal-content {
+        background-color: $party-section-card;
+    }
+}
+
+#membershipThree,
+#membershipFive,
+#membershipTen,
+#membershipKlusais,
+#membershipAktivais {
+    .modal-content {
+        background-color: $membership-section-card;
+    }
+}
+
+#aOneHour,
+#xsOneHour,
+#aOneHourFullDay,
+#partyRoom,
+#membershipThree,
+#membershipFive,
+#membershipTen,
+#membershipKlusais,
+#membershipAktivais {
+    .modal-content {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .modal-body {
+        li::before {
+            content: "•";
+            display: inline-block;
+            width: 1em;
+            color: $menu-bg-color;
+        }
+    }
 }
