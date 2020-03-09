@@ -2,7 +2,7 @@
   <div class="row text-center">
     <div class="col-12">
       <a class="d-block buy-reserve-btns reserve mx-auto text-white" href="https://siguldaadventures.com/adventureszone">
-        pērc
+        pirkt
       </a>
     </div>
     {{-- <div class="col-12">
