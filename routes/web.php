@@ -20,7 +20,7 @@ Route::group([
   Route::get('/{attraction}', 'AttractionsController@index')->name('showAttraction');
 });
 
-// Auth::routes();
+Auth::routes();
 
 Route::get('/', function() {
   return redirect(app()->getLocale());
