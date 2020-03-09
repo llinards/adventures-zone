@@ -29,4 +29,5 @@ Route::get('/', function() {
 
 Route::middleware(['auth'])->group(function () {
   Route::get('/admin', 'AdminController@index')->name('adminHome');
+  Route::get('/admin/add', 'AdminController@create');
 });

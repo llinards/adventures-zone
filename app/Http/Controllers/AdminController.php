@@ -12,4 +12,8 @@ class AdminController extends Controller
         $attractions = DB::table('attractions')->get();
         return view('admin.index', compact('attractions'));
     }
+
+    public function create() {
+        return view('admin.add');
+    }
 }

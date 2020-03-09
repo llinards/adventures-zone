@@ -4,7 +4,8 @@
       @include('inc.status-messages')
       <div class="row">
         <div class="col-12">
-          <h3 class="pt-5 d-block">Visas atrakcijas</h3>
+          <h3 class="pt-5">Visas atrakcijas</h3>
+          <a href="/admin/add" class="btn btn-success mt-3">Jauna atrakcija</a>
           <ul class="list-group list-group-flush">
             @if (!$attractions->isEmpty())
               @foreach ($attractions as $attraction)
