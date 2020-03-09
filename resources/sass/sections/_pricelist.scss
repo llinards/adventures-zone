@@ -218,22 +218,36 @@
     }
 }
 
+#xsOneHour,
+#aOneHour,
+#aOneHourFullDay,
+#partyRoom,
+#membershipThree,
+#membershipFive,
+#membershipTen,
+#membershipKlusais,
+#membershipAktivais {
+    .modal-content {
+        background-image: url('/storage/img/modal-bg/modal-bg-min.png');
+    }
+}
+
 #xsOneHour {
     .modal-content {
-        background-image: url('/storage/img/modal-bg/blue.jpg');
+        background-color: $product-page-menu-bg-color;
     }
 }
 
 #aOneHour,
 #aOneHourFullDay {
     .modal-content {
-        background-image: url('/storage/img/modal-bg/green.jpg');
+        background-color: $a-zone-pricelist;
     }
 }
 
 #partyRoom {
     .modal-content {
-        background-image: url('/storage/img/modal-bg/v.jpg');
+        background-color: $party-section-card;
     }
 }
 
@@ -243,7 +257,7 @@
 #membershipKlusais,
 #membershipAktivais {
     .modal-content {
-        background-image: url('/storage/img/modal-bg/p.jpg');
+        background-color: $membership-section-card;
     }
 }
 

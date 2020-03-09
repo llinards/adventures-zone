@@ -37,11 +37,11 @@
               <a href="{{app()->getLocale()}}/ballites" class="col-md-8 section-card-desc">
                 <p class="text-white text-center">
                     @if(app()->getLocale() == 'en')
-                    Mēs saprotam, ka dažādu vecuma bērniem ir gan dažādas intereses, gan arī prasības pret laukuma drošību. Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu.
+                    Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu. Tas viss – neparastā un īpaši mīlīgā vidē, kas liek smaidīt.
                     @elseif(app()->getLocale() == 'ru')
-                    Mēs saprotam, ka dažādu vecuma bērniem ir gan dažādas intereses, gan arī prasības pret laukuma drošību. Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu. 
+                    Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu. Tas viss – neparastā un īpaši mīlīgā vidē, kas liek smaidīt.
                     @else
-                    Mēs saprotam, ka dažādu vecuma bērniem ir gan dažādas intereses, gan arī prasības pret laukuma drošību. Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu. 
+                    Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu. Tas viss – neparastā un īpaši mīlīgā vidē, kas liek smaidīt.
                     @endif
                 </p>
               </a>

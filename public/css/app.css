@@ -15826,17 +15826,29 @@ video {
   opacity: 1;
 }
 
+#xsOneHour .modal-content,
+#aOneHour .modal-content,
+#aOneHourFullDay .modal-content,
+#partyRoom .modal-content,
+#membershipThree .modal-content,
+#membershipFive .modal-content,
+#membershipTen .modal-content,
+#membershipKlusais .modal-content,
+#membershipAktivais .modal-content {
+  background-image: url("/storage/img/modal-bg/modal-bg-min.png");
+}
+
 #xsOneHour .modal-content {
-  background-image: url("/storage/img/modal-bg/blue.jpg");
+  background-color: #20abe2;
 }
 
 #aOneHour .modal-content,
 #aOneHourFullDay .modal-content {
-  background-image: url("/storage/img/modal-bg/green.jpg");
+  background-color: #5cd823;
 }
 
 #partyRoom .modal-content {
-  background-image: url("/storage/img/modal-bg/v.jpg");
+  background-color: #662d85;
 }
 
 #membershipThree .modal-content,
@@ -15844,7 +15856,7 @@ video {
 #membershipTen .modal-content,
 #membershipKlusais .modal-content,
 #membershipAktivais .modal-content {
-  background-image: url("/storage/img/modal-bg/p.jpg");
+  background-color: #808080;
 }
 
 #aOneHour .modal-content,
