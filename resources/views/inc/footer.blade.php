@@ -33,7 +33,8 @@
         </div>
         <div class="working-hours">
           <h5 class="text-white text-uppercase">Darba laiks:</h5>
-          <h5 class="text-white">Katru dienu: <span class="text-uppercase font-weight-bold">10:00 - 22:00</span></h5>
+          {{-- <h5 class="text-white">Katru dienu: <span class="text-uppercase font-weight-bold">10:00 - 22:00</span></h5> --}}
+          <p class="text-white">Pamatojoties uz šī brīža situāciju valstī, <br />no 15.03.2020 piedzīvojumu parks SLĒGTS uz nenoteiktu laiku!</span></p>
         </div>
       </div>
     </div>
