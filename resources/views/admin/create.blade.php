@@ -33,6 +33,12 @@
             <small class="form-text text-muted">Bildes stūris tiks automātiski apgriezts</small>
             <div class="text-danger">{{ $errors->first('attraction-cover-img') }}</div>
          </div>
+          <div class="form-group">
+            <label for="attraction-header-img" class="col-form-label">Atrakcijas titlulbilde</label>
+            <input type="file" class="form-control-file" name="attraction-header-img" id="attraction-header-img">
+            <small class="form-text text-muted">Bildes izmēram jābūt pēc iespējas mazākam!</small>
+            <div class="text-danger">{{ $errors->first('attraction-header-img') }}</div>
+          </div>
           <button class="btn btn-success" type="submit">Pievienot</button>
         </form>
       </div>

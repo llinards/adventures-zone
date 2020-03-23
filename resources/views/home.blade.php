@@ -74,7 +74,7 @@
                       @endif
                   </p>
                 </a>
-                <a href="{{app()->getLocale()}}/ballites" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+                <a href="/ballites" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
                     <h5 class="text-white">uzzināt vairāk</h5>
                     <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
                 </a>

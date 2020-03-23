@@ -25,7 +25,8 @@ class AdminController extends Controller
             'attraction-lv' => 'required',
             'attraction-eng' => 'required', 
             'attraction-rus' => 'required',
-            'attraction-cover-img' => '',
+            'attraction-cover-img' => 'required|image',
+            'attraction-header-img' => 'required|image',
         ]);
         try {
             $newAttraction = new Attraction();
@@ -33,11 +34,14 @@ class AdminController extends Controller
             $newAttraction->name_eng = $data['attraction-eng'];
             $newAttraction->name_rus = $data['attraction-rus'];
             $attractionSlug = $newAttraction->attraction_slug = Str::slug($data['attraction-lv'], '-');
+            
             Storage::makeDirectory('public/img/attractions/' . $attractionSlug);
+            $attractionsPath = 'img/attractions/' . $attractionSlug;
 
-            // Temporary
-            $newAttraction->cover_photo_url = 'img-min.jpg';
-            $newAttraction->header_photo_url = 'header.jpg';
+            $coverImagePath = request('attraction-cover-img')->store($attractionsPath,'public');
+            $newAttraction->cover_photo_url = $coverImagePath;
+            $headerImagePath = request('attraction-header-img')->store($attractionsPath,'public');
+            $newAttraction->header_photo_url = $headerImagePath;
 
             $newAttraction->description_lat = 'nothing';
             $newAttraction->description_rus = 'nothing';
