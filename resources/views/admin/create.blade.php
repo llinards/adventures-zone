@@ -39,6 +39,26 @@
             <small class="form-text text-muted">Bildes izmēram jābūt pēc iespējas mazākam!</small>
             <div class="text-danger">{{ $errors->first('attraction-header-img') }}</div>
           </div>
+          <div class="form-group">
+            <label for="description-lat">Apraksts LV</label>
+            <textarea class="form-control" id="description-area-lv" name="description-lat"></textarea>
+            <div class="text-danger">{{ $errors->first('description-lv') }}</div>
+          </div>
+          <div class="form-group">
+            <label for="description-eng">Apraksts ENG</label>
+            <textarea class="form-control" id="description-area-eng" name="description-eng"></textarea>
+            <div class="text-danger">{{ $errors->first('description-eng') }}</div>
+          </div>
+          <div class="form-group">
+            <label for="description-rus">Apraksts RUS</label>
+            <textarea class="form-control" id="description-area-rus" name="description-rus"></textarea>
+            <div class="text-danger">{{ $errors->first('description-rus') }}</div>
+          </div>
+          <div class="form-group">
+            <label for="meta-description-lat">SEO apraksts</label>
+            <textarea class="form-control" name="meta-description-lat" id="meta-description-lat" rows="2"></textarea>
+            <div class="text-danger">{{ $errors->first('meta-description-lat') }}</div>
+          </div>
           <button class="btn btn-success" type="submit">Pievienot</button>
         </form>
       </div>

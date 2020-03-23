@@ -27,6 +27,10 @@ class AdminController extends Controller
             'attraction-rus' => 'required',
             'attraction-cover-img' => 'required|image',
             'attraction-header-img' => 'required|image',
+            'meta-description-lat' => 'required',
+            'description-lat' => 'required',
+            'description-rus' => 'required',
+            'description-eng' => 'required',
         ]);
         try {
             $newAttraction = new Attraction();
@@ -43,13 +47,13 @@ class AdminController extends Controller
             $headerImagePath = request('attraction-header-img')->store($attractionsPath,'public');
             $newAttraction->header_photo_url = $headerImagePath;
 
-            $newAttraction->description_lat = 'nothing';
-            $newAttraction->description_rus = 'nothing';
-            $newAttraction->description_eng = 'nothing';
+            $newAttraction->description_lat = $data['description-lat'];
+            $newAttraction->description_rus = $data['description-rus'];
+            $newAttraction->description_eng = $data['description-eng'];
 
-            $newAttraction->meta_description_lat = 'nothing';
-            $newAttraction->meta_description_rus = 'nothing';
-            $newAttraction->meta_description_eng = 'nothing';
+            $newAttraction->meta_description_lat = $data['meta-description-lat'];
+            $newAttraction->meta_description_rus = '';
+            $newAttraction->meta_description_eng = '';
 
 
             $newAttraction->save();

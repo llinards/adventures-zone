@@ -9,6 +9,7 @@
         Administrācijas panelis | AZ
     </title>
     <!-- Scripts -->
+
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -43,5 +44,15 @@
     </div>
   </nav>
     @yield('content')
+    <script src="https://cdn.ckeditor.com/4.14.0/basic/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('description-area-lv',{
+          language: 'lv',
+        });
+        CKEDITOR.replace('description-area-eng',{
+          language: 'en',
+        });
+        CKEDITOR.replace('description-area-rus');
+    </script>
 </body>
 </html>
