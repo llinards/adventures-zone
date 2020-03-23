@@ -34,7 +34,7 @@
               <div class="col-12 px-0">
                   <img class="img-fluid" src="storage/img/attractions/xs-zona/header.jpg" alt="ballītes">
               </div>
-              <a href="{{app()->getLocale()}}/ballites" class="col-md-8 section-card-desc">
+              <a href="/ballites" class="col-md-8 section-card-desc">
                 <p class="text-white text-center">
                     @if(app()->getLocale() == 'en')
                     Pašiem mazākajiem apmeklētājiem esam sarūpējuši atsevišķu zonu ar bumbu baseinu, vēja plūsmām un slidkalniņu. Tas viss – neparastā un īpaši mīlīgā vidē, kas liek smaidīt.
@@ -45,7 +45,7 @@
                     @endif
                 </p>
               </a>
-              <a href="{{app()->getLocale()}}/xs-zona" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+              <a href="/xs-zona" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
                   <h5 class="text-white">uzzināt vairāk</h5>
                   <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
               </a>
@@ -92,7 +92,7 @@
             <div class="col-12 px-0">
               <img class="img-fluid" src="storage/img/attractions/kafejnica/header.jpg" alt="kafejnīca">
             </div>
-            <a href="{{app()->getLocale()}}/kafejnica" class="col-md-8 section-card-desc">
+            <a href="/kafejnica" class="col-md-8 section-card-desc">
               <p class="text-white text-center">
                   @if(app()->getLocale() == 'en')
                   Esam padomājuši arī pat tiem vecākiem, kuri savas atvases gaidīs malā, tāpēc mums ir mūsdienīga un komfortabla kafejnīca. Mēs esam pārliecināti dabīga un veselīga uztura piekritēji, tāpēc piedāvājam tikai augstākās kvalitātes produktus.
@@ -103,7 +103,7 @@
                   @endif
               </p>
             </a>
-            <a href="{{app()->getLocale()}}/kafejnica" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+            <a href="/kafejnica" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
               <h5 class="text-white">uzzināt vairāk</h5>
               <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
             </a>
@@ -121,7 +121,7 @@
             <div class="col-12 px-0">
               <img class="img-fluid" src="storage/img/attractions/vertibas/header.jpg" alt="vērtības">
             </div>
-            <a href="{{app()->getLocale()}}/vertibas" class="col-md-8 section-card-desc">
+            <a href="/vertibas" class="col-md-8 section-card-desc">
               <p class="text-white text-center">
                   @if(app()->getLocale() == 'en')
                   ADVENTURES' ZONE ir viens no kvalitatīvākajiem un inovatīvākajiem bērnu rotaļu laukumiem pasaulē. Mūsu komanda ir piedalījusies neskaitāmu atrakciju parku, tai skaitā jaunākās Disnejlendas, būvniecībā visā pasaulē. 
@@ -132,7 +132,7 @@
                   @endif
               </p>
             </a>
-            <a href="{{app()->getLocale()}}/vertibas" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+            <a href="/vertibas" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
               <h5 class="text-white">uzzināt vairāk</h5>
               <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
             </a>

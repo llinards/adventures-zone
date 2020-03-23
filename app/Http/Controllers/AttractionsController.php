@@ -4,14 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App;
 use App\Attraction;
 use App\Image;
 
 class AttractionsController extends Controller
 {
-    public function index($locale, $attraction) {
-        $attractionInfo = DB::table('attractions')->select('id','name_lat','name_rus','name_eng','attraction_slug','header_photo_url','description_lat','description_rus','description_eng','meta_description_lat','meta_description_rus','meta_description_eng')->where('attraction_slug', $attraction)->get();
+    public function index($attraction) {
         
+        $attractionInfo = DB::table('attractions')->where('attraction_slug', $attraction)->get();
+        $locale = App::getLocale();
         if($locale == 'en') {
             $attractionName = $attractionInfo[0]->name_eng;
             $attractionDescription = $attractionInfo[0]->description_eng;
@@ -37,7 +39,7 @@ class AttractionsController extends Controller
 
         $attraction_id = $attraction['id'];
         $attractions = Attraction::whereNotIn('id', array($attraction_id,'6','8','9','10'))->get();
-        $images = DB::table('images')->select('photo_url')->where('attraction_id', $attraction_id)->get();
+        $images = DB::table('images')->where('attraction_id', $attraction_id)->get();
         return view('product-page', compact('attraction', 'attractions', 'images'));
     }
 }
