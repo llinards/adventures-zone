@@ -18,7 +18,7 @@
             @if(!empty($product_page))
             <a href="{{$attraction->attraction_slug}}">
             @else
-            <a href="{{app()->getLocale() }}/{{$attraction->attraction_slug}}">
+            <a href="/{{$attraction->attraction_slug}}">
             @endif
               @if(app()->getLocale() == 'en')
                 <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_eng}}">

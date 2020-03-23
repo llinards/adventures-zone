@@ -13,10 +13,11 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/{attraction}', 'AttractionsController@index')->name('showAttraction');
-
 Route::middleware(['auth'])->group(function () {
-  Route::get('/admin', 'AdminController@index')->name('adminHome');
-  Route::get('/admin/add', 'AdminController@create');
+  Route::get('/admin', 'AdminController@index');
+  Route::get('/admin/create', 'AdminController@create');
 });
+
+Route::get('/', 'HomeController@index');
+Route::get('/{attraction}', 'AttractionsController@index');
+

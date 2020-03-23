@@ -11,7 +11,6 @@ use App\Image;
 class AttractionsController extends Controller
 {
     public function index($attraction) {
-        
         $attractionInfo = DB::table('attractions')->where('attraction_slug', $attraction)->get();
         $locale = App::getLocale();
         if($locale == 'en') {
