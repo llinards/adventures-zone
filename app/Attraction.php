@@ -19,6 +19,7 @@ class Attraction extends Model
     public function scopeActive($query) {
         return $query->where('enabled', true);
     }
+    
     public function scopeFirstpage($query) {
         return $query->whereNotIn('id', array('6','8','9','10'));
     }

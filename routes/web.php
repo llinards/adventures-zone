@@ -11,13 +11,17 @@
 |
 */
 
-Auth::routes();
+Auth::routes([
+  'register' => true,
+  'reset' => false
+]);
+
+Route::get('/', 'HomeController@index');
+// Route::get('/attractions/{attraction}', 'AttractionsController@index');
 
 Route::middleware(['auth'])->group(function () {
   Route::get('/admin', 'AdminController@index');
   Route::get('/admin/create', 'AdminController@create');
+  Route::post('/admin', 'AdminController@store');
 });
-
-Route::get('/', 'HomeController@index');
-Route::get('/{attraction}', 'AttractionsController@index');
 
