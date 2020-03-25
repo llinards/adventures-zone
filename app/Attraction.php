@@ -23,4 +23,8 @@ class Attraction extends Model
     public function scopeFirstpage($query) {
         return $query->whereNotIn('id', array('6','8','9','10'));
     }
+
+    public function scopeAttraction($query, $id) {
+        return $query->where('attraction_slug', $id);
+    }
 }

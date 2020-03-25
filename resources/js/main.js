@@ -111,4 +111,10 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $(document).on('click', '.deleteCategory', function () {
+        var categoryId = $(this).attr('data-categoryid');
+        $('#modelToDeleteId').val(categoryId);
+        $('#deleteModal').modal('show');
+    });
 });

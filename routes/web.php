@@ -17,13 +17,14 @@ Auth::routes([
 ]);
 
 Route::middleware(['auth'])->group(function () {
-  Route::get('/admin', 'AdminController@index');
-  Route::get('/admin/create', 'AdminController@create');
-  Route::post('/admin', 'AdminController@store');
+  Route::get('/admin', 'AttractionsController@index');
+  Route::get('/admin/create', 'AttractionsController@create');
+  Route::post('/admin', 'AttractionsController@store');
+  Route::delete('/admin/delete', 'AttractionsController@destroy');
 });
 
 Route::get('/', 'HomeController@index');
-Route::get('/{attraction}', 'AttractionsController@index');
+Route::get('/{attraction}', 'ProductsController@index');
 
 
 

@@ -20,9 +20,10 @@
                     @endif
                   </span>
                 </div>
+                @include('admin.attractions.delete-modal')
                 <div class="attraction-actions">
                   <a href="/admin/{{ $attraction->attraction_slug }}/edit" class="btn btn-secondary">Rediģēt</a>
-                  <a href="#" class="btn btn-danger">Dzēst</a>
+                  <button class="btn btn-danger deleteCategory" data-toggle="modal" data-categoryid="{{ $attraction->id }}">Dzēst</button>
                 </div>
               </li>
               @endforeach
