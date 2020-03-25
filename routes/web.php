@@ -20,7 +20,10 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/admin', 'AttractionsController@index');
   Route::get('/admin/create', 'AttractionsController@create');
   Route::post('/admin', 'AttractionsController@store');
+  Route::get('/admin/{attraction}/edit', 'AttractionsController@edit');
+  Route::patch('/admin/{attraction}', 'AttractionsController@update');
   Route::delete('/admin/delete', 'AttractionsController@destroy');
+
 });
 
 Route::get('/', 'HomeController@index');

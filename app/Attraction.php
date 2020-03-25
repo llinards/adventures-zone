@@ -27,4 +27,12 @@ class Attraction extends Model
     public function scopeAttraction($query, $id) {
         return $query->where('attraction_slug', $id);
     }
+
+    public function activeOptions()
+    {
+        return [
+            1 => 'Aktivizēts',
+            0 => 'Deaktivizēts',
+        ];
+    }
 }
