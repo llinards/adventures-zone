@@ -11,22 +11,23 @@
 |
 */
 
-Route::group([
-  'prefix' => '{locale}',
-  'where' => ['locale' => '[a-zA-Z]{2}'],
-  'middleware' => 'setlocale'
-], function() {
-  Route::get('/', 'HomeController@index')->name('home');
-  Route::get('/{attraction}', 'AttractionsController@index')->name('showAttraction');
-});
-
-// Auth::routes();
-
-Route::get('/', function() {
-  return redirect(app()->getLocale());
-});
-
+Auth::routes([
+  'register' => true,
+  'reset' => false
+]);
 
 Route::middleware(['auth'])->group(function () {
-  Route::get('/admin', 'AdminController@index')->name('adminHome');
+  Route::get('/admin', 'AttractionsController@index');
+  Route::get('/admin/create', 'AttractionsController@create');
+  Route::post('/admin', 'AttractionsController@store');
+  Route::get('/admin/{attraction}/edit', 'AttractionsController@edit');
+  Route::patch('/admin/{attraction}', 'AttractionsController@update');
+  Route::delete('/admin/delete', 'AttractionsController@destroy');
+
 });
+
+Route::get('/', 'HomeController@index');
+Route::get('/{attraction}', 'ProductsController@index');
+
+
+

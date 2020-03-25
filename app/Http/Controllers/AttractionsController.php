@@ -3,41 +3,128 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Filesystem\Filesystem;
 use DB;
+use File;
 use App\Attraction;
-use App\Image;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class AttractionsController extends Controller
 {
-    public function index($locale, $attraction) {
-        $attractionInfo = DB::table('attractions')->select('id','name_lat','name_rus','name_eng','attraction_slug','header_photo_url','description_lat','description_rus','description_eng','meta_description_lat','meta_description_rus','meta_description_eng')->where('attraction_slug', $attraction)->get();
-        
-        if($locale == 'en') {
-            $attractionName = $attractionInfo[0]->name_eng;
-            $attractionDescription = $attractionInfo[0]->description_eng;
-            $attractionMetaDescription = $attractionInfo[0]->meta_description_eng;
-        } else if ($locale == 'rus') {
-            $attractionName = $attractionInfo[0]->name_rus;
-            $attractionDescription = $attractionInfo[0]->description_rus;
-            $attractionMetaDescription = $attractionInfo[0]->meta_description_rus;
-        } else {
-            $attractionName = $attractionInfo[0]->name_lat;
-            $attractionDescription = $attractionInfo[0]->description_lat;
-            $attractionMetaDescription = $attractionInfo[0]->meta_description_lat;
+    public function index() {
+        $attractions = Attraction::firstpage()->get();
+        return view('admin.attractions.index', compact('attractions'));
+    }
+
+    public function create() {
+        return view('admin.attractions.create');
+    }
+
+    public function store() {
+        $data = request()->validate([
+            'attraction-lv' => 'required',
+            'attraction-eng' => 'required', 
+            'attraction-rus' => 'required',
+            'attraction-cover-img' => 'file|image|max:1500',
+            'attraction-header-img' => 'file|image|max:1500',
+            'meta-description-lat' => 'required',
+            'description-lat' => 'required',
+            'description-rus' => 'required',
+            'description-eng' => 'required',
+        ]);
+        try {
+            $newAttraction = new Attraction();
+            $newAttraction->name_lat = $data['attraction-lv'];
+            $newAttraction->name_eng = $data['attraction-eng'];
+            $newAttraction->name_rus = $data['attraction-rus'];
+            $attractionSlug = $newAttraction->attraction_slug = Str::slug($data['attraction-lv'], '-');
+            
+            Storage::makeDirectory('public/img/attractions/' . $attractionSlug);
+            $attractionsPath = 'img/attractions/' . $attractionSlug;
+
+            $coverImagePath = request('attraction-cover-img')->store($attractionsPath,'public');
+            $newAttraction->cover_photo_url = $coverImagePath;
+            
+            $headerImagePath = request('attraction-header-img')->store($attractionsPath,'public');
+            $newAttraction->header_photo_url = $headerImagePath;
+
+            $newAttraction->description_lat = $data['description-lat'];
+            $newAttraction->description_rus = $data['description-rus'];
+            $newAttraction->description_eng = $data['description-eng'];
+
+            $newAttraction->meta_description_lat = $data['meta-description-lat'];
+            $newAttraction->meta_description_rus = '';
+            $newAttraction->meta_description_eng = '';
+
+            $newAttraction->save();
+            return redirect('/admin')->with('success', 'Atrakcija pievienota!');
+        } catch (\Exception $e) {
+            return redirect('/admin')->with('error', 'Kļūda!');
+            // return redirect('/admin')->with('error', $e);
         }
+    }
 
-        $attraction = [
-            'id' => $attractionInfo[0]->id,
-            'name' => $attractionName,
-            'attraction_slug' => $attractionInfo[0]->attraction_slug,
-            'header_photo_url' => $attractionInfo[0]->header_photo_url,
-            'description' => $attractionDescription,
-            'meta_description' => $attractionMetaDescription
-        ];
+    public function edit(Attraction $attraction) {
+        return view('admin.attractions.edit', compact('attraction'));
+    }
 
-        $attraction_id = $attraction['id'];
-        $attractions = Attraction::whereNotIn('id', array($attraction_id,'6','8','9','10'))->get();
-        $images = DB::table('images')->select('photo_url')->where('attraction_id', $attraction_id)->get();
-        return view('product-page', compact('attraction', 'attractions', 'images'));
+    public function update(Attraction $attraction) {
+        $data = request()->validate([
+            'active' => 'required',
+            'attraction-lv' => 'required',
+            'attraction-eng' => 'required', 
+            'attraction-rus' => 'required',
+            'attraction-cover-img' => 'file|image|max:1500',
+            'attraction-header-img' => 'file|image|max:1500',
+            'meta-description-lat' => 'required',
+            'description-lat' => 'required',
+            'description-rus' => 'required',
+            'description-eng' => 'required',
+        ]);
+        try {
+            $updateAttraction = Attraction::find($attraction->id);
+            $updateAttraction->enabled = $data['active'];
+            $updateAttraction->name_lat = $data['attraction-lv'];
+            $updateAttraction->name_eng = $data['attraction-eng'];
+            $updateAttraction->name_rus = $data['attraction-rus'];
+            $attractionSlug = $updateAttraction->attraction_slug;
+            $attractionsPath = 'img/attractions/' . $attractionSlug;
+
+            if(request('attraction-cover-img')) {
+                $coverImagePath = request('attraction-cover-img')->store($attractionsPath,'public');
+                $updateAttraction->cover_photo_url = $coverImagePath;
+            } 
+
+            if(request('attraction-header-img')) {
+                $headerImagePath = request('attraction-header-img')->store($attractionsPath,'public');
+                $updateAttraction->header_photo_url = $headerImagePath;
+            } 
+
+            $updateAttraction->description_lat = $data['description-lat'];
+            $updateAttraction->description_rus = $data['description-rus'];
+            $updateAttraction->description_eng = $data['description-eng'];
+
+            $updateAttraction->meta_description_lat = $data['meta-description-lat'];
+           
+            $updateAttraction->save();
+            return redirect('/admin')->with('success', 'Atrakcija atjaunota!');
+        } catch (\Exception $e) {
+            // return redirect('/admin')->with('error', 'Kļūda!');
+            return redirect('/admin')->with('error', $e);
+        }
+    }
+
+    public function destroy(Request $request) {
+        $attractionId = $request->input('category-id');
+        try {
+            $attraction = Attraction::find($attractionId);
+            $attractionSlug = $attraction->attraction_slug;
+            Storage::deleteDirectory('public/img/attractions/' . $attractionSlug);
+            Attraction::destroy($attractionId);
+            return redirect('/admin')->with('success', 'Atrakcija un tās bildes izdzēstas!');
+        } catch (\Exception $e) {
+            return redirect('/admin')->with('error', $e);
+        }
     }
 }

@@ -15,27 +15,19 @@
       @if (count($attractions) > 0)
         @foreach ($attractions as $attraction)
           <div class="attraction">
-            @if(!empty($product_page))
             <a href="{{$attraction->attraction_slug}}">
-            @else
-            <a href="{{app()->getLocale() }}/{{$attraction->attraction_slug}}">
-            @endif
-              @if(app()->getLocale() == 'en')
-                <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_eng}}">
+                <img class="attraction-img img-fluid" src="{{$attraction->cover_photo_url}}" alt="{{$attraction->name_lat}}">
                 <div class="attraction-title d-flex align-items-center justify-content-center">
-                  <h4 class="text-uppercase text-white text-center">{{$attraction->name_eng}}</h4>
+                  <h4 class="text-uppercase text-white text-center">
+                    @if(app()->getLocale() == 'en')
+                      {{$attraction->name_eng}}
+                    @elseif(app()->getLocale() == 'ru')
+                      {{$attraction->name_rus}}
+                    @else
+                      {{$attraction->name_lat}}
+                    @endif
+                  </h4>
                 </div>
-              @elseif(app()->getLocale() == 'ru')
-                <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_rus}}">
-                <div class="attraction-title d-flex align-items-center justify-content-center">
-                  <h4 class="text-uppercase text-white text-center">{{$attraction->name_rus}}</h4>
-                </div>
-                @else
-                <img class="attraction-img img-fluid" src="/storage/img/attractions/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_lat}}">
-                <div class="attraction-title d-flex align-items-center justify-content-center">
-                  <h4 class="text-uppercase text-white text-center">{{$attraction->name_lat}}</h4>
-                </div>
-              @endif
             </a>
           </div>
         @endforeach
