@@ -60,8 +60,8 @@ class AttractionsController extends Controller
             $newAttraction->save();
             return redirect('/admin')->with('success', 'Atrakcija pievienota!');
         } catch (\Exception $e) {
-            return redirect('/admin')->with('error', 'Kļūda!');
-            // return redirect('/admin')->with('error', $e);
+            //return redirect('/admin')->with('error', 'Kļūda!');
+            return redirect('/admin')->with('error', $e);
         }
     }
 
