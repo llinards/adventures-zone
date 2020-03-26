@@ -16,7 +16,7 @@
         @foreach ($attractions as $attraction)
           <div class="attraction">
             <a href="{{$attraction->attraction_slug}}">
-                <img class="attraction-img img-fluid" src="{{$attraction->cover_photo_url}}" alt="{{$attraction->name_lat}}">
+                <img class="attraction-img img-fluid" src="/storage/{{$attraction->cover_photo_url}}" alt="{{$attraction->name_lat}}">
                 <div class="attraction-title d-flex align-items-center justify-content-center">
                   <h4 class="text-uppercase text-white text-center">
                     @if(app()->getLocale() == 'en')
