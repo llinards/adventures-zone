@@ -21,7 +21,7 @@ class Attraction extends Model
     }
     
     public function scopeFirstpage($query) {
-        return $query->whereNotIn('id', array('6','8','9','10'));
+        return $query->whereNotIn('id', array('6'));
     }
 
     public function scopeAttraction($query, $id) {

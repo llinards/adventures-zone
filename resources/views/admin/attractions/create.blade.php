@@ -2,15 +2,6 @@
 @section('content')
   <div class="container pb-2">
     @include('inc.status-messages')
-    @if ($errors->any())
-      <div class="alert alert-danger">
-        <ul>
-          @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-          @endforeach
-        </ul>
-      </div>
-    @endif
     <div class="row">
       <div class="col-12">
         <h3 class="py-5">Jaunas atrakcijas pievienošana</h3>
@@ -56,8 +47,8 @@
             <textarea class="form-control" id="description-area-rus" name="description-rus"></textarea>
           </div>
           <div class="form-group">
-            <label for="meta-description-lat">SEO apraksts</label>
-            <textarea class="form-control" name="meta-description-lat" id="meta-description-lat" rows="2"></textarea>
+            <label for="meta-description">SEO apraksts</label>
+            <textarea class="form-control" name="meta-description" id="meta-description" rows="2"></textarea>
           </div>
           <button class="btn btn-success" type="submit">Pievienot</button>
         </form>

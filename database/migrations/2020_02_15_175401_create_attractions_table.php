@@ -24,9 +24,7 @@ class CreateAttractionsTable extends Migration
             $table->text('description_lat');
             $table->text('description_rus');
             $table->text('description_eng');
-            $table->text('meta_description_lat');
-            $table->text('meta_description_rus');
-            $table->text('meta_description_eng');
+            $table->text('meta_description');
             $table->timestamps();
         });
     }

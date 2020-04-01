@@ -28,7 +28,7 @@ class AttractionsController extends Controller
             'attraction-rus' => 'required',
             'attraction-cover-img' => 'file|image|max:1500',
             'attraction-header-img' => 'file|image|max:1500',
-            'meta-description-lat' => 'required',
+            'meta-description' => 'required',
             'description-lat' => 'required',
             'description-rus' => 'required',
             'description-eng' => 'required',
@@ -39,24 +39,16 @@ class AttractionsController extends Controller
             $newAttraction->name_eng = $data['attraction-eng'];
             $newAttraction->name_rus = $data['attraction-rus'];
             $attractionSlug = $newAttraction->attraction_slug = Str::slug($data['attraction-lv'], '-');
-            
             Storage::makeDirectory('public/img/attractions/' . $attractionSlug);
             $attractionsPath = 'img/attractions/' . $attractionSlug;
-
             $coverImagePath = request('attraction-cover-img')->store($attractionsPath,'public');
             $newAttraction->cover_photo_url = $coverImagePath;
-            
             $headerImagePath = request('attraction-header-img')->store($attractionsPath,'public');
             $newAttraction->header_photo_url = $headerImagePath;
-
             $newAttraction->description_lat = $data['description-lat'];
             $newAttraction->description_rus = $data['description-rus'];
             $newAttraction->description_eng = $data['description-eng'];
-
-            $newAttraction->meta_description_lat = $data['meta-description-lat'];
-            $newAttraction->meta_description_rus = '';
-            $newAttraction->meta_description_eng = '';
-
+            $newAttraction->meta_description = $data['meta-description'];
             $newAttraction->save();
             return back()->with('success', 'Atrakcija pievienota!');
         } catch (\Exception $e) {
@@ -76,7 +68,7 @@ class AttractionsController extends Controller
             'attraction-rus' => 'required',
             'attraction-cover-img' => 'file|image|max:1500',
             'attraction-header-img' => 'file|image|max:1500',
-            'meta-description-lat' => 'required',
+            'meta-description' => 'required',
             'description-lat' => 'required',
             'description-rus' => 'required',
             'description-eng' => 'required',
@@ -104,7 +96,7 @@ class AttractionsController extends Controller
             $updateAttraction->description_rus = $data['description-rus'];
             $updateAttraction->description_eng = $data['description-eng'];
 
-            $updateAttraction->meta_description_lat = $data['meta-description-lat'];
+            $updateAttraction->meta_description = $data['meta-description'];
             $updateAttraction->save();
             return back()->with('success', 'Atrakcija atjaunota!');
         } catch (\Exception $e) {
