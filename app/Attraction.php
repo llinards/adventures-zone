@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Attraction extends Model
 {
-    protected $guarded = [];
+    // protected $guarded = [];
     
     public function image() {
         return $this->hasMany(Image::class);
@@ -21,7 +21,7 @@ class Attraction extends Model
     }
     
     public function scopeFirstpage($query) {
-        return $query->whereNotIn('id', array('6','8','9','10'));
+        return $query->whereNotIn('id', array('6'));
     }
 
     public function scopeAttraction($query, $id) {

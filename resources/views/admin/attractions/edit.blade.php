@@ -4,7 +4,7 @@
     @include('inc.status-messages')
     <div class="row">
       <div class="col-12">
-        <h3 class="py-5">Atrakcijas: {{ $attraction->name_lat }}</h3>
+        <h3 class="py-5">Atrakcija: {{ $attraction->name_lat }}</h3>
       </div>
     </div>
     <div class="row">
@@ -24,50 +24,41 @@
           <div class="form-group">
             <label for="attraction-lv" class="col-form-label">Atrakcijas nosaukums LV</label>
             <input class="form-control" type="text" name="attraction-lv" id="" value="{{ $attraction->name_lat }}">
-            <div class="text-danger">{{ $errors->first('attraction-lv') }}</div>
           </div>
           <div class="form-group">
             <label for="attraction-eng" class="col-form-label">Atrakcijas nosaukums ENG</label>
             <input class="form-control" type="text" name="attraction-eng" id="" value="{{ $attraction->name_eng }}">
-            <div class="text-danger">{{ $errors->first('attraction-eng') }}</div>
           </div>
           <div class="form-group">
             <label for="attraction-rus" class="col-form-label">Atrakcijas nosaukums RUS</label>
             <input class="form-control" type="text" name="attraction-rus" id="" value="{{ $attraction->name_rus }}">
-            <div class="text-danger">{{ $errors->first('attraction-rus') }}</div>
           </div>
           <div class="form-group">
             <label for="attraction-cover-img" class="col-form-label">Atrakcijas pirmās lapas bilde</label>
             <input type="file" class="form-control-file" name="attraction-cover-img" id="attraction-cover-img">
             <small class="form-text text-muted">Bildei obligāti ir jābūt <strong>1607x2500</strong>!</small>
             <small class="form-text text-muted">Bildes stūris tiks automātiski apgriezts</small>
-            <div class="text-danger">{{ $errors->first('attraction-cover-img') }}</div>
          </div>
           <div class="form-group">
             <label for="attraction-header-img" class="col-form-label">Atrakcijas titlulbilde</label>
             <input type="file" class="form-control-file" name="attraction-header-img" id="attraction-header-img">
             <small class="form-text text-muted">Bildes izmēram jābūt pēc iespējas mazākam!</small>
-            <div class="text-danger">{{ $errors->first('attraction-header-img') }}</div>
           </div>
           <div class="form-group">
             <label for="description-lat">Apraksts LV</label>
             <textarea class="form-control" id="description-area-lv" name="description-lat">{{ $attraction->description_lat }}</textarea>
-            <div class="text-danger">{{ $errors->first('description-lv') }}</div>
           </div>
           <div class="form-group">
             <label for="description-eng">Apraksts ENG</label>
             <textarea class="form-control" id="description-area-eng" name="description-eng">{{ $attraction->description_eng }}</textarea>
-            <div class="text-danger">{{ $errors->first('description-eng') }}</div>
           </div>
           <div class="form-group">
             <label for="description-rus">Apraksts RUS</label>
             <textarea class="form-control" id="description-area-rus" name="description-rus">{{ $attraction->description_rus }}</textarea>
-            <div class="text-danger">{{ $errors->first('description-rus') }}</div>
           </div>
           <div class="form-group">
-            <label for="meta-description-lat">SEO apraksts</label>
-            <textarea class="form-control" name="meta-description-lat" id="meta-description-lat" rows="2">{{ $attraction->meta_description_lat }}</textarea>
-            <div class="text-danger">{{ $errors->first('meta-description-lat') }}</div>
+            <label for="meta-description">SEO apraksts</label>
+            <textarea class="form-control" name="meta-description" id="meta-description" rows="2">{{ $attraction->meta_description }}</textarea>
           </div>
           <button class="btn btn-success" type="submit">Atjaunot</button>
         </form>
