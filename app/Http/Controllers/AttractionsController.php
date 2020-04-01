@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Storage;
 class AttractionsController extends Controller
 {
     public function index() {
-        $attractions = Attraction::firstpage()->get();
+        $attractions = Attraction::get();
         return view('admin.attractions.index', compact('attractions'));
     }
 
