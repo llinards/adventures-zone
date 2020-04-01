@@ -58,10 +58,9 @@ class AttractionsController extends Controller
             $newAttraction->meta_description_eng = '';
 
             $newAttraction->save();
-            return redirect('/admin')->with('success', 'Atrakcija pievienota!');
+            return back()->with('success', 'Atrakcija pievienota!');
         } catch (\Exception $e) {
-            return redirect('/admin')->with('error', 'Kļūda!');
-            // return redirect('/admin')->with('error', $e);
+            return back()->with('error', 'Kļūda!');
         }
     }
 
@@ -106,12 +105,11 @@ class AttractionsController extends Controller
             $updateAttraction->description_eng = $data['description-eng'];
 
             $updateAttraction->meta_description_lat = $data['meta-description-lat'];
-           
             $updateAttraction->save();
-            return redirect('/admin')->with('success', 'Atrakcija atjaunota!');
+            return back()->with('success', 'Atrakcija atjaunota!');
         } catch (\Exception $e) {
-            // return redirect('/admin')->with('error', 'Kļūda!');
-            return redirect('/admin')->with('error', $e);
+            //return redirect('/admin')->with('error', 'Kļūda!');
+            return back()->with('error', $e);
         }
     }
 
