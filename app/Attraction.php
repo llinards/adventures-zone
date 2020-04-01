@@ -5,9 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Attraction extends Model
-{
-    // protected $guarded = [];
-    
+{    
     public function image() {
         return $this->hasMany(Image::class);
     }
