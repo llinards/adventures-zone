@@ -94,9 +94,31 @@
           <div class="form-group">
             <textarea class="form-control" name="meta-description" id="meta-description" rows="2">{{ $attraction->meta_description }}</textarea>
           </div>
+          
           <button class="btn btn-success" type="submit">Atjaunot</button>
           <a class="btn btn-secondary" href="/admin">Atpakaļ</a>
         </form>
+        <h3>Visas bildes</h3>
+
+          <div class="row">
+            @forelse ($images as $image)
+              <div class="col-4">
+                <div class="square">
+                  <img class="img-fluid" src="/storage/img/attractions/{{$attraction->attraction_slug}}/{{$image->photo_url}}" alt=""> 
+                </div> 
+                <form action="/admin/image/{{ $image->id }}" method="POST">
+                  @csrf
+                  @method('DELETE')
+                  <input type="hidden" name="img-location" value="/img/attractions/{{$attraction->attraction_slug}}/{{$image->photo_url}}">
+                  <button class="btn btn-danger mt-1 mb-2" type="submit">Dzēst</button>
+                </form>
+              </div>
+
+            @empty
+                <h5>Nav atrastas bildes!</h5>
+            @endforelse
+          </div>
+          
       </div>
     </div>
   </div>

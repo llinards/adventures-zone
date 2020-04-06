@@ -7,6 +7,7 @@ use Illuminate\Filesystem\Filesystem;
 use DB;
 use File;
 use App\Attraction;
+use App\Image;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 
@@ -57,7 +58,8 @@ class AttractionsController extends Controller
     }
 
     public function edit(Attraction $attraction) {
-        return view('admin.attractions.edit', compact('attraction'));
+        $images = Image::allimages($attraction->id)->get();
+        return view('admin.attractions.edit', compact('attraction', 'images'));
     }
 
     public function update() {
@@ -122,7 +124,7 @@ class AttractionsController extends Controller
             Attraction::destroy($attractionId);
             return redirect('/admin')->with('success', 'Atrakcija un tās bildes izdzēstas!');
         } catch (\Exception $e) {
-            return redirect('/admin')->with('error', $e);
+            return redirect('/admin')->with('error', 'Kļūda!');
         }
     }
 }

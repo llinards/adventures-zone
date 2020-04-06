@@ -24,6 +24,8 @@ Route::middleware(['auth'])->group(function () {
   Route::patch('/admin/{attraction}', 'AttractionsController@update');
   Route::delete('/admin/delete', 'AttractionsController@destroy');
 
+  Route::delete('/admin/image/{image}', 'ImagesController@destroy');
+
 });
 
 Route::get('/', 'HomeController@index');
