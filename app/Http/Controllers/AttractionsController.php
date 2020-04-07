@@ -75,6 +75,9 @@ class AttractionsController extends Controller
             'description-lat' => 'required',
             'description-rus' => 'required',
             'description-eng' => 'required',
+            'first-page-description-lat' => '',
+            'first-page-description-eng' => '',
+            'first-page-description-rus' => '',
         ]);
         try {
             $updateAttraction = Attraction::find($data['id']);
@@ -110,7 +113,8 @@ class AttractionsController extends Controller
             $updateAttraction->save();
             return back()->with('success', 'Atrakcija atjaunota!');
         } catch (\Exception $e) {
-            return redirect('/admin')->with('error', 'Kļūda!');
+            // return redirect('/admin')->with('error', 'Kļūda!');
+            return redirect('/admin')->with('error', $e);
         }
     }
 
