@@ -29,36 +29,6 @@
           </div>
           <button class="btn btn-success" type="submit">Pievienot</button>
         </form>
-        <div class="progress">
-           <div class="progress-bar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0%;">
-            0%
-          </div>
-        </div>
-        <div id="success" class="row">
-
-        </div>
-        <script>
-          jQuery(document).ready(function(){
-            jQuery('form').ajaxForm({
-               beforeSend: function(){
-                 jQuery('#success').empty();
-                 jQuery('.progress-bar').text('0%'); 
-                 jQuery('.progress-bar').css('width', '0%');
-               },
-               uploadProgress: function(event, position, total, percentComplete ) {
-                 jQuery('.progress-bar').text(percentComplete + '0%');
-                 jQuery('.progress-bar').css('width', percentComplete + '0%');
-               },
-               success: function(data) {
-                 if (data.success) {
-                   jQuery('#success').append(data.image);
-                   jQuery('.progress-bar').text('Uploaded!');
-                   jQuery('.progress.bar').css('width', '100%')
-                 }
-               }
-            });
-          }); 
-        </script>
       </div>
     </div>
   </div>
