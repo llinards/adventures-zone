@@ -5,9 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Attraction extends Model
-{
-    // protected $guarded = [];
-    
+{    
     public function image() {
         return $this->hasMany(Image::class);
     }
@@ -22,6 +20,22 @@ class Attraction extends Model
     
     public function scopeFirstpage($query) {
         return $query->whereNotIn('id', array('6'));
+    }
+
+    public function scopeXszone($query) {
+        return $query->whereIn('id', array('6'));
+    }
+    
+    public function scopeParty($query) {
+        return $query->whereIn('id', array('8'));
+    }
+
+    public function scopeCafe($query) {
+        return $query->whereIn('id', array('9'));
+    }
+
+    public function scopeValues($query) {
+        return $query->whereIn('id', array('10'));
     }
 
     public function scopeAttraction($query, $id) {

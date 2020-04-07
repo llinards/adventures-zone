@@ -7,13 +7,14 @@ use Illuminate\Filesystem\Filesystem;
 use DB;
 use File;
 use App\Attraction;
+use App\Image;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 
 class AttractionsController extends Controller
 {
     public function index() {
-        $attractions = Attraction::firstpage()->get();
+        $attractions = Attraction::get();
         return view('admin.attractions.index', compact('attractions'));
     }
 
@@ -57,11 +58,13 @@ class AttractionsController extends Controller
     }
 
     public function edit(Attraction $attraction) {
-        return view('admin.attractions.edit', compact('attraction'));
+        $images = Image::allimages($attraction->id)->get();
+        return view('admin.attractions.edit', compact('attraction', 'images'));
     }
 
-    public function update(Attraction $attraction) {
+    public function update() {
         $data = request()->validate([
+            'id' => 'required',
             'active' => 'required',
             'attraction-lv' => 'required',
             'attraction-eng' => 'required', 
@@ -74,7 +77,7 @@ class AttractionsController extends Controller
             'description-eng' => 'required',
         ]);
         try {
-            $updateAttraction = Attraction::find($attraction->id);
+            $updateAttraction = Attraction::find($data['id']);
             $updateAttraction->enabled = $data['active'];
             $updateAttraction->name_lat = $data['attraction-lv'];
             $updateAttraction->name_eng = $data['attraction-eng'];
@@ -97,11 +100,17 @@ class AttractionsController extends Controller
             $updateAttraction->description_eng = $data['description-eng'];
 
             $updateAttraction->meta_description = $data['meta-description'];
+
+            if(request('first-page-description-lat')) {
+                $updateAttraction->first_page_description_lat = $data['first-page-description-lat'];
+                $updateAttraction->first_page_description_eng = $data['first-page-description-eng'];
+                $updateAttraction->first_page_description_rus = $data['first-page-description-rus'];
+            }
+           
             $updateAttraction->save();
             return back()->with('success', 'Atrakcija atjaunota!');
         } catch (\Exception $e) {
-            //return redirect('/admin')->with('error', 'Kļūda!');
-            return back()->with('error', $e);
+            return redirect('/admin')->with('error', 'Kļūda!');
         }
     }
 
@@ -112,9 +121,10 @@ class AttractionsController extends Controller
             $attractionSlug = $attraction->attraction_slug;
             Storage::deleteDirectory('public/img/attractions/' . $attractionSlug);
             Attraction::destroy($attractionId);
+            Image::where('attraction_id', $attractionId)->delete();
             return redirect('/admin')->with('success', 'Atrakcija un tās bildes izdzēstas!');
         } catch (\Exception $e) {
-            return redirect('/admin')->with('error', $e);
+            return redirect('/admin')->with('error', 'Kļūda!');
         }
     }
 }
