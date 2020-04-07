@@ -110,8 +110,7 @@ class AttractionsController extends Controller
             $updateAttraction->save();
             return back()->with('success', 'Atrakcija atjaunota!');
         } catch (\Exception $e) {
-            //return redirect('/admin')->with('error', 'Kļūda!');
-            return back()->with('error', $e);
+            return redirect('/admin')->with('error', 'Kļūda!');
         }
     }
 
@@ -122,6 +121,7 @@ class AttractionsController extends Controller
             $attractionSlug = $attraction->attraction_slug;
             Storage::deleteDirectory('public/img/attractions/' . $attractionSlug);
             Attraction::destroy($attractionId);
+            Image::where('attraction_id', $attractionId)->delete();
             return redirect('/admin')->with('success', 'Atrakcija un tās bildes izdzēstas!');
         } catch (\Exception $e) {
             return redirect('/admin')->with('error', 'Kļūda!');
