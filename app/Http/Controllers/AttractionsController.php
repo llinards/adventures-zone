@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Storage;
 class AttractionsController extends Controller
 {
     public function index() {
-        $attractions = Attraction::orderBy('created_at', 'ASC')->get();
+        $attractions = Attraction::orderBy('created_at', 'DESC')->get();
         return view('admin.attractions.index', compact('attractions'));
     }
 
