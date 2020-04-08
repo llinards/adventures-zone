@@ -15,13 +15,13 @@ class ImagesController extends Controller
         return view('admin.images.create', compact('allAttractions'));
     }
 
-    public function store(Request $request)
+    public function store()
     {
-        $attractionId = request()->input('attraction-id');
-        $attractionLocation = Attraction::where('id', $attractionId)->get();
-        $attractionLocation = 'storage/img/attractions/' . $attractionLocation[0]->attraction_slug; 
         try {
-            $images = $request->file('attraction-imgs');
+            $attractionId = request('attraction-id');
+            $attractionLocation = Attraction::where('id', $attractionId)->get();
+            $attractionLocation = 'storage/img/attractions/' . $attractionLocation[0]->attraction_slug;
+            $images = request('attraction-imgs');
             foreach($images as $image) {
                 $newName = rand() . '.' . $image->getClientOriginalExtension();
                 $image->move($attractionLocation, $newName);
@@ -30,16 +30,16 @@ class ImagesController extends Controller
                 $imagesToDb->photo_url = $newName;
                 $imagesToDb->save();
             }
-            return back()->with('success', 'Bildes pievienotas!');
+            return redirect('/admin')->with('success', 'Bildes pievienotas!');
         } catch (\Exception $e) {
             return back()->with('error', 'Kļūda!');
         }
     }
     
-    public function destroy(Image $image, Request $request)
+    public function destroy(Image $image)
     {
         $imageId = $image->id;
-        $imageLocation = request()->input('img-location');
+        $imageLocation = request('img-location');
          try {
             Image::destroy($imageId);
             Storage::delete('public/' . $imageLocation);

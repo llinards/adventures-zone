@@ -23,18 +23,8 @@ class AttractionsController extends Controller
     }
 
     public function store() {
-        $data = request()->validate([
-            'attraction-lv' => 'required',
-            'attraction-eng' => 'required', 
-            'attraction-rus' => 'required',
-            'attraction-cover-img' => 'file|image|max:1500',
-            'attraction-header-img' => 'file|image|max:1500',
-            'meta-description' => 'required',
-            'description-lat' => 'required',
-            'description-rus' => 'required',
-            'description-eng' => 'required',
-        ]);
         try {
+            $data = $this->validatedData();
             $newAttraction = new Attraction();
             $newAttraction->name_lat = $data['attraction-lv'];
             $newAttraction->name_eng = $data['attraction-eng'];
@@ -51,9 +41,9 @@ class AttractionsController extends Controller
             $newAttraction->description_eng = $data['description-eng'];
             $newAttraction->meta_description = $data['meta-description'];
             $newAttraction->save();
-            return back()->with('success', 'Atrakcija pievienota!');
+            return redirect('/admin')->with('success', 'Atrakcija pievienota!');
         } catch (\Exception $e) {
-            return back()->with('error', 'Kļūda!');
+            return redirect('/admin')->with('error', 'Kļūda!');
         }
     }
 
@@ -63,25 +53,10 @@ class AttractionsController extends Controller
     }
 
     public function update() {
-        $data = request()->validate([
-            'id' => 'required',
-            'active' => 'required',
-            'attraction-lv' => 'required',
-            'attraction-eng' => 'required', 
-            'attraction-rus' => 'required',
-            'attraction-cover-img' => 'file|image|max:1500',
-            'attraction-header-img' => 'file|image|max:1500',
-            'meta-description' => 'required',
-            'description-lat' => 'required',
-            'description-rus' => 'required',
-            'description-eng' => 'required',
-            'first-page-description-lat' => '',
-            'first-page-description-eng' => '',
-            'first-page-description-rus' => '',
-        ]);
         try {
-            $updateAttraction = Attraction::find($data['id']);
-            $updateAttraction->enabled = $data['active'];
+            $data = $this->validatedData();
+            $updateAttraction = Attraction::find(request('id'));
+            $updateAttraction->enabled = request('active');
             $updateAttraction->name_lat = $data['attraction-lv'];
             $updateAttraction->name_eng = $data['attraction-eng'];
             $updateAttraction->name_rus = $data['attraction-rus'];
@@ -108,19 +83,21 @@ class AttractionsController extends Controller
                 $updateAttraction->first_page_description_lat = $data['first-page-description-lat'];
                 $updateAttraction->first_page_description_eng = $data['first-page-description-eng'];
                 $updateAttraction->first_page_description_rus = $data['first-page-description-rus'];
+            } else {
+                $updateAttraction->first_page_description_lat = NULL;
+                $updateAttraction->first_page_description_eng = NULL;
+                $updateAttraction->first_page_description_rus = NULL;
             }
-           
             $updateAttraction->save();
             return back()->with('success', 'Atrakcija atjaunota!');
         } catch (\Exception $e) {
-            // return redirect('/admin')->with('error', 'Kļūda!');
-            return redirect('/admin')->with('error', $e);
+            return back()->with('error', 'Kļūda!');
         }
     }
 
-    public function destroy(Request $request) {
-        $attractionId = $request->input('category-id');
+    public function destroy() {
         try {
+            $attractionId = request('category-id');
             $attraction = Attraction::find($attractionId);
             $attractionSlug = $attraction->attraction_slug;
             Storage::deleteDirectory('public/img/attractions/' . $attractionSlug);
@@ -130,5 +107,24 @@ class AttractionsController extends Controller
         } catch (\Exception $e) {
             return redirect('/admin')->with('error', 'Kļūda!');
         }
+    }
+
+    protected function validatedData()
+    {
+        $data = request()->validate([
+            'attraction-lv' => 'required',
+            'attraction-eng' => 'required', 
+            'attraction-rus' => 'required',
+            'attraction-cover-img' => 'file|image|max:1500',
+            'attraction-header-img' => 'file|image|max:1500',
+            'meta-description' => 'required',
+            'description-lat' => 'required',
+            'description-rus' => 'required',
+            'description-eng' => 'required',
+            'first-page-description-lat' => 'nullable',
+            'first-page-description-eng' => 'nullable',
+            'first-page-description-rus' => 'nullable',
+        ]);
+        return $data;
     }
 }
