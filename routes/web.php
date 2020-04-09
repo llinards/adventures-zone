@@ -28,6 +28,9 @@ Route::middleware(['auth'])->group(function () {
   Route::post('/admin/images', 'ImagesController@store');
   Route::delete('/admin/image/{image}', 'ImagesController@destroy');
 
+  Route::get('/admin/footer/{id}/edit', 'FooterController@edit');
+  Route::patch('/admin/footer/{footer}', 'FooterController@update');
+
 });
 
 Route::get('/', 'HomeController@index');

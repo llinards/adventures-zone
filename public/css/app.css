@@ -15933,6 +15933,7 @@ footer {
 
 .working-hours {
   padding-left: 8px;
+  max-width: 300px;
 }
 
 .footer-bar {
@@ -16234,6 +16235,10 @@ footer {
 
   .product-page-title .az-title-second {
     font-size: 2.75rem;
+  }
+
+  .working-hours {
+    max-width: 256px;
   }
 }
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Attraction;
+use App\Footer;
 use App;
 
 class HomeController extends Controller
@@ -99,7 +100,7 @@ class HomeController extends Controller
             'firstPageDescription' => $valuesFirstPageDescription,
         ];
 
-
-        return view('home', compact('attractions', 'xszone', 'party', 'cafe', 'values'));
+        $footer = Footer::get();
+        return view('home', compact('attractions', 'xszone', 'party', 'cafe', 'values', 'footer'));
     }
 }
