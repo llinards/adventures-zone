@@ -31,10 +31,10 @@
             <img class="img-fluid soc-icon" src="/storage/img/insta.png" alt="">
           </a>
         </div>
-        <div class="working-hours">
+        <div class="working-hours mx-auto">
           <h5 class="text-white text-uppercase">Darba laiks:</h5>
-          {{-- <h5 class="text-white">Katru dienu: <span class="text-uppercase font-weight-bold">10:00 - 22:00</span></h5> --}}
-          <p class="text-white">Pamatojoties uz šī brīža situāciju valstī, <br />no 15.03.2020 piedzīvojumu parks SLĒGTS uz nenoteiktu laiku!</span></p>
+          {{-- <h5 class="text-white">Katru dienu: 10:00 - 22:00</h5> --}}
+          <h5 class="text-white">Pamatojoties uz šī brīža situāciju valstī, no 15.03.2020 piedzīvojumu parks SLĒGTS uz nenoteiktu laiku!</h5>
         </div>
       </div>
     </div>
