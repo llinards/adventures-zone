@@ -13,7 +13,7 @@
             <p>t/c "Alfa", 3.stāvs</p>
             <p><u>Brīvības gatve 372, Rīga</u></p>
           </a>
-          <h5><strong><a href="tel:+37122022333">+371 220 22 333</a></strong></h5>
+          <h5><strong><a href="tel:{{ $footer[0]['mobile_phone']}}">{{ $footer[0]['mobile_phone']}}</a></strong></h5>
         </div>
       </div>
       <div class="footer-soc-icons">
@@ -34,7 +34,7 @@
         <div class="working-hours mx-auto">
           <h5 class="text-white text-uppercase">Darba laiks:</h5>
           {{-- <h5 class="text-white">Katru dienu: 10:00 - 22:00</h5> --}}
-          <h5 class="text-white">Pamatojoties uz šī brīža situāciju valstī, no 15.03.2020 piedzīvojumu parks SLĒGTS uz nenoteiktu laiku!</h5>
+          <h5 class="text-white">{!! $footer[0]['working_hours'] !!}</h5>
         </div>
       </div>
     </div>
