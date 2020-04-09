@@ -5,7 +5,7 @@
     <header id="party">
         <img 
             class="header-img" 
-            src="/storage/img/attractions/{{$attraction['attraction_slug']}}/{{$attraction['header_photo_url']}}" 
+            src="/storage/{{$attraction['header_photo_url']}}" 
             alt="{{$attraction['name']}}">
         @include('inc.navbar', ['product_page' => true])
       
