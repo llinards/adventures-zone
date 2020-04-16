@@ -49,7 +49,7 @@
       <a class="nav-link text-white text-uppercase" href="#pricelist">cenas/pirkt</a>
     </li>
     @endif
-    {{-- <li class="nav-item dropdown">
+    <li class="nav-item dropdown">
       @foreach (config('app.available_locales') as $locale)
         @if (app()->getLocale() == $locale) 
           <a 
@@ -66,7 +66,7 @@
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         @foreach (config('app.available_locales') as $locale)
           <a 
-            href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), $locale) }}" 
+            href="/{{$locale}}" 
             class="dropdown-item"
             @if (app()->getLocale() == $locale) 
               style="font-weight: bold; text-decoration: underline" 
@@ -74,7 +74,7 @@
           </a>
         @endforeach
       </div>
-    </li> --}}
+    </li>
   </div>
 </nav>
 

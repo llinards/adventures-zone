@@ -10,13 +10,12 @@ use App\Image;
 
 class ProductsController extends Controller
 {
-    public function index($attraction) {
+    public function index($locale, $attraction) {
         $attractionInfo = Attraction::attraction($attraction)->get();
-        $locale = App::getLocale();
         if($locale == 'en') {
             $attractionName = $attractionInfo[0]->name_eng;
             $attractionDescription = $attractionInfo[0]->description_eng;
-        } else if ($locale == 'rus') {
+        } else if ($locale == 'ru') {
             $attractionName = $attractionInfo[0]->name_rus;
             $attractionDescription = $attractionInfo[0]->description_rus;
         } else {
@@ -37,6 +36,6 @@ class ProductsController extends Controller
         $attraction_id = $attraction['id'];
         $attractions = Attraction::whereNotIn('id', array($attraction_id,'8','9','10'))->get();
         $images = Image::allimages($attraction_id)->get();
-        return view('product-page', compact('attraction', 'attractions', 'images'));
+        return view('product-page', compact('attraction', 'attractions', 'images','locale'));
     }
 }

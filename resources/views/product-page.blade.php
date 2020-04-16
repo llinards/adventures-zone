@@ -58,7 +58,7 @@
         </div>
     </section>
     {{-- end of gallery --}}
-    @include('inc.attractions', ['attractions' => $attractions, 'product_page' => true])
+    @include('inc.attractions', ['attractions' => $attractions, 'product_page' => true, 'locale' => $locale])
     @include('inc.buy-reserve-btn')
     @include('inc.footer')
 @endsection
