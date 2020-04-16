@@ -119,5 +119,5 @@
     </section>
     {{-- end of values section --}}
     @include('inc.pricelist')
-    @include('inc.footer')
+    @include('inc.footer', ['footer' => $footer])
 @endsection

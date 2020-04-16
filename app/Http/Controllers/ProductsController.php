@@ -7,6 +7,7 @@ use DB;
 use App;
 use App\Attraction;
 use App\Image;
+use App\Footer;
 
 class ProductsController extends Controller
 {
