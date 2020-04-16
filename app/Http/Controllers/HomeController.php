@@ -101,6 +101,6 @@ class HomeController extends Controller
         ];
 
         $footer = Footer::get();
-        return view('home', compact('attractions', 'xszone', 'party', 'cafe', 'values', 'footer'));
+        return view('home', compact('attractions', 'xszone', 'party', 'cafe', 'values','footer', 'locale'));
     }
 }
