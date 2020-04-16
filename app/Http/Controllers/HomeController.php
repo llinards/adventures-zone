@@ -100,6 +100,6 @@ class HomeController extends Controller
         ];
 
 
-        return view('home', compact('attractions', 'xszone', 'party', 'cafe', 'values', 'locale'));
+        return view('home', compact('attractions', 'xszone', 'party', 'cafe', 'values','footer', 'locale'));
     }
 }
