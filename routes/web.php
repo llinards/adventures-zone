@@ -33,8 +33,19 @@ Route::middleware(['auth'])->group(function () {
 
 });
 
-Route::get('/', 'HomeController@index');
-Route::get('/{attraction}', 'ProductsController@index');
+Route::group([
+  'prefix' => '{locale}',
+  'where' => ['locale' => '[a-zA-Z]{2}'],
+  'middleware' => 'setLocale'
+], function() {
+  Route::get('/', 'HomeController@index');
+  Route::get('/{attraction}', 'ProductsController@index');
+});
+
+Route::get('/', function () {
+    return redirect(app()->getLocale());
+});
+
 
 
 

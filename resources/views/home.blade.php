@@ -23,7 +23,7 @@
         </div>
         {{-- end of header --}}
     </header>
-    @include('inc.attractions', ['attractions' => $attractions])
+    @include('inc.attractions', ['attractions' => $attractions, 'locale' => $locale])
     {{-- xs zone section --}}
     <section id="xs-zone" class="section-cards">
       <div class="section-title-bar">
@@ -36,12 +36,12 @@
               <div class="col-12 px-0">
                   <img class="img-fluid" src="/storage/{{$xszone['img']}}" alt="{{ $xszone['name'] }}">
               </div>
-              <a href="/{{ $xszone['slug'] }}" class="col-md-8 section-card-desc">
+              <a href="{{$locale}}/{{ $xszone['slug'] }}" class="col-md-8 section-card-desc">
                 <p class="text-white text-center">
                     {{ $xszone['firstPageDescription']}}
                 </p>
               </a>
-              <a href="/{{ $xszone['slug'] }}" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+              <a href="{{$locale}}/{{ $xszone['slug'] }}" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
                   <h5 class="text-white">uzzināt vairāk</h5>
                   <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
               </a>
@@ -59,12 +59,12 @@
                 <div class="col-12 px-0">
                     <img class="img-fluid" src="/storage/{{$party['img']}}" alt="{{ $party['name'] }}">
                 </div>
-                <a href="/{{ $party['slug'] }}" class="col-md-8 section-card-desc">
+                <a href="{{$locale}}/{{ $party['slug'] }}" class="col-md-8 section-card-desc">
                   <p class="text-white text-center">
                     {{ $party['firstPageDescription']}}
                   </p>
                 </a>
-                <a href="/{{ $party['slug'] }}" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+                <a href="{{$locale}}/{{ $party['slug'] }}" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
                     <h5 class="text-white">uzzināt vairāk</h5>
                     <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
                 </a>
@@ -82,12 +82,12 @@
             <div class="col-12 px-0">
               <img class="img-fluid" src="/storage/{{$cafe['img']}}" alt="{{ $cafe['name'] }}">
             </div>
-            <a href="/{{ $cafe['slug'] }}" class="col-md-8 section-card-desc">
+            <a href="{{$locale}}/{{ $cafe['slug'] }}" class="col-md-8 section-card-desc">
               <p class="text-white text-center">
                 {{ $cafe['firstPageDescription']}}
               </p>
             </a>
-            <a href="/{{ $cafe['slug'] }}" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+            <a href="{{$locale}}/{{ $cafe['slug'] }}" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
               <h5 class="text-white">uzzināt vairāk</h5>
               <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
             </a>
@@ -105,12 +105,12 @@
             <div class="col-12 px-0">
               <img class="img-fluid" src="/storage/{{$values['img']}}" alt="{{ $values['name'] }}">
             </div>
-            <a href="/{{ $values['slug'] }}" class="col-md-8 section-card-desc">
+            <a href="{{$locale}}/{{ $values['slug'] }}" class="col-md-8 section-card-desc">
               <p class="text-white text-center">
                 {{ $values['firstPageDescription']}}
               </p>
             </a>
-            <a href="/{{ $values['slug'] }}" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
+            <a href="{{$locale}}/{{ $values['slug'] }}" class="col-md-4 section-card-readmore d-flex align-items-center justify-content-around">
               <h5 class="text-white">uzzināt vairāk</h5>
               <p class="section-card-readmore-icon"><i class="fas fa-caret-right"></i></p>
             </a>
