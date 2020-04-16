@@ -34,7 +34,7 @@ class HomeController extends Controller
 
             $valuesName = $values[0]->name_eng;
             $valuesFirstPageDescription = $values[0]->first_page_description_eng;
-        } else if ($locale == 'rus') {
+        } else if ($locale == 'ru') {
             $xszoneName = $xszone[0]->name_rus;
             $xszoneFirstPageDescription = $xszone[0]->first_page_description_rus;
 
