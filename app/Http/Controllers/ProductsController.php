@@ -36,6 +36,7 @@ class ProductsController extends Controller
         $attraction_id = $attraction['id'];
         $attractions = Attraction::whereNotIn('id', array($attraction_id,'8','9','10'))->get();
         $images = Image::allimages($attraction_id)->get();
+        $footer = Footer::get();
         return view('product-page', compact('attraction', 'attractions', 'images','footer','locale'));
     }
 }

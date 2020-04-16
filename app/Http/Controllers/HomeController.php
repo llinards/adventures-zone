@@ -99,7 +99,7 @@ class HomeController extends Controller
             'firstPageDescription' => $valuesFirstPageDescription,
         ];
 
-
+        $footer = Footer::get();
         return view('home', compact('attractions', 'xszone', 'party', 'cafe', 'values','footer', 'locale'));
     }
 }
