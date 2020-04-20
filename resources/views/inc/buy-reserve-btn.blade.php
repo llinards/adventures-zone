@@ -1,8 +1,8 @@
 <div id="buy-btns" class="container">
   <div class="row text-center">
     <div class="col-12">
-      <a class="d-block buy-reserve-btns reserve mx-auto text-white" href="https://siguldaadventures.com/adventureszone">
-        pirkt
+      <a class="d-block buy-reserve-btns reserve mx-auto text-white text-lowercase" href="https://siguldaadventures.com/adventureszone">
+        {{__('pirkt')}}
       </a>
     </div>
     {{-- <div class="col-12">

@@ -8,10 +8,10 @@
           </a>
         </div>
         <div class="footer-address text-white">
-          <h5><strong>Adrese:</strong></h5>
+          <h5><strong>{{__('adrese')}}:</strong></h5>
           <a target="_blank" href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">  
-            <p>t/c "Alfa", 3.stāvs</p>
-            <p><u>Brīvības gatve 372, Rīga</u></p>
+            <p>{{__('alfas-nosaukums')}}</p>
+            <p><u>{{__('alfas-iela')}}</u></p>
           </a>
           <h5><strong><a href="tel:{{ $footer[0]['mobile_phone']}}">{{ $footer[0]['mobile_phone']}}</a></strong></h5>
         </div>
@@ -32,7 +32,7 @@
           </a>
         </div>
         <div class="working-hours mx-auto">
-          <h5 class="text-white text-uppercase">Darba laiks:</h5>
+          <h5 class="text-white text-uppercase">{{__('darba-laiks')}}</h5>
           {{-- <h5 class="text-white">Katru dienu: 10:00 - 22:00</h5> --}}
           <h5 class="text-white">{!! $footer[0]['working_hours'] !!}</h5>
         </div>

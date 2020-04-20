@@ -11,42 +11,42 @@
     @if(!empty($product_page))
     <div id="left" class="product-page az-menubar d-flex justify-content-end align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#attractions">atrakcijas</a>
+        <a class="nav-link text-white text-uppercase" href="/#attractions">{{__('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="/#party">{{__('ballites')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#values">vērtības</a>
+        <a class="nav-link text-white text-uppercase" href="/#values">{{__('vertibas')}}</a>
       </li>
       @else
     <div id="left" class="az-menubar d-flex justify-content-end align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#attractions">atrakcijas</a>
+        <a class="nav-link text-white text-uppercase" href="#attractions">{{__('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#values">vērtības</a>
+        <a class="nav-link text-white text-uppercase" href="#values">{{__('vertibas')}}</a>
       </li>
       @endif
   </div>
   @if(!empty($product_page))
   <div id="right" class="product-page az-menubar d-flex justify-content-start align-items-center">
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="/#cafe">kafejnīca</a>
+      <a class="nav-link text-white text-uppercase" href="/#cafe">{{__('kafejnica')}}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="/#pricelist">cenas/pirkt</a>
+      <a class="nav-link text-white text-uppercase" href="/#pricelist">{{__('cenas')}}</a>
     </li>
     @else
   <div id="right" class="az-menubar d-flex justify-content-start align-items-center">
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
+      <a class="nav-link text-white text-uppercase" href="#cafe">{{__('kafejnica')}}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="#pricelist">cenas/pirkt</a>
+      <a class="nav-link text-white text-uppercase" href="#pricelist">{{__('cenas')}}</a>
     </li>
     @endif
     <li class="nav-item dropdown">
@@ -65,13 +65,15 @@
       @endforeach
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         @foreach (config('app.available_locales') as $locale)
-          <a 
-            href="/{{$locale}}" 
-            class="dropdown-item"
-            @if (app()->getLocale() == $locale) 
-              style="font-weight: bold; text-decoration: underline" 
-            @endif>{{ strtoupper($locale) }}
-          </a>
+          @if(app()->getLocale() != $locale)
+            <a 
+              href="/{{$locale}}" 
+              class="dropdown-item"
+              @if (app()->getLocale() == $locale) 
+                style="font-weight: bold; text-decoration: underline" 
+              @endif>{{ strtoupper($locale) }}
+            </a>
+          @endif
         @endforeach
       </div>
     </li>

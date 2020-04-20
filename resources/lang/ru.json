@@ -1,3 +1,35 @@
 {
-    "atrakcijas": "достопримечательности"
-}
+    "atrakcijas": "АТТРАКЦИОНЫ",
+    "citas_atrakcijas": "другие АТТРАКЦИОНЫ",
+    "ballites": "ПРАЗДНИКИ",
+    "vertibas": "НАШИ ЦЕННОСТИ",
+    "kafejnica": "КАФЕ",
+    "cenas": "ЦЕНЫ",
+    "apaksvirsraksts": "Piedzīvojumi, kas aizrauj un attīsta",
+    "a-zona": "A зона",
+    "xs-zona": "XS зона",
+    "abonementi": "абонемент",
+  
+    "viena-stunda": "1 час",
+    "divas-stundas": "2-й час",
+    "visa-diena": "Весь день",
+    "kopa": "Всего",
+    "telpas-noma": "праздников",
+    "ire": "аренда",
+    "apmeklejuma-reizes": "apmeklējuma reizes",
+    "30-dienam": "30 дней",
+    "klusais-laiks": "klusais laiks",
+    "aktivais-laiks": "aktīvais laiks",
+  
+  
+  
+    "uzzinat_vairak": "Узнать больше",
+    "pirkt": "купить",
+  
+    "adrese": "Адрес",
+    "alfas-nosaukums": "т/ц ALFA, 3 этаж",
+    "alfas-iela": "Brīvības gatve 372, Рига",
+    "darba-laiks": "ЧАСЫ РАБОТЫ:"
+  
+    
+  }

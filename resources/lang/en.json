@@ -1,4 +1,35 @@
 {
-    "atrakcijas": "Attractions",
-    "ballites": "Parties"
-}
+    "atrakcijas": "ATTRACTIONS",
+    "citas_atrakcijas": "Other ATTRACTIONS",
+    "ballites": "PARTIES",
+    "vertibas": "VALUES",
+    "kafejnica": "CAFE",
+    "cenas": "PRICING",
+    "apaksvirsraksts": "Piedzīvojumi, kas aizrauj un attīsta",
+    "a-zona": "A ZONE",
+    "xs-zona": "XS ZONE",
+    "abonementi": "Monthly pass",
+  
+    "viena-stunda": "1 hour",
+    "divas-stundas": "2nd hour",
+    "visa-diena": "All day",
+    "kopa": "Total",
+    "telpas-noma": "Party room",
+    "ire": "īre",
+    "apmeklejuma-reizes": "apmeklējuma reizes",
+    "30-dienam": "30 days",
+    "klusais-laiks": "klusais laiks",
+    "aktivais-laiks": "aktīvais laiks",
+  
+  
+  
+    "uzzinat_vairak": "Learn more",
+    "pirkt": "Buy",
+  
+    "adrese": "Address",
+    "alfas-nosaukums": "Shopping mall ALFA, 3rd floor",
+    "alfas-iela": "Brīvības gatve 372, Rīga",
+    "darba-laiks": "WORKING HOURS:"
+  
+    
+  }
