@@ -18,7 +18,9 @@ class FooterController extends Controller
         try {
             $footerUpdate = Footer::find(1);
             $footerUpdate->mobile_phone = request('mobile_phone');
-            $footerUpdate->working_hours = request('working_hours');
+            $footerUpdate->working_hours_lat = request('working_hours_lat');
+            $footerUpdate->working_hours_eng = request('working_hours_eng');
+            $footerUpdate->working_hours_rus = request('working_hours_rus');
             $footerUpdate->save();
             return back()->with('success', 'Atjaunots!');
         } catch (\Exception $e) {
