@@ -34,7 +34,15 @@
         <div class="working-hours mx-auto">
           <h5 class="text-white text-uppercase">{{__('darba-laiks')}}</h5>
           {{-- <h5 class="text-white">Katru dienu: 10:00 - 22:00</h5> --}}
-          <h5 class="text-white">{!! $footer[0]['working_hours'] !!}</h5>
+          <h5 class="text-white">
+            @if ($locale == "en")
+              {!! $footer[0]['working_hours_eng'] !!}
+            @elseif ($locale == "ru")
+              {!! $footer[0]['working_hours_rus'] !!}
+            @else
+              {!! $footer[0]['working_hours_lat'] !!}
+            @endif
+          </h5>
         </div>
       </div>
     </div>
