@@ -6,7 +6,7 @@
 @else
 <section id="attractions">
   <div class="section-title-bar">
-    <h1 class="text-white text-center">{{ __('atrakcijas')}}</h1>
+    <h1 class="text-white text-center">{{ __('a-zona')}}</h1>
   </div>
 @endif
   <div class="container position-relative">

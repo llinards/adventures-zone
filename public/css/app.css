@@ -15826,62 +15826,62 @@ video {
   opacity: 1;
 }
 
-#xsOneHour .modal-content,
-#aOneHour .modal-content,
-#aOneHourFullDay .modal-content,
-#partyRoom .modal-content,
-#membershipThree .modal-content,
-#membershipFive .modal-content,
-#membershipTen .modal-content,
-#membershipKlusais .modal-content,
-#membershipAktivais .modal-content {
+.xsOneHour .modal-content,
+.aOneHour .modal-content,
+.aOneHourFullDay .modal-content,
+.partyRoom .modal-content,
+.membershipThree .modal-content,
+.membershipFive .modal-content,
+.membershipTen .modal-content,
+.membershipKlusais .modal-content,
+.membershipAktivais .modal-content {
   background-image: url("/storage/img/modal-bg/modal-bg-min.png");
 }
 
-#xsOneHour .modal-content {
+.xsOneHour .modal-content {
   background-color: #20abe2;
 }
 
-#aOneHour .modal-content,
-#aOneHourFullDay .modal-content {
+.aOneHour .modal-content,
+.aOneHourFullDay .modal-content {
   background-color: #5cd823;
 }
 
-#partyRoom .modal-content {
+.partyRoom .modal-content {
   background-color: #662d85;
 }
 
-#membershipThree .modal-content,
-#membershipFive .modal-content,
-#membershipTen .modal-content,
-#membershipKlusais .modal-content,
-#membershipAktivais .modal-content {
+.membershipThree .modal-content,
+.membershipFive .modal-content,
+.membershipTen .modal-content,
+.membershipKlusais .modal-content,
+.membershipAktivais .modal-content {
   background-color: #808080;
 }
 
-#aOneHour .modal-content,
-#xsOneHour .modal-content,
-#aOneHourFullDay .modal-content,
-#partyRoom .modal-content,
-#membershipThree .modal-content,
-#membershipFive .modal-content,
-#membershipTen .modal-content,
-#membershipKlusais .modal-content,
-#membershipAktivais .modal-content {
+.aOneHour .modal-content,
+.xsOneHour .modal-content,
+.aOneHourFullDay .modal-content,
+.partyRoom .modal-content,
+.membershipThree .modal-content,
+.membershipFive .modal-content,
+.membershipTen .modal-content,
+.membershipKlusais .modal-content,
+.membershipAktivais .modal-content {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
 }
 
-#aOneHour .modal-body li::before,
-#xsOneHour .modal-body li::before,
-#aOneHourFullDay .modal-body li::before,
-#partyRoom .modal-body li::before,
-#membershipThree .modal-body li::before,
-#membershipFive .modal-body li::before,
-#membershipTen .modal-body li::before,
-#membershipKlusais .modal-body li::before,
-#membershipAktivais .modal-body li::before {
+.aOneHour .modal-body li::before,
+.xsOneHour .modal-body li::before,
+.aOneHourFullDay .modal-body li::before,
+.partyRoom .modal-body li::before,
+.membershipThree .modal-body li::before,
+.membershipFive .modal-body li::before,
+.membershipTen .modal-body li::before,
+.membershipKlusais .modal-body li::before,
+.membershipAktivais .modal-body li::before {
   content: "\2022";
   display: inline-block;
   width: 1em;

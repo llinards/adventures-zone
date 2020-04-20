@@ -218,58 +218,58 @@
     }
 }
 
-#xsOneHour,
-#aOneHour,
-#aOneHourFullDay,
-#partyRoom,
-#membershipThree,
-#membershipFive,
-#membershipTen,
-#membershipKlusais,
-#membershipAktivais {
+.xsOneHour,
+.aOneHour,
+.aOneHourFullDay,
+.partyRoom,
+.membershipThree,
+.membershipFive,
+.membershipTen,
+.membershipKlusais,
+.membershipAktivais {
     .modal-content {
         background-image: url('/storage/img/modal-bg/modal-bg-min.png');
     }
 }
 
-#xsOneHour {
+.xsOneHour {
     .modal-content {
         background-color: $product-page-menu-bg-color;
     }
 }
 
-#aOneHour,
-#aOneHourFullDay {
+.aOneHour,
+.aOneHourFullDay {
     .modal-content {
         background-color: $a-zone-pricelist;
     }
 }
 
-#partyRoom {
+.partyRoom {
     .modal-content {
         background-color: $party-section-card;
     }
 }
 
-#membershipThree,
-#membershipFive,
-#membershipTen,
-#membershipKlusais,
-#membershipAktivais {
+.membershipThree,
+.membershipFive,
+.membershipTen,
+.membershipKlusais,
+.membershipAktivais {
     .modal-content {
         background-color: $membership-section-card;
     }
 }
 
-#aOneHour,
-#xsOneHour,
-#aOneHourFullDay,
-#partyRoom,
-#membershipThree,
-#membershipFive,
-#membershipTen,
-#membershipKlusais,
-#membershipAktivais {
+.aOneHour,
+.xsOneHour,
+.aOneHourFullDay,
+.partyRoom,
+.membershipThree,
+.membershipFive,
+.membershipTen,
+.membershipKlusais,
+.membershipAktivais {
     .modal-content {
         background-size: cover;
         background-repeat: no-repeat;
