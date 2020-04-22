@@ -100,48 +100,67 @@
     <ul class="navbar-nav mx-auto text-center">
       @if(!empty($product_page))
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#attractions">atrakcijas</a>
+        <a class="nav-link text-white text-uppercase" href="/#attractions">{{__('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#party">ballītes</a>
+        <a class="nav-link text-white text-uppercase" href="/#party">{{__('ballites')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#values">vērtibas</a>
+        <a class="nav-link text-white text-uppercase" href="/#values">{{__('vertibas')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#cafe">kafejnīca</a>
+        <a class="nav-link text-white text-uppercase" href="/#cafe">{{__('kafejnica')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#pricelist">cenas/pirkt</a>
+        <a class="nav-link text-white text-uppercase" href="/#pricelist">{{__('cenas')}}</a>
       </li>
       @else
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#attractions">atrakcijas</a>
+        <a class="nav-link text-white text-uppercase" href="#attractions">{{__('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#party">ballītes</a>
+        <a class="nav-link text-white text-uppercase" href="#party">{{__('ballites')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#values">vērtibas</a>
+        <a class="nav-link text-white text-uppercase" href="#values">{{__('vertibas')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#cafe">kafejnīca</a>
+        <a class="nav-link text-white text-uppercase" href="#cafe">{{__('kafejnica')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="#pricelist">cenas/pirkt</a>
+        <a class="nav-link text-white text-uppercase" href="#pricelist">{{__('cenas')}}</a>
       </li>
       @endif
     </ul>
     <div class="navbar-contact-info text-center text-white text-uppercase pt-4">
-      <h5>darba laiks:</h5>
-      <p>katru dienu: <strong>10:00 - 22:00</strong></p>
+      <h5>{{__('darba-laiks')}}</h5>
+      <p>@if ($locale == "en")
+        {!! $footer[0]['working_hours_eng'] !!}
+      @elseif ($locale == "ru")
+        {!! $footer[0]['working_hours_rus'] !!}
+      @else
+        {!! $footer[0]['working_hours_lat'] !!}
+      @endif</p>
     </div>
-    <h5 class="text-uppercase text-white text-center pt-3"><strong>Adrese:</strong></h5>
+    <h5 class="text-uppercase text-white text-center pt-3"><strong>{{__('adrese')}}:</strong></h5>
     <a class="text-uppercase text-white text-center pt-1" target="_blank" href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">  
-      <p><u>t/c "Alfa", 3.stāvs Brīvības gatve 372, Rīga</u></p>
+      <p><u>{{__('alfas-nosaukums')}}</u></p>
     </a>
     <h4 class="text-uppercase text-white text-center">
       <a href="tel:+37122022333">+371 220 22 333</a>
     </h4>
+    <ul class="d-flex justify-content-center">
+      @foreach (config('app.available_locales') as $locale)
+        @if(app()->getLocale() == $locale)
+          <li class="nav-item">
+            <a class="nav-link text-white text-uppercase" href="/{{$locale}}">{{ strtoupper($locale) }}</a>
+          </li>
+        @else
+        <li class="nav-item">
+          <a class="nav-link text-white text-uppercase" style="border-bottom:none;" href="/{{$locale}}">{{ strtoupper($locale) }}</a>
+        </li>
+        @endif
+      @endforeach
+    </ul>
   </div>
 </nav>

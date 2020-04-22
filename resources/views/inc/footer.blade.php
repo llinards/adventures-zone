@@ -14,6 +14,7 @@
             <p><u>{{__('alfas-iela')}}</u></p>
           </a>
           <h5><strong><a href="tel:{{ $footer[0]['mobile_phone']}}">{{ $footer[0]['mobile_phone']}}</a></strong></h5>
+          <h6><strong><a href="mailto:info@adventures.zone">info@adventures.zone</a></strong></h6>
         </div>
       </div>
       <div class="footer-soc-icons">
