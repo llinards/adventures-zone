@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFootersTable extends Migration
+class CreatePricelistsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateFootersTable extends Migration
      */
     public function up()
     {
-        Schema::create('footers', function (Blueprint $table) {
+        Schema::create('pricelists', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('working_hours');
-            $table->string('mobile_phone');
+            $table->string('zone')->nullable();
+            $table->string('amount')->nullable();
+            $table->string('price')->nullable();
+            $table->string('total')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreateFootersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('footers');
+        Schema::dropIfExists('pricelists');
     }
 }

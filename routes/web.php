@@ -31,6 +31,10 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/admin/footer/{id}/edit', 'FooterController@edit');
   Route::patch('/admin/footer/{footer}', 'FooterController@update');
 
+  Route::get('/admin/pricelist', 'PricelistController@index');
+  Route::get('/admin/pricelist/{item}/edit', 'PricelistController@edit');
+  Route::patch('/admin/pricelist/{item}', 'PricelistController@store');
+
 });
 
 Route::group([

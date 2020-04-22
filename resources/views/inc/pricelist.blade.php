@@ -9,7 +9,7 @@
         <div class="row mx-auto justify-content-end">
           <a class="col-md-12 xs-zone pricelist-card" href="#" data-toggle="modal" data-target="#{{$locale}}xsOneHour">
             <h4 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">{{ $pricelist[0]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
@@ -28,7 +28,7 @@
         <div class="row mx-auto justify-content-start">
           <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#{{$locale}}aOneHour">
             <h4 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">12</span> <i class="fas fa-euro-sign"></i></h3>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">{{ $pricelist[1]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
@@ -36,20 +36,20 @@
 
           <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#{{$locale}}aOneHour">
             <h4 class="pricelist-title text-center text-white">{{__('divas-stundas')}}</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">+7</span> <i class="fas fa-euro-sign"></i></h3>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">+{{ $pricelist[2]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
-            <h6 class="text-center text-white">{{__('kopa')}} 19 <i class="fas fa-euro-sign"></i></h6>
+            <h6 class="text-center text-white">{{__('kopa')}} {{ $pricelist[2]->total }} <i class="fas fa-euro-sign"></i></h6>
           </a>
   
           <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal" data-target="#{{$locale}}aOneHourFullDay">
             <h4 class="pricelist-title text-center text-white">{{__('visa-diena')}}</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">+5</span> <i class="fas fa-euro-sign"></i></h3>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">+{{ $pricelist[3]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
-            <h6 class="text-center text-white">{{__('kopa')}} 24 <i class="fas fa-euro-sign"></i></h6>
+            <h6 class="text-center text-white">{{__('kopa')}} {{ $pricelist[3]->total }} <i class="fas fa-euro-sign"></i></h6>
           </a>
         </div>
       </div>
@@ -67,11 +67,11 @@
           
           <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal" data-target="#{{$locale}}partyRoom">
             <h4 class="pricelist-title text-center text-white">{{__('telpas-noma')}}</h4>
-            <h3 class="pricelist-price text-center text-white"><span class="price-number">49</span> <i class="fas fa-euro-sign"></i></h3>
+            <h3 class="pricelist-price text-center text-white"><span class="price-number">{{ $pricelist[4]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
             <div class="pricelist-info">
               <i class="fas fa-info text-black"></i>
             </div>
-            <h6 class="text-center text-white">2h {{__('ire')}}</h6>
+            <h6 class="text-center text-white">{{ $pricelist[4]->amount }} {{__('ire')}}</h6>
           </a>
 
         </div>
@@ -91,24 +91,24 @@
             <div class="row mx-auto justify-content-start">
               
               <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#{{$locale}}membershipThree">
-                <h3 class="pricelist-price text-center text-white"><span class="price-number">39</span> <i class="fas fa-euro-sign"></i></h3>
-                <h6 class="pricelist-title text-center text-white">3 x 2h</h6>
+                <h3 class="pricelist-price text-center text-white"><span class="price-number">{{ $pricelist[5]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
+                <h6 class="pricelist-title text-center text-white">{{ $pricelist[5]->amount }}</h6>
                 <div class="pricelist-info-small">
                   <i class="fas fa-info text-black"></i>
                 </div>
               </a>
 
               <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#{{$locale}}membershipFive">
-                <h3 class="pricelist-price text-center text-white"><span class="price-number">59</span> <i class="fas fa-euro-sign"></i></h3>
-                <h6 class="pricelist-title text-center text-white">5 x 2h</h6>
+                <h3 class="pricelist-price text-center text-white"><span class="price-number">{{ $pricelist[6]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
+                <h6 class="pricelist-title text-center text-white">{{ $pricelist[6]->amount }}</h6>
                 <div class="pricelist-info-small">
                   <i class="fas fa-info text-black"></i>
                 </div>
               </a>
 
               <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#{{$locale}}membershipTen">
-                <h3 class="pricelist-price text-center text-white"><span class="price-number">99</span> <i class="fas fa-euro-sign"></i></h3>
-                <h6 class="pricelist-title text-center text-white">10 x 2h</h6>
+                <h3 class="pricelist-price text-center text-white"><span class="price-number">{{ $pricelist[7]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
+                <h6 class="pricelist-title text-center text-white">{{ $pricelist[7]->amount }}</h6>
                 <div class="pricelist-info-small">
                   <i class="fas fa-info text-black"></i>
                 </div>
@@ -126,14 +126,14 @@
           <div class="container-fluid">
             <div class="row mx-auto justify-content-start">
               <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#{{$locale}}membershipKlusais">
-                <h3 class="pricelist-price text-center text-white"><span class="price-number">59</span> <i class="fas fa-euro-sign"></i></h3>
+                <h3 class="pricelist-price text-center text-white"><span class="price-number">{{ $pricelist[8]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
                 <h6 class="pricelist-title text-center text-white">"{{__('klusais-laiks')}}"</h6>
                 <div class="pricelist-info-small">
                   <i class="fas fa-info text-black"></i>
                 </div>
               </a>
               <a class="col-12 membership pricelist-card small d-flex align-items-center justify-content-around" href="#" data-toggle="modal" data-target="#{{$locale}}membershipAktivais">
-                <h3 class="pricelist-price text-center text-white"><span class="price-number">99</span> <i class="fas fa-euro-sign"></i></h3>
+                <h3 class="pricelist-price text-center text-white"><span class="price-number">{{ $pricelist[9]->price }}</span> <i class="fas fa-euro-sign"></i></h3>
                 <h6 class="pricelist-title text-center text-white">"{{__('aktivais-laiks')}}"</h6>
                 <div class="pricelist-info-small">
                   <i class="fas fa-info text-black"></i>
@@ -143,9 +143,6 @@
           </div>
         </div>
       </div>
-
-      
-
     </div>
   </div>
   @include('inc.pricelist-modal')

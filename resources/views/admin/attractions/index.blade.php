@@ -9,6 +9,7 @@
               <a href="/admin/create" class="btn btn-success mt-3">Jauna atrakcija</a>
               <a href="/admin/images/add" class="btn btn-success mt-3">Pievienot bildes atrakcijai</a>
               <a href="/admin/footer/1/edit" class="btn btn-success mt-3">Atjaunot darba laiku / telefona numuru</a>
+              <a href="/admin/pricelist" class="btn btn-success mt-3">Rediģēt cenrādi</a>
             </div>
             <div class="card-body">
               <ul class="list-group list-group-flush">
