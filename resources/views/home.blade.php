@@ -3,7 +3,7 @@
 @section('content')
     <header>
         <video autoplay muted loop playsinline src="/storage/img/header_video.mp4" poster="storage/img/header_img.jpg"></video>
-        @include('inc.navbar')
+        @include('inc.navbar', ['footer' => $footer])
         {{-- header --}}
         <div class="container-fluid az-title">
             <div class="row">
