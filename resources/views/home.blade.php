@@ -52,7 +52,7 @@
     {{-- party section --}}
     <section id="party" class="section-cards">
         <div class="section-title-bar">
-          <h1 class="text-white text-center">{{ $party['name'] }}</h1>
+          <h1 class="text-white text-center text-lowercase">{{ $party['name'] }}</h1>
         </div>
         <div class="container">
             <div class="row">
@@ -75,7 +75,7 @@
     {{-- cafe section --}}
     <section id="cafe" class="section-cards">
         <div class="section-title-bar">
-          <h1 class="text-white text-center">{{ $cafe['name'] }}</h1>
+          <h1 class="text-white text-center text-lowercase">{{ $cafe['name'] }}</h1>
         </div>
         <div class="container">
           <div class="row">
@@ -98,7 +98,7 @@
     {{-- values section --}}
     <section id="values" class="section-cards">
         <div class="section-title-bar">
-          <h1 class="text-white text-center">{{ $values['name'] }}</h1>
+          <h1 class="text-white text-center text-lowercase">{{ $values['name'] }}</h1>
         </div>
         <div class="container">
           <div class="row">

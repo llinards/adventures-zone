@@ -15744,7 +15744,7 @@ video {
 }
 
 .party.pricelist-card .pricelist-title {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .price-number {
@@ -16235,6 +16235,10 @@ footer {
 
   .product-page-title .az-title-second {
     font-size: 2.75rem;
+  }
+
+  .section-title-bar h1 {
+    font-size: 30px;
   }
 
   .working-hours {
