@@ -24,6 +24,9 @@ class PricelistController extends Controller
             $pricelistUpdate = Pricelist::find($item->id);
             $pricelistUpdate->price = request('price');
             $pricelistUpdate->total = request('total');
+            $pricelistUpdate->description_lat = request('description-lat');
+            $pricelistUpdate->description_eng = request('description-eng');
+            $pricelistUpdate->description_rus = request('description-rus');
             $pricelistUpdate->save();
             return redirect('/admin/pricelist')->with('success', 'Atjaunots!');
         } catch (\Exception $e) {

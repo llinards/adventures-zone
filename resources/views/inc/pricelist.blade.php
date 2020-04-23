@@ -145,7 +145,7 @@
       </div>
     </div>
   </div>
-  @include('inc.pricelist-modal')
+  @include('inc.pricelist-modal', ['pricelist' => $pricelist])
 
   @include('inc.buy-reserve-btn')
 </section>

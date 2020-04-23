@@ -1,6 +1,4 @@
-{{-- LV --}}
-
-<div class="modal fade pricelist xsOneHour" id="lvxsOneHour" tabindex="-1" role="dialog">
+<div class="modal fade pricelist xsOneHour" id="{{$locale}}xsOneHour" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,16 +7,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Iegādājoties 1 stundas biļeti apmeklējumam XS zonā, Tu vari apmeklēt XS zona bumbu baseinu.</h5> 
-        <div class="alert alert-danger" role="alert">
-          <p>Šajā zonā vecākiem vai par bērnu atbildīgajai personai pašai ir jāpieskata bērns, kamēr tas atrodas atrakcijā.</p>
-        </div>
+        @if ($locale == 'ru')
+          {!! $pricelist[0]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[0]->description_eng !!}
+        @else
+          {!! $pricelist[0]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade pricelist aOneHour" id="lvaOneHour" tabindex="-1" role="dialog">
+<div class="modal fade pricelist aOneHour" id="{{$locale}}aOneHour" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -27,20 +28,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Cenā ietilpst jebkuras A zonas atrakciju izmantošana:</h5>
-        <ul>
-          <li>Nindzja šķēršļu josla</li>
-          <li>Klinšu kāpšanas sienas</li>
-          <li>Tīklu parks un pasaku labirints</li>
-          <li>Batuti un slidkalniņi</li>
-          <li>Kreativitāti attīstošas spēles</li>
-        </ul>
+        @if ($locale == 'ru')
+          {!! $pricelist[1]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[1]->description_eng !!}
+        @else
+          {!! $pricelist[1]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade pricelist aOneHourFullDay" id="lvaOneHourFullDay" tabindex="-1" role="dialog">
+<div class="modal fade pricelist aOneHourFullDay" id="{{$locale}}aOneHourFullDay" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -49,21 +49,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Cenā ietilpst jebkuras A zonas atrakciju izmantošana:</h5>
-        <ul class="pb-2">
-          <li>Nindzja šķēršļu josla</li>
-          <li>Klinšu kāpšanas sienas</li>
-          <li>Tīklu parks un pasaku labirints</li>
-          <li>Batuti un slidkalniņi</li>
-          <li>Kreativitāti attīstošas spēles</li>
-        </ul>
-        <p>Iegādājoties dienas biļeti, apmeklētājs var attiecīgās dienas laikā vairākas reizes apmeklēt un atstāt atrakciju parku.</p>
+        @if ($locale == 'ru')
+          {!! $pricelist[3]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[3]->description_eng !!}
+        @else
+          {!! $pricelist[3]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade pricelist partyRoom" id="lvpartyRoom" tabindex="-1" role="dialog">
+<div class="modal fade pricelist partyRoom" id="{{$locale}}partyRoom" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -72,17 +70,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Cenā ietilpst vienas ballīšu telpas noma ar tajā esošo telpas aprīkojumu divām stundām.</h5>
-        <p class="pb-2">
-          Nomājot ballīšu telpu, biļetes ADVENTURES' zone atrakciju izmantošanai ir jāiegādājas atsevišķi, 
-          atrakciju izmantošana neietilpst ballīšu telpas nomas cenā.</p>
-        <p>Par papildu samaksu ballītei nodrošinām svētku galdu un iespējams piesaistīt arī animatoru.  </p>
+        @if ($locale == 'ru')
+          {!! $pricelist[4]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[4]->description_eng !!}
+        @else
+          {!! $pricelist[4]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade pricelist membershipThree" id="lvmembershipThree" tabindex="-1" role="dialog">
+<div class="modal fade pricelist membershipThree" id="{{$locale}}membershipThree" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -91,21 +91,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Ietaupi un iegādājies 3 divu stundu atrakciju parka apmeklējumus par 2 cenu!</h5>
-        <ul class="pb-2">
-          <li>Nindzja šķēršļu josla</li>
-          <li>Klinšu kāpšanas sienas</li>
-          <li>Tīklu parks un pasaku labirints</li>
-          <li>Batuti un slidkalniņi</li>
-          <li>Kreativitāti attīstošas spēles</li>
-        </ul>
-        <p>Abonements ir derīgs izmantošanai 3 gadus kopš iegādes brīža, to var izmantot trīs atsevišķām 2 stundu parka apmeklējuma reizēm vai 3 personām.</p>
+        @if ($locale == 'ru')
+          {!! $pricelist[5]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[5]->description_eng !!}
+        @else
+          {!! $pricelist[5]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade pricelist membershipFive" id="lvmembershipFive" tabindex="-1" role="dialog">
+<div class="modal fade pricelist membershipFive" id="{{$locale}}membershipFive" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -114,21 +112,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Ietaupi un iegādājies 5 divu stundu atrakciju parka apmeklējumus par 3 cenu!</h5>
-        <ul class="pb-2">
-          <li>Nindzja šķēršļu josla</li>
-          <li>Klinšu kāpšanas sienas</li>
-          <li>Tīklu parks un pasaku labirints</li>
-          <li>Batuti un slidkalniņi</li>
-          <li>Kreativitāti attīstošas spēles</li>
-        </ul>
-        <p>Abonements ir derīgs izmantošanai 3 gadus kopš iegādes brīža, to var izmantot trīs atsevišķām 2 stundu parka apmeklējuma reizēm vai 3 personām.</p>
+        @if ($locale == 'ru')
+          {!! $pricelist[6]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[6]->description_eng !!}
+        @else
+          {!! $pricelist[6]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade pricelist membershipTen" id="lvmembershipTen" tabindex="-1" role="dialog">
+<div class="modal fade pricelist membershipTen" id="{{$locale}}membershipTen" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -137,21 +133,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Ietaupi un iegādājies 10 divu stundu atrakciju parka apmeklējumus par 5 cenu!</h5>
-        <ul class="pb-2">
-          <li>Nindzja šķēršļu josla</li>
-          <li>Klinšu kāpšanas sienas</li>
-          <li>Tīklu parks un pasaku labirints</li>
-          <li>Batuti un slidkalniņi</li>
-          <li>Kreativitāti attīstošas spēles</li>
-        </ul>
-        <p>Abonements ir derīgs izmantošanai 3 gadus kopš iegādes brīža, to var izmantot trīs atsevišķām 2 stundu parka apmeklējuma reizēm vai 3 personām.</p>
+        @if ($locale == 'ru')
+          {!! $pricelist[7]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[7]->description_eng !!}
+        @else
+          {!! $pricelist[7]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade pricelist membershipKlusais" id="lvmembershipKlusais" tabindex="-1" role="dialog">
+<div class="modal fade pricelist membershipKlusais" id="{{$locale}}membershipKlusais" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -160,18 +154,19 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Abonements ir derīgs vienu mēnesi kopš tā pirmās izmantošanas dienas jeb reizes. Šī abonementa izmantošanas noteikumi paredz, ka abonementu drīkst izmantot:</h5>
-        <ul class="pb-2">
-          <li>tikai <strong>darba dienās no plkst. 10:00 līdz 16:00;</strong></li>
-          <li>tikai <strong>viena</strong> persona;</li>
-          <li>neierobežotu skaitu reižu tikai tā derīguma termiņa ietvaros.</li>
-        </ul>
+        @if ($locale == 'ru')
+          {!! $pricelist[8]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[8]->description_eng !!}
+        @else
+          {!! $pricelist[8]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade pricelist membershipAktivais" id="lvmembershipAktivais" tabindex="-1" role="dialog">
+<div class="modal fade pricelist membershipAktivais" id="{{$locale}}membershipAktivais" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -180,12 +175,13 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Abonements ir derīgs vienu mēnesi kopš tā pirmās izmantošanas dienas jeb reizes. Šī abonementa izmantošanas noteikumi paredz, ka abonementu drīkst izmantot:</h5>
-        <ul class="pb-2">
-          <li>jebkurā dienā un laikā piedzīvojuma parka darba laika ietvaros;</li>
-          <li>tikai <strong>viena</strong> persona;</li>
-          <li>neierobežotu skaitu reižu tikai tā derīguma termiņa ietvaros.</li>
-        </ul>
+        @if ($locale == 'ru')
+          {!! $pricelist[9]->description_rus !!}
+        @elseif ($locale == 'en')
+          {!! $pricelist[9]->description_eng !!}
+        @else
+          {!! $pricelist[9]->description_lat !!}
+        @endif
       </div>
     </div>
   </div>
@@ -193,7 +189,7 @@
 
 {{-- EN --}}
 
-<div class="modal fade pricelist xsOneHour" id="enxsOneHour" tabindex="-1" role="dialog">
+{{-- <div class="modal fade pricelist xsOneHour" id="enxsOneHour" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -382,11 +378,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 {{-- RU --}}
 
-<div class="modal fade pricelist xsOneHour" id="ruxsOneHour" tabindex="-1" role="dialog">
+{{-- <div class="modal fade pricelist xsOneHour" id="ruxsOneHour" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -575,4 +571,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
