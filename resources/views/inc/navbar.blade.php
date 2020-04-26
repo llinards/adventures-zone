@@ -1,6 +1,6 @@
 <nav id="desktop-navbar">
   <div class="az-logo d-flex justify-content-center">
-      <a href="/">
+      <a href="/{{$locale}}">
         @if(!empty($product_page))
           <img class="az-logo--img" src="/storage/img/logo_blue.png" alt="az-logo-blue">
         @else
@@ -11,13 +11,13 @@
     @if(!empty($product_page))
     <div id="left" class="product-page az-menubar d-flex justify-content-end align-items-center">
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#attractions">{{__('atrakcijas')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/{{$locale}}#attractions">{{__('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#party">{{__('ballites')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/{{$locale}}#party">{{__('ballites')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#values">{{__('vertibas')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/{{$locale}}#values">{{__('vertibas')}}</a>
       </li>
       @else
     <div id="left" class="az-menubar d-flex justify-content-end align-items-center">
@@ -35,10 +35,10 @@
   @if(!empty($product_page))
   <div id="right" class="product-page az-menubar d-flex justify-content-start align-items-center">
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="/#cafe">{{__('kafejnica')}}</a>
+      <a class="nav-link text-white text-uppercase" href="/{{$locale}}#cafe">{{__('kafejnica')}}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link text-white text-uppercase" href="/#pricelist">{{__('cenas')}}</a>
+      <a class="nav-link text-white text-uppercase" href="/{{$locale}}#pricelist">{{__('cenas')}}</a>
     </li>
     @else
   <div id="right" class="az-menubar d-flex justify-content-start align-items-center">
@@ -82,12 +82,12 @@
 
 @if(!empty($product_page))
 <nav id="mobile-navbar" class="navbar navbar-expand-md navbar-dark product-page">
-  <a href="/">
+  <a href="/{{app()->getLocale()}}">
     <img src="/storage/img/logo_blue.png" width="50px"alt="az-logo">
   </a>
   @else
 <nav id="mobile-navbar" class="navbar navbar-expand-md navbar-dark">
-  <a href="/">
+  <a href="/{{app()->getLocale()}}">
     <img src="/storage/img/logo_pink.png" width="50px"alt="az-logo">
   </a>
   @endif
@@ -100,19 +100,19 @@
     <ul class="navbar-nav mx-auto text-center">
       @if(!empty($product_page))
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#attractions">{{__('atrakcijas')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/{{app()->getLocale()}}#attractions">{{__('atrakcijas')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#party">{{__('ballites')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/{{app()->getLocale()}}#party">{{__('ballites')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#values">{{__('vertibas')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/{{app()->getLocale()}}#values">{{__('vertibas')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#cafe">{{__('kafejnica')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/{{app()->getLocale()}}#cafe">{{__('kafejnica')}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white text-uppercase" href="/#pricelist">{{__('cenas')}}</a>
+        <a class="nav-link text-white text-uppercase" href="/{{app()->getLocale()}}#pricelist">{{__('cenas')}}</a>
       </li>
       @else
       <li class="nav-item">

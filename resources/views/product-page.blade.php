@@ -7,7 +7,7 @@
             class="header-img" 
             src="/storage/{{$attraction['header_photo_url']}}" 
             alt="{{$attraction['name']}}">
-        @include('inc.navbar', ['product_page' => true, 'footer' => $footer])
+        @include('inc.navbar', ['product_page' => true, 'footer' => $footer, 'locale' => $locale])
       
         <div class="container-fluid az-title product-page-title">
             <div class="row">

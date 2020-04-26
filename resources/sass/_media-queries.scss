@@ -2,6 +2,19 @@
     .product-description {
         padding: 0 0.5rem;
     }
+
+    #visit-count,
+    #thirty-days {
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+
+    .membership {
+        h6.pricelist-title {
+            font-size: 0.8rem;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -153,7 +166,7 @@
 
 @media (max-width: 575px) {
     .az-title-second {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .product-page-title {
