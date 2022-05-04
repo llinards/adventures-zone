@@ -11,25 +11,25 @@
     <meta property="og:url" content=" {{Request::url()}}" />
     <meta property="og:type"          content="article" />
     <meta property="og:title"         content="Adventure's Zone" />
-    <meta property="og:description"   content="Atrakciju un piedzīvojumu parks sniedz iespēju aktīvi pavadīt brīvo laiku  kopā ar ģimeni, bērniem, draugiem un kolēģiem Rīgā, svinēt pie mums svētkus un nomāt bērnu ballīšu telpas. Izcila izklaides vieta skolēniem un visai klasei." />   
+    <meta property="og:description"   content="Atrakciju un piedzīvojumu parks sniedz iespēju aktīvi pavadīt brīvo laiku  kopā ar ģimeni, bērniem, draugiem un kolēģiem Rīgā, svinēt pie mums svētkus un nomāt bērnu ballīšu telpas. Izcila izklaides vieta skolēniem un visai klasei." />
     <title>
         @isset($title)
-            {{ $title }} | 
+            {{ $title }} |
         @endisset
         {{ config('app.name') }}
     </title>
      <!-- Global site tag (gtag.js) - Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155885850-1"></script>
-     <script>
-         window.dataLayer = window.dataLayer || [];
- 
-         function gtag() {
-             dataLayer.push(arguments);
-         }
-         gtag('js', new Date());
- 
-         gtag('config', 'UA-155885850-1');
-     </script>
+{{--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155885850-1"></script>--}}
+{{--     <script>--}}
+{{--         window.dataLayer = window.dataLayer || [];--}}
+{{-- --}}
+{{--         function gtag() {--}}
+{{--             dataLayer.push(arguments);--}}
+{{--         }--}}
+{{--         gtag('js', new Date());--}}
+{{-- --}}
+{{--         gtag('config', 'UA-155885850-1');--}}
+{{--     </script>--}}
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
