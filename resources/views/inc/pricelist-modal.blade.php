@@ -103,6 +103,48 @@
   </div>
 </div>
 
+<div class="modal fade pricelist partyRoom" id="{{$locale}}partyRoomAdditionalHour" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[11]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[11]->description_eng !!}
+                @else
+                    {!! $pricelist[11]->description_lat !!}
+                @endif
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade pricelist partyRoomWeekend" id="{{$locale}}partyRoomWeekend" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[12]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[12]->description_eng !!}
+                @else
+                    {!! $pricelist[12]->description_lat !!}
+                @endif
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade pricelist membershipThree" id="{{$locale}}membershipThree" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

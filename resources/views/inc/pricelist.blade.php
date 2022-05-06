@@ -99,26 +99,25 @@
 
                             <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal"
                                data-target="#{{$locale}}partyRoom">
-                                <h4 class="pricelist-title text-center text-white">{{__('telpas-noma')}}</h4>
+                                <h4 class="pricelist-title text-center text-white">{{__('darba-dienas')}}</h4>
                                 <h3 class="pricelist-price text-center text-white"><span
                                         class="price-number">{{ $pricelist[4]->price }}</span> <i class="fas fa-euro-sign"></i>
                                 </h3>
                                 <div class="pricelist-info">
                                     <i class="fas fa-info text-black"></i>
                                 </div>
-                                <h6 class="text-center text-white">{{ $pricelist[4]->amount }} {{__('ire')}}</h6>
+                                <h6 class="text-center text-white">{{__('ire-2h')}}</h6>
                             </a>
 
                             <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal"
-                               data-target="#{{$locale}}partyRoom">
-                                <h4 class="pricelist-title text-center text-white">{{__('telpas-noma')}}</h4>
+                               data-target="#{{$locale}}partyRoomAdditionalHour">
                                 <h3 class="pricelist-price text-center text-white"><span
-                                        class="price-number">{{ $pricelist[4]->price }}</span> <i class="fas fa-euro-sign"></i>
+                                        class="price-number">+{{ $pricelist[11]->price }}</span> <i class="fas fa-euro-sign"></i>
                                 </h3>
                                 <div class="pricelist-info">
                                     <i class="fas fa-info text-black"></i>
                                 </div>
-                                <h6 class="text-center text-white">{{ $pricelist[4]->amount }} {{__('ire')}}</h6>
+                                <h6 class="text-center text-white">{{__('katra-nakama-stunda')}}</h6>
                             </a>
 
                         </div>
@@ -126,16 +125,15 @@
                     <div class="col-lg-6">
                         <div class="row">
 
-                            <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal"
-                               data-target="#{{$locale}}partyRoom">
-                                <h4 class="pricelist-title text-center text-white">{{__('telpas-noma')}}</h4>
+                            <a class="col-md-12 party-weekend pricelist-card" href="#" data-toggle="modal"
+                               data-target="#{{$locale}}partyRoomWeekend">
+                                <h4 class="pricelist-title text-center text-white">{{__('brivdienas')}}</h4>
                                 <h3 class="pricelist-price text-center text-white"><span
-                                        class="price-number">{{ $pricelist[4]->price }}</span> <i class="fas fa-euro-sign"></i>
+                                        class="price-number">+{{ $pricelist[12]->price }}</span> <i class="fas fa-euro-sign"></i>
                                 </h3>
                                 <div class="pricelist-info">
                                     <i class="fas fa-info text-black"></i>
                                 </div>
-                                <h6 class="text-center text-white">{{ $pricelist[4]->amount }} {{__('ire')}}</h6>
                             </a>
 
                         </div>

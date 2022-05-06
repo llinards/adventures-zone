@@ -76,6 +76,7 @@
 #membership.section-title-bar,
 .membership,
 .a-weekends,
+.party-weekend,
 #thirty-days.section-title-bar,
 #visit-count.section-title-bar {
     background-color: $membership-section-card;
@@ -144,16 +145,17 @@
 
 .pricelist-title {
     font-weight: 400;
+    font-size: 1.2rem;
 }
-
-.party.pricelist-card {
-    .pricelist-title {
-        font-size: 1rem;
-    }
-}
+//
+//.party.pricelist-card {
+//    .pricelist-title {
+//        font-size: 1rem;
+//    }
+//}
 
 .price-number {
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 700;
 }
 
@@ -201,7 +203,8 @@
 }
 
 .membership .pricelist-info i,
-.a-weekends .pricelist-info i{
+.a-weekends .pricelist-info i,
+.party-weekend .pricelist-info i{
     color: $membership-section-card;
 }
 
@@ -243,6 +246,7 @@
 .aOneHour,
 .aOneHourFullDay,
 .aWeekends,
+.partyRoomWeekend
 .partyRoom,
 .membershipThree,
 .membershipFive,
@@ -278,7 +282,8 @@
 .membershipTen,
 .membershipKlusais,
 .membershipAktivais,
-.aWeekends{
+.aWeekends,
+.partyRoomWeekend{
     .modal-content {
         background-color: $membership-section-card;
     }
@@ -289,6 +294,7 @@
 .aOneHourFullDay,
 .aWeekends,
 .partyRoom,
+.partyRoomWeekend,
 .membershipThree,
 .membershipFive,
 .membershipTen,

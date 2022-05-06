@@ -9,7 +9,7 @@
     "a-zona": "A ZONE",
     "xs-zona": "XS ZONE",
     "abonementi": "Monthly pass",
-  
+
     "viena-stunda": "1 hour",
     "divas-stundas": "2nd hour",
     "visa-diena": "All day",
@@ -20,16 +20,20 @@
     "30-dienam": "30 days",
     "klusais-laiks": "off-peak time",
     "aktivais-laiks": "peak time",
-  
-  
-  
+    "brivdienas": "brīvdienās",
+    "darba-dienas": "darba dienās",
+    "ire-2h": "2h telpu īre",
+    "katra-nakama-stunda": "katra nākamā stunda",
+
+
+
     "uzzinat_vairak": "Learn more",
     "pirkt": "Buy",
-  
+
     "adrese": "Address",
     "alfas-nosaukums": "Shopping mall ALFA, 3rd floor",
     "alfas-iela": "Brīvības gatve 372, Rīga",
     "darba-laiks": "WORKING HOURS:"
-  
-    
+
+
   }

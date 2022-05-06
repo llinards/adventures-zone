@@ -9,7 +9,7 @@
     "a-zona": "A зона",
     "xs-zona": "XS зона",
     "abonementi": "абонемент",
-  
+
     "viena-stunda": "1 час",
     "divas-stundas": "2-й час",
     "visa-diena": "Весь день",
@@ -20,16 +20,20 @@
     "30-dienam": "30 дней",
     "klusais-laiks": "тихое время",
     "aktivais-laiks": "активное время",
-  
-  
-  
+    "brivdienas": "brīvdienās",
+    "darba-dienas": "darba dienās",
+    "ire-2h": "2h telpu īre",
+    "katra-nakama-stunda": "katra nākamā stunda",
+
+
+
     "uzzinat_vairak": "Узнать больше",
     "pirkt": "купить",
-  
+
     "adrese": "Адрес",
     "alfas-nosaukums": "т/ц ALFA, 3 этаж",
     "alfas-iela": "Brīvības gatve 372, Рига",
     "darba-laiks": "ЧАСЫ РАБОТЫ:"
-  
-    
+
+
   }
