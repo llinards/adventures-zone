@@ -1,35 +1,33 @@
 {
-  "atrakcijas": "Atrakcijas",
-  "citas_atrakcijas": "Citas atrakcijas",
-  "ballites": "Ballītes",
-  "vertibas": "Vērtības",
-  "kafejnica": "Kafejnīca",
-  "cenas": "Cenas/pirkt",
-  "apaksvirsraksts": "Piedzīvojumi, kas aizrauj un attīsta",
-  "a-zona": "A zona",
-  "xs-zona": "XS zona",
-  "abonementi": "Abonementi",
+    "atrakcijas": "Atrakcijas",
+    "citas_atrakcijas": "Citas atrakcijas",
+    "ballites": "Ballītes",
+    "vertibas": "Vērtības",
+    "kafejnica": "Kafejnīca",
+    "cenas": "Cenas/pirkt",
+    "apaksvirsraksts": "Piedzīvojumi, kas aizrauj un attīsta",
+    "a-zona": "A zona",
+    "xs-zona": "XS zona",
+    "abonementi": "Abonementi",
 
-  "viena-stunda": "1. stunda",
-  "divas-stundas": "2. stunda",
-  "visa-diena": "visa diena",
-  "kopa": "kopā",
-  "telpas-noma": "telpas noma",
-  "ire": "īre",
-  "apmeklejuma-reizes": "apmeklējuma reizes",
-  "30-dienam": "mēneša abonements",
-  "klusais-laiks": "klusais laiks",
-  "aktivais-laiks": "aktīvais laiks",
+    "viena-stunda": "1. stunda",
+    "divas-stundas": "2. stunda",
+    "visa-diena": "visa diena",
+    "kopa": "kopā",
+    "telpas-noma": "telpas noma",
+    "ire": "īre",
+    "apmeklejuma-reizes": "apmeklējuma reizes",
+    "30-dienam": "mēneša abonements",
+    "klusais-laiks": "klusais laiks",
+    "aktivais-laiks": "aktīvais laiks",
+    "brivdienas": "brīvdienās",
 
 
+    "uzzinat_vairak": "Uzzināt vairāk",
+    "pirkt": "Pirkt",
 
-  "uzzinat_vairak": "Uzzināt vairāk",
-  "pirkt": "Pirkt",
-
-  "adrese": "Adrese",
-  "alfas-nosaukums": "t/c 'Alfa', 3.stāvs",
-  "alfas-iela": "Brīvības gatve 372, Rīga",
-  "darba-laiks": "Darba laiks:"
-
-  
+    "adrese": "Adrese",
+    "alfas-nosaukums": "t/c 'Alfa', 3.stāvs",
+    "alfas-iela": "Brīvības gatve 372, Rīga",
+    "darba-laiks": "Darba laiks:"
 }

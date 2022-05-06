@@ -61,6 +61,27 @@
   </div>
 </div>
 
+<div class="modal fade pricelist aWeekends" id="{{$locale}}aWeekends" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[10]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[10]->description_eng !!}
+                @else
+                    {!! $pricelist[10]->description_lat !!}
+                @endif
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade pricelist partyRoom" id="{{$locale}}partyRoom" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -198,7 +219,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Purchasing an XS zone ticket allows you to visit the XS area ball pool for one hour.</h5> 
+        <h5 class="pb-2">Purchasing an XS zone ticket allows you to visit the XS area ball pool for one hour.</h5>
         <div class="alert alert-danger" role="alert">
           <p>In this area, the parent or the person in charge of the child must supervise the child himself / herself while the child is in the amusement park.</p>
         </div>
@@ -391,7 +412,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="pb-2">Покупка билета в XS зону дает Вам право часового посещения бассейна с шариками.</h5> 
+        <h5 class="pb-2">Покупка билета в XS зону дает Вам право часового посещения бассейна с шариками.</h5>
         <div class="alert alert-danger" role="alert">
           <p>В этой зоне родитель или лицо, ответственное за ребенка, должен сам присматривать за своим чадом, пока он / она находится в аттракционе.</p>
         </div>

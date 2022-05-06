@@ -2,12 +2,8 @@
     .section-title-bar {
         background-color: $menu-bg-color;
         position: relative;
-        margin-bottom: 2rem;
+        margin-bottom: 0.75rem;
     }
-}
-
-.pricelist-block {
-    width: 100%;
 }
 
 #second-row.pricelist-block {
@@ -15,13 +11,26 @@
 }
 
 
+#first-row {
+    .left,
+    .center,
+    .right {
+        width: 33.333%;
+    }
+}
+
 .left {
-    width: 40%;
+    width: 100%;
+}
+
+.center {
+    .section-title-bar {
+        -webkit-clip-path: $center-general-clip-path;
+        clip-path: $center-general-clip-path;
+    }
 }
 
 .right {
-    width: 60%;
-
     .section-title-bar {
         -webkit-clip-path: $second-general-clip-path;
         clip-path: $second-general-clip-path
@@ -29,20 +38,30 @@
 }
 
 .left,
-.right {
+.right,
+.center {
     .section-title-bar {
         width: 100%;
     }
 }
 
-.second-lvl {
-    width: 100%;
-    max-width: 665px;
+#second-row {
+    .left {
+        #membership.section-title-bar {
+            width: 50%;
+        }
+    }
 }
 
-.left.second-lvl,
-.right.second-lvl {
-    width: 48%;
+.second-lvl {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.left.second-lvl .container-fluid,
+.right.second-lvl .container-fluid{
+    padding: 0;
 }
 
 #xs.section-title-bar {
@@ -56,13 +75,14 @@
 
 #membership.section-title-bar,
 .membership,
+.a-weekends,
 #thirty-days.section-title-bar,
 #visit-count.section-title-bar {
     background-color: $membership-section-card;
 }
 
 #membership.section-title-bar {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
 }
 
 #visit-count.section-title-bar,
@@ -76,25 +96,23 @@
     clip-path: $second-lvl-clip-path;
 }
 
-#azone.section-title-bar,
-#membership.section-title-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 6%;
-}
+//#membership.section-title-bar {
+//    display: -webkit-box;
+//    display: -ms-flexbox;
+//    display: flex;
+//    padding-left: 10%;
+//}
 
-#xs.section-title-bar,
-#party.section-title-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    padding-right: 10%;
-}
+//#xs.section-title-bar {
+//    display: -webkit-box;
+//    display: -ms-flexbox;
+//    display: flex;
+//    -webkit-box-orient: horizontal;
+//    -webkit-box-direction: reverse;
+//    -ms-flex-direction: row-reverse;
+//    flex-direction: row-reverse;
+//    padding-right: 10%;
+//}
 
 
 .pricelist-card {
@@ -109,9 +127,10 @@
 
 .pricelist-card.small {
     height: 30px !important;
-    max-width: 95% !important;
+    max-width: 85% !important;
     -webkit-clip-path: $third-lvl-clip-path;
     clip-path: $third-lvl-clip-path;
+    margin: 0.5rem 0;
 }
 
 .xs-zone {
@@ -144,7 +163,7 @@
     }
 }
 
-.pricelist-price>.fa-euro-sign {
+.pricelist-price > .fa-euro-sign {
     font-size: 1rem;
 }
 
@@ -165,7 +184,7 @@
     font-size: 1rem;
 }
 
-.pricelist-info>.fa-info {
+.pricelist-info > .fa-info {
     color: #000000;
 }
 
@@ -181,13 +200,15 @@
     color: $party-section-card;
 }
 
-.membership .pricelist-info i {
+.membership .pricelist-info i,
+.a-weekends .pricelist-info i{
     color: $membership-section-card;
 }
 
 // pricelist modal
 
-.modal-dialog {}
+.modal-dialog {
+}
 
 .modal-content {
     border: none;
@@ -221,6 +242,7 @@
 .xsOneHour,
 .aOneHour,
 .aOneHourFullDay,
+.aWeekends,
 .partyRoom,
 .membershipThree,
 .membershipFive,
@@ -255,7 +277,8 @@
 .membershipFive,
 .membershipTen,
 .membershipKlusais,
-.membershipAktivais {
+.membershipAktivais,
+.aWeekends{
     .modal-content {
         background-color: $membership-section-card;
     }
@@ -264,6 +287,7 @@
 .aOneHour,
 .xsOneHour,
 .aOneHourFullDay,
+.aWeekends,
 .partyRoom,
 .membershipThree,
 .membershipFive,
