@@ -51,13 +51,13 @@
     @endif
     <li class="nav-item dropdown">
       @foreach (config('app.available_locales') as $locale)
-        @if (app()->getLocale() == $locale) 
-          <a 
-            class="nav-item nav-link dropdown-toggle text-white text-uppercase" 
-            href="#" id="navbarDropdown" 
-            role="button" 
-            data-toggle="dropdown" 
-            aria-haspopup="true" 
+        @if (app()->getLocale() == $locale)
+          <a
+            class="nav-item nav-link dropdown-toggle text-white text-uppercase"
+            href="#" id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
             aria-expanded="false">
             {{$locale}}
           </a>
@@ -66,11 +66,11 @@
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         @foreach (config('app.available_locales') as $locale)
           @if(app()->getLocale() != $locale)
-            <a 
-              href="/{{$locale}}" 
+            <a
+              href="/{{$locale}}"
               class="dropdown-item"
-              @if (app()->getLocale() == $locale) 
-                style="font-weight: bold; text-decoration: underline" 
+              @if (app()->getLocale() == $locale)
+                style="font-weight: bold; text-decoration: underline"
               @endif>{{ strtoupper($locale) }}
             </a>
           @endif
@@ -134,16 +134,16 @@
     </ul>
     <div class="navbar-contact-info text-center text-white text-uppercase pt-4">
       <h5>{{__('darba-laiks')}}</h5>
-      <p>@if ($locale == "en")
+      <p>@if (app()->getLocale() == "en")
         {!! $footer[0]['working_hours_eng'] !!}
-      @elseif ($locale == "ru")
+      @elseif (app()->getLocale() == "ru")
         {!! $footer[0]['working_hours_rus'] !!}
       @else
         {!! $footer[0]['working_hours_lat'] !!}
       @endif</p>
     </div>
     <h5 class="text-uppercase text-white text-center pt-3"><strong>{{__('adrese')}}:</strong></h5>
-    <a class="text-uppercase text-white text-center pt-1" target="_blank" href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">  
+    <a class="text-uppercase text-white text-center pt-1" target="_blank" href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">
       <p><u>{{__('alfas-nosaukums')}}</u></p>
     </a>
     <h4 class="text-uppercase text-white text-center">
