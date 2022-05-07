@@ -56,7 +56,9 @@ class AttractionsController extends Controller
         try {
             $data = $this->validatedData();
             $updateAttraction = Attraction::find(request('id'));
-            $updateAttraction->enabled = request('active');
+            if(request('active')) {
+                $updateAttraction->enabled = request('active');
+            }
             $updateAttraction->name_lat = $data['attraction-lv'];
             $updateAttraction->name_eng = $data['attraction-eng'];
             $updateAttraction->name_rus = $data['attraction-rus'];
@@ -66,12 +68,12 @@ class AttractionsController extends Controller
             if(request('attraction-cover-img')) {
                 $coverImagePath = request('attraction-cover-img')->store($attractionsPath,'public');
                 $updateAttraction->cover_photo_url = $coverImagePath;
-            } 
+            }
 
             if(request('attraction-header-img')) {
                 $headerImagePath = request('attraction-header-img')->store($attractionsPath,'public');
                 $updateAttraction->header_photo_url = $headerImagePath;
-            } 
+            }
 
             $updateAttraction->description_lat = $data['description-lat'];
             $updateAttraction->description_rus = $data['description-rus'];
@@ -113,7 +115,7 @@ class AttractionsController extends Controller
     {
         $data = request()->validate([
             'attraction-lv' => 'required',
-            'attraction-eng' => 'required', 
+            'attraction-eng' => 'required',
             'attraction-rus' => 'required',
             'attraction-cover-img' => 'file|image|max:1500',
             'attraction-header-img' => 'file|image|max:1500',

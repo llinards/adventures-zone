@@ -3,13 +3,6 @@
         padding: 0 0.5rem;
     }
 
-    #visit-count,
-    #thirty-days {
-        h4 {
-            font-size: 1.25rem;
-        }
-    }
-
     .membership {
         h6.pricelist-title {
             font-size: 0.8rem;
@@ -58,9 +51,14 @@
     .second-lvl {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        width: 100%;
     }
 
+    #first-row .left,
+    #first-row .center,
+    #first-row .right,
     .left,
+    .center,
     .right {
         width: 100%;
         margin-bottom: 1rem;
@@ -123,6 +121,10 @@
         display: block;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .disclaimer-section {
+        text-align: center;
     }
 
     .footer-right {

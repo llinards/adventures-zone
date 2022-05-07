@@ -29,11 +29,12 @@ $product-page-menu-bg-color: #20abe2;
 
 $general-clip-path: polygon(0 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
 $second-general-clip-path: polygon(calc(0% + 40px) 0, 100% 0%, 100% 100%, 0 100%);
+$center-general-clip-path: polygon(calc(0% + 40px) 0, 100% 0%, calc(100% - 40px) 100%, 0 100%);
 
 $second-lvl-clip-path: polygon(30px 0, 100% 0%, calc(100% - 30px) 100%, 0 100%);
 $second-second-lvl-clip-path: polygon(30px 0, 100% 0%, 100% 100%, 0 100%);
 
-$third-lvl-clip-path: polygon(25px 0, 100% 0%, calc(100% - 25px) 100%, 0 100%);
+$third-lvl-clip-path: polygon(0 0, 100% 0%, calc(100% - 25px) 100%, 0 100%);
 
 
 // $second-general-clip-path: polygon(0% 100%, 40px 0%, 100% 0%, 100% 100%, 0% 100%, 0 calc(100% - 40px));
