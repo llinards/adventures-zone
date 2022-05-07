@@ -20,10 +20,12 @@
     "30-dienam": "30 дней",
     "klusais-laiks": "тихое время",
     "aktivais-laiks": "активное время",
-    "brivdienas": "brīvdienās",
-    "darba-dienas": "darba dienās",
-    "ire-2h": "2h telpu īre",
-    "katra-nakama-stunda": "katra nākamā stunda",
+    "brivdienas": "выходные дни",
+    "darba-dienas": "рабочие дни",
+    "ire-2h": "2h",
+    "katra-nakama-stunda": "каждый следующий час",
+    "klusais-laiks-atruna": "В рабочие дни с 10:00 до 16:00",
+    "aktivais-laiks-atruna": "В любой день и время ",
 
 
 

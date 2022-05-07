@@ -6,7 +6,7 @@
             </div>
 
             <div class="container-fluid">
-                <div class="row mx-auto justify-content-center">
+                <div class="row justify-content-center">
                     <a class="col-md-12 xs-zone pricelist-card" href="#" data-toggle="modal"
                        data-target="#{{$locale}}xsOneHour">
                         <h4 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h4>
@@ -30,7 +30,7 @@
             <div class="container-fluid">
                 <div class="row mx-auto">
                     <div class="col-lg-6">
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <a class="col-md-12 a-zone pricelist-card" href="#" data-toggle="modal"
                                data-target="#{{$locale}}aOneHour">
                                 <h4 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h4>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <a class="col-md-12 a-weekends pricelist-card" href="#" data-toggle="modal"
                                data-target="#{{$locale}}aWeekends">
                                 <h4 class="pricelist-title text-center text-white">{{__('brivdienas')}}</h4>
@@ -95,7 +95,7 @@
             <div class="container-fluid">
                 <div class="row mx-auto">
                     <div class="col-lg-6">
-                        <div class="row">
+                        <div class="row justify-content-center">
 
                             <a class="col-md-12 party pricelist-card" href="#" data-toggle="modal"
                                data-target="#{{$locale}}partyRoom">
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="row">
+                        <div class="row justify-content-center">
 
                             <a class="col-md-12 party-weekend pricelist-card" href="#" data-toggle="modal"
                                data-target="#{{$locale}}partyRoomWeekend">
@@ -222,6 +222,11 @@
                                     <i class="fas fa-info text-black"></i>
                                 </div>
                             </a>
+
+                        </div>
+                        <div class="disclaimer-section">
+                            <p>* {{__('klusais-laiks-atruna')}}</p>
+                            <p>** {{__('aktivais-laiks-atruna')}}</p>
                         </div>
                     </div>
                 </div>

@@ -20,10 +20,12 @@
     "30-dienam": "30 days",
     "klusais-laiks": "off-peak time",
     "aktivais-laiks": "peak time",
-    "brivdienas": "brīvdienās",
-    "darba-dienas": "darba dienās",
-    "ire-2h": "2h telpu īre",
-    "katra-nakama-stunda": "katra nākamā stunda",
+    "brivdienas": "weekends",
+    "darba-dienas": "weekdays",
+    "ire-2h": "2h rent",
+    "katra-nakama-stunda": "every next hour",
+    "klusais-laiks-atruna": "from 10am to 4pm",
+    "aktivais-laiks-atruna": "any day and time",
 
 
 
