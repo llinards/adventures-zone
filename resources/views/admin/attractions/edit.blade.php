@@ -81,7 +81,7 @@
                                 <label for="first-page-description-eng">ENG</label>
                                 <textarea class="form-control" name="first-page-description-eng"
                                           id="first-page-description-eng"
-                                          rows="4">{{ $attraction->first_page_description_lat }}</textarea>
+                                          rows="4">{{ $attraction->first_page_description_eng }}</textarea>
                             </div>
                         </div>
                         <div class="col">
@@ -89,7 +89,7 @@
                                 <label for="first-page-description-rus">RUS</label>
                                 <textarea class="form-control" name="first-page-description-rus"
                                           id="first-page-description-rus"
-                                          rows="4">{{ $attraction->first_page_description_lat }}</textarea>
+                                          rows="4">{{ $attraction->first_page_description_rus }}</textarea>
                             </div>
                         </div>
                     </div>
