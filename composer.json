@@ -12,7 +12,8 @@
         "doctrine/dbal": "^3.0",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^4.0"
+        "laravel/ui": "^4.0",
+        "whitecube/laravel-cookie-consent": "^1.2"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^2.0",

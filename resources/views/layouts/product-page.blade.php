@@ -11,35 +11,22 @@
     <meta property="og:url" content=" {{Request::url()}}" />
     <meta property="og:type"          content="article" />
     <meta property="og:title"         content="{{ $parameters['name'] }} | Adventure's Zone" />
-    <meta property="og:description"   content="{{ $parameters['meta_description'] }}" />  
-    <meta property="og:image" content="{{ $parameters['header_photo_url'] }}" />  
+    <meta property="og:description"   content="{{ $parameters['meta_description'] }}" />
+    <meta property="og:image" content="{{ $parameters['header_photo_url'] }}" />
     <title>
         @isset($parameters)
-            {{ $parameters['name'] }} | 
+            {{ $parameters['name'] }} |
         @endisset
         {{ config('app.name') }}
     </title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155885850-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-155885850-1');
-    </script> --}}
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @cookieconsentscripts
 </head>
 <body>
-    <!--[if IE]>
-        Jūs izmantojat Internet Explorer un tas netiek atbalstīts šajā mājaslapā. Vislabāko pieredzi iegūsiet ar Google Chrome.
-    <![endif]-->
     @yield('content')
+    @cookieconsentview
 </body>
 </html>
