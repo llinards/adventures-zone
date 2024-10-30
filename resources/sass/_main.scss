@@ -42,3 +42,20 @@ a[href^="tel"] {
     color: inherit;
     text-decoration: none;
 }
+
+//Cookies consent window
+
+#cookies-policy .cookies__alert {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+#cookies-policy .cookies__actions .cookiesBtn__link {
+    background: $menu-bg-color;
+    border: none;
+}
+
+#cookies-policy .cookies__intro a:focus,
+#cookies-policy .cookies__intro a:hover {
+    color: $menu-bg-color !important;
+}
