@@ -5,17 +5,17 @@
             <div class="cookies__wrapper">
                 <h5 class="cookies__title">@lang('cookieConsent::cookies.title')</h5>
                 <div class="cookies__intro">
-                    <p>@lang('cookieConsent::cookies.link', ['url' => app()->getLocale().'/privatuma-politika'])</p>
+                    <p>@lang('cookieConsent::cookies.link', ['url' => '/'.app()->getLocale().'/privatuma-politika'])</p>
                 </div>
                 <div class="cookies__actions">
                     @cookieconsentbutton(action: 'accept.essentials', label: __('cookieConsent::cookies.essentials'),
-                    attributes: ['class' => 'cookiesBtn cookiesBtn--essentials'])
+                    attributes: ['class' => 'cookiesBtn cookiesBtn--essentials d-none'])
                     @cookieconsentbutton(action: 'accept.all', label: __('cookieConsent::cookies.all'), attributes:
                     ['class' => 'cookiesBtn cookiesBtn--accept'])
                 </div>
             </div>
         </div>
-        <a href="#cookies-policy-customize" class="cookies__btn cookies__btn--customize">
+        <a href="#cookies-policy-customize" class="cookies__btn cookies__btn--customize d-none">
             <span>@lang('cookieConsent::cookies.customize')</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                  aria-hidden="true">
@@ -24,7 +24,7 @@
                     fill="#2C2E30"/>
             </svg>
         </a>
-        <div class="cookies__expandable cookies__expandable--custom" id="cookies-policy-customize">
+        <div class="cookies__expandable cookies__expandable--custom d-none" id="cookies-policy-customize">
             <form action="{{ route('cookieconsent.accept.configuration') }}" method="post" class="cookies__customize">
                 @csrf
                 <div class="cookies__sections">
