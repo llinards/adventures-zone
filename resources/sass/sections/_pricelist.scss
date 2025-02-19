@@ -6,46 +6,40 @@
     }
 }
 
-#second-row.pricelist-block {
-    margin-top: 2rem;
-}
-
-
 #first-row {
     .left,
-    .center,
     .right {
-        width: 33.333%;
+        width: 50%
     }
 }
 
-.left {
-    width: 100%;
+#second-row {
+    .left {
+        width: 50%;
+        margin-top: -25%;
+    }
 }
 
-.center {
-    .section-title-bar {
-        -webkit-clip-path: $center-general-clip-path;
-        clip-path: $center-general-clip-path;
+#third-row {
+    .left {
+        width: 100%;
     }
 }
 
 .right {
     .section-title-bar {
-        -webkit-clip-path: $second-general-clip-path;
         clip-path: $second-general-clip-path
     }
 }
 
 .left,
-.right,
-.center {
+.right {
     .section-title-bar {
         width: 100%;
     }
 }
 
-#second-row {
+#third-row {
     .left {
         #membership.section-title-bar {
             width: 50%;
@@ -54,9 +48,9 @@
 }
 
 .second-lvl {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    max-width: 768px;
+    //max-width: 768px;
 }
 
 .left.second-lvl .container-fluid,
@@ -93,43 +87,21 @@
 
 #visit-count.section-title-bar,
 #thirty-days.section-title-bar {
-    -webkit-clip-path: $second-lvl-clip-path;
     clip-path: $second-lvl-clip-path;
 }
 
-//#membership.section-title-bar {
-//    display: -webkit-box;
-//    display: -ms-flexbox;
-//    display: flex;
-//    padding-left: 10%;
-//}
-
-//#xs.section-title-bar {
-//    display: -webkit-box;
-//    display: -ms-flexbox;
-//    display: flex;
-//    -webkit-box-orient: horizontal;
-//    -webkit-box-direction: reverse;
-//    -ms-flex-direction: row-reverse;
-//    flex-direction: row-reverse;
-//    padding-right: 10%;
-//}
-
-
 .pricelist-card {
-    max-width: 185px !important;
-    height: 185px !important;
+    max-width: 170px !important;
+    height: 170px !important;
     padding: 0.5rem;
     position: relative;
     margin: 0.5rem;
-    -webkit-clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
     clip-path: polygon(0% 20px, 20px 0%, 101% 0%, 101% 101%, 0px 101%);
 }
 
 .pricelist-card.small {
     height: 30px !important;
     max-width: 85% !important;
-    -webkit-clip-path: $third-lvl-clip-path;
     clip-path: $third-lvl-clip-path;
     margin: 0.5rem 0;
 }
@@ -156,7 +128,7 @@
 //}
 
 .price-number {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
