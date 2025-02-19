@@ -1,68 +1,68 @@
 <div class="modal fade pricelist xsOneHour" id="{{$locale}}xsOneHour" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[0]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[0]->description_eng !!}
-        @else
-          {!! $pricelist[0]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[0]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[0]->description_eng !!}
+                @else
+                    {!! $pricelist[0]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="modal fade pricelist aOneHour" id="{{$locale}}aOneHour" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[1]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[1]->description_eng !!}
-        @else
-          {!! $pricelist[1]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[1]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[1]->description_eng !!}
+                @else
+                    {!! $pricelist[1]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="modal fade pricelist aOneHourFullDay" id="{{$locale}}aOneHourFullDay" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[3]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[3]->description_eng !!}
-        @else
-          {!! $pricelist[3]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[3]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[3]->description_eng !!}
+                @else
+                    {!! $pricelist[3]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="modal fade pricelist aWeekends" id="{{$locale}}aWeekends" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">
@@ -83,28 +83,28 @@
 </div>
 
 <div class="modal fade pricelist partyRoom" id="{{$locale}}partyRoom" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[4]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[4]->description_eng !!}
-        @else
-          {!! $pricelist[4]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[4]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[4]->description_eng !!}
+                @else
+                    {!! $pricelist[4]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="modal fade pricelist partyRoom" id="{{$locale}}partyRoomAdditionalHour" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">
@@ -125,7 +125,7 @@
 </div>
 
 <div class="modal fade pricelist partyRoomWeekend" id="{{$locale}}partyRoomWeekend" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">
@@ -146,114 +146,114 @@
 </div>
 
 <div class="modal fade pricelist membershipThree" id="{{$locale}}membershipThree" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[5]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[5]->description_eng !!}
-        @else
-          {!! $pricelist[5]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[5]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[5]->description_eng !!}
+                @else
+                    {!! $pricelist[5]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="modal fade pricelist membershipFive" id="{{$locale}}membershipFive" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[6]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[6]->description_eng !!}
-        @else
-          {!! $pricelist[6]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[6]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[6]->description_eng !!}
+                @else
+                    {!! $pricelist[6]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="modal fade pricelist membershipTen" id="{{$locale}}membershipTen" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[7]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[7]->description_eng !!}
-        @else
-          {!! $pricelist[7]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[7]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[7]->description_eng !!}
+                @else
+                    {!! $pricelist[7]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="modal fade pricelist membershipKlusais" id="{{$locale}}membershipKlusais" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[8]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[8]->description_eng !!}
-        @else
-          {!! $pricelist[8]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[8]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[8]->description_eng !!}
+                @else
+                    {!! $pricelist[8]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="modal fade pricelist membershipAktivais" id="{{$locale}}membershipAktivais" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        @if ($locale == 'ru')
-          {!! $pricelist[9]->description_rus !!}
-        @elseif ($locale == 'en')
-          {!! $pricelist[9]->description_eng !!}
-        @else
-          {!! $pricelist[9]->description_lat !!}
-        @endif
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if ($locale == 'ru')
+                    {!! $pricelist[9]->description_rus !!}
+                @elseif ($locale == 'en')
+                    {!! $pricelist[9]->description_eng !!}
+                @else
+                    {!! $pricelist[9]->description_lat !!}
+                @endif
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 {{-- EN --}}
 
 {{-- <div class="modal fade pricelist xsOneHour" id="enxsOneHour" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -271,7 +271,7 @@
 </div>
 
 <div class="modal fade pricelist aOneHour" id="enaOneHour" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -293,7 +293,7 @@
 </div>
 
 <div class="modal fade pricelist aOneHourFullDay" id="enaOneHourFullDay" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -315,7 +315,7 @@
 </div>
 
 <div class="modal fade pricelist partyRoom" id="enpartyRoom" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -333,7 +333,7 @@
 </div>
 
 <div class="modal fade pricelist membershipThree" id="enmembershipThree" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -356,7 +356,7 @@
 </div>
 
 <div class="modal fade pricelist membershipFive" id="enmembershipFive" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -379,7 +379,7 @@
 </div>
 
 <div class="modal fade pricelist membershipTen" id="enmembershipTen" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -402,7 +402,7 @@
 </div>
 
 <div class="modal fade pricelist membershipKlusais" id="enmembershipKlusais" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -423,7 +423,7 @@
 </div>
 
 <div class="modal fade pricelist membershipAktivais" id="enmembershipAktivais" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -446,7 +446,7 @@
 {{-- RU --}}
 
 {{-- <div class="modal fade pricelist xsOneHour" id="ruxsOneHour" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -464,7 +464,7 @@
 </div>
 
 <div class="modal fade pricelist aOneHour" id="ruaOneHour" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -486,7 +486,7 @@
 </div>
 
 <div class="modal fade pricelist aOneHourFullDay" id="ruaOneHourFullDay" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -508,7 +508,7 @@
 </div>
 
 <div class="modal fade pricelist partyRoom" id="rupartyRoom" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -526,7 +526,7 @@
 </div>
 
 <div class="modal fade pricelist membershipThree" id="rumembershipThree" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -549,7 +549,7 @@
 </div>
 
 <div class="modal fade pricelist membershipFive" id="rumembershipFive" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -572,7 +572,7 @@
 </div>
 
 <div class="modal fade pricelist membershipTen" id="rumembershipTen" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -595,7 +595,7 @@
 </div>
 
 <div class="modal fade pricelist membershipKlusais" id="rumembershipKlusais" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
@@ -616,7 +616,7 @@
 </div>
 
 <div class="modal fade pricelist membershipAktivais" id="rumembershipAktivais" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">
