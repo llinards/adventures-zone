@@ -9,11 +9,15 @@
                    data-toggle="modal"
                    data-target="#{{$locale}}xsOneHour">
                     <h3 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h3>
-                    <h4 class="pricelist-price text-center text-white my-auto"><span
-                            class="price-number">
-                                {{ $pricelist[0]->price }}
-                            </span> <i class="fas fa-euro-sign"></i>
-                    </h4>
+                    @php
+                        $price = $pricelist[0]->price;
+                        [$whole, $decimal] = explode('.', $price);
+                    @endphp
+                    <h6 class="pricelist-price text-center text-white my-auto position-relative">
+                        <span class="price-number">{{ $whole }}</span>
+                        <i class="fas fa-euro-sign euro-decimal"></i>
+                        <sup class="price-sup">{{ $decimal }}</sup>
+                    </h6>
                     <div class="pricelist-info">
                         <i class="fas fa-info text-black"></i>
                     </div>
@@ -29,9 +33,14 @@
                    data-target="#{{$locale}}aOneHour">
                     <h3 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h3>
                     <h6 class="text-center text-white">{{__('darba-dienas')}}</h6>
-                    <h6 class="pricelist-price text-center text-white my-auto"><span
-                            class="price-number">{{ $pricelist[1]->price }}</span> <i
-                            class="fas fa-euro-sign"></i>
+                    @php
+                        $price = $pricelist[1]->price;
+                        [$whole, $decimal] = explode('.', $price);
+                    @endphp
+                    <h6 class="pricelist-price text-center text-white my-auto">
+                        <span class="price-number">{{ $whole }}</span>
+                        <i class="fas fa-euro-sign euro-decimal"></i>
+                        <sup class="price-sup">{{ $decimal }}</sup>
                     </h6>
                     <div class="pricelist-info">
                         <i class="fas fa-info text-black"></i>
@@ -39,12 +48,17 @@
                 </a>
                 <a class="col-12 col-sm-6 a-zone pricelist-card d-flex flex-column" href="#" data-toggle="modal"
                    data-target="#{{$locale}}aOneHour">
-                    <h4 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h4>
+                    <h3 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h3>
                     <h6 class="text-center text-white">{{__('brivdienas')}}</h6>
-                    <h3 class="pricelist-price text-center text-white my-auto"><span
-                            class="price-number">{{ $pricelist[10]->price }}</span> <i
-                            class="fas fa-euro-sign"></i>
-                    </h3>
+                    @php
+                        $price = $pricelist[10]->price;
+                        [$whole, $decimal] = explode('.', $price);
+                    @endphp
+                    <h6 class="pricelist-price text-center text-white my-auto">
+                        <span class="price-number">{{ $whole }}</span>
+                        <i class="fas fa-euro-sign euro-decimal"></i>
+                        <sup class="price-sup">{{ $decimal }}</sup>
+                    </h6>
                     <div class="pricelist-info">
                         <i class="fas fa-info text-black"></i>
                     </div>

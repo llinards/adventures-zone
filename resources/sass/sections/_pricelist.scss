@@ -292,3 +292,15 @@
         }
     }
 }
+
+.price-number {
+    font-weight: bold;
+}
+
+.price-sup {
+    font-size: 1.25rem;
+    font-weight: bold;
+    vertical-align: super;
+    top: -1rem;
+    left: -1rem;
+}
