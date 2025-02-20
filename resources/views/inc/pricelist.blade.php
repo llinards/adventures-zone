@@ -52,7 +52,7 @@
                     </div>
                 </a>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center d-none d-md-flex">
                 <a class="col-12 party-weekend pricelist-card d-flex flex-column" href="#"
                    data-toggle="modal"
                    data-target="#{{$locale}}partyRoomWeekend">
