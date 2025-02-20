@@ -2,12 +2,6 @@
     .product-description {
         padding: 0 0.5rem;
     }
-
-    //.membership {
-    //    h6.pricelist-title {
-    //        font-size: 0.8rem;
-    //    }
-    //}
 }
 
 @media (max-width: 768px) {
@@ -63,12 +57,6 @@
     .right {
         width: 100%;
         margin-bottom: 1rem;
-
-        .row {
-            -webkit-box-pack: center !important;
-            -ms-flex-pack: center !important;
-            justify-content: center !important;
-        }
     }
 
     #second-row {
