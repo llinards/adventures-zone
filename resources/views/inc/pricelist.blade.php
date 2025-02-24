@@ -138,7 +138,7 @@
 
     <div id="second-row" class="d-flex d-md-none flex-wrap">
         <div class="left">
-            <div id="party" class="section-title-bar mt-lg-2">
+            <div id="party" class="section-title-bar">
                 <h1 class="text-white text-center text-lowercase">{{__('ballites')}}</h1>
             </div>
             <div class="row justify-content-center">
