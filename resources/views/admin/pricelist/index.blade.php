@@ -8,23 +8,23 @@
             </div>
         </div>
         <div class="row">
-            @foreach ($pricelist as $item)
-                <div class="col-3 p-3">
-                    <div class="card">
-                        <div class="card-header text-center">
-                            <h5>{{ $item->name }}</h5>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <div class="zone-price mb-1">
-                                <p>{{ $item->amount }}: {{ $item->price }} EUR</p>
-                            </div>
-                            <div class="edit-btn">
-                                <a class="btn btn-success" href="/admin/pricelist/{{$item->id}}/edit">Rediģēt</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+            <table class="table table-bordered">
+                <thead>
+                <td>Produkts</td>
+                <td>Cena</td>
+                <td/>
+                </thead>
+                <tbody>
+                @foreach ($pricelist as $item)
+                    <tr>
+                        <td><strong>{{$item->name}}</strong> - {{ $item->amount }}</td>
+                        <td>{{ $item->price }}</td>
+                        <td class="text-center">
+                            <a class="btn btn-primary" href="/admin/pricelist/{{$item->id}}/edit">Rediģēt</a>
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
         </div>
-    </div>
 @endsection

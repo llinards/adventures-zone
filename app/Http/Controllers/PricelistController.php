@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Pricelist;
 
 class PricelistController extends Controller
@@ -10,6 +9,7 @@ class PricelistController extends Controller
     public function index()
     {
         $pricelist = Pricelist::orderBy('name', 'ASC')->get();
+
         return view('admin.pricelist.index', compact('pricelist'));
     }
 
@@ -21,13 +21,13 @@ class PricelistController extends Controller
     public function store(Pricelist $item)
     {
         try {
-            $pricelistUpdate = Pricelist::find($item->id);
-            $pricelistUpdate->price = request('price');
-            $pricelistUpdate->total = request('total');
+            $pricelistUpdate                  = Pricelist::find($item->id);
+            $pricelistUpdate->price           = request('price');
             $pricelistUpdate->description_lat = request('description-lat');
             $pricelistUpdate->description_eng = request('description-eng');
             $pricelistUpdate->description_rus = request('description-rus');
             $pricelistUpdate->save();
+
             return redirect('/admin/pricelist')->with('success', 'Atjaunots!');
         } catch (\Exception $e) {
             return back()->with('error', 'Kļūda!');

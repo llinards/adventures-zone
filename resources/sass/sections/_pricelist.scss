@@ -2,7 +2,7 @@
     .section-title-bar {
         background-color: $menu-bg-color;
         position: relative;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -86,6 +86,7 @@
 
 .pricelist-card {
     max-width: 150px !important;
+    width: 150px;
     height: 150px !important;
     padding: 0.5rem;
     position: relative;
@@ -144,7 +145,6 @@
     position: absolute;
     bottom: -33px;
     right: -28px;
-    -webkit-clip-path: polygon(12px 56px, 45px 19px, 62.80% 64.26%);
     clip-path: polygon(12px 56px, 45px 19px, 62.80% 64.26%);
 }
 
@@ -180,9 +180,6 @@
 }
 
 // pricelist modal
-
-.modal-dialog {
-}
 
 .modal-content {
     border: none;
@@ -297,4 +294,12 @@
     vertical-align: super;
     top: -1rem;
     left: -1rem;
+}
+
+.party-color {
+    color: $party-section-card;
+}
+
+.a-zone-color {
+    color: $a-zone-pricelist;
 }
