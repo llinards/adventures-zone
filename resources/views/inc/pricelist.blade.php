@@ -10,8 +10,7 @@
                    data-target="#{{$locale}}xsOneHour">
                     <h3 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h3>
                     @php
-                        $price = $pricelist[0]->price;
-                        [$whole, $decimal] = explode('.', $price);
+                        [$whole, $decimal] = explode('.', $pricelist[0]->price);
                     @endphp
                     <h6 class="pricelist-price text-center text-white my-auto position-relative">
                         <span class="price-number">{{ $whole }}</span>
@@ -77,8 +76,7 @@
                     <h3 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h3>
                     <h6 class="text-center text-white">{{__('darba-dienas')}}</h6>
                     @php
-                        $price = $pricelist[1]->price;
-                        [$whole, $decimal] = explode('.', $price);
+                        [$whole, $decimal] = explode('.', $pricelist[1]->price);
                     @endphp
                     <h6 class="pricelist-price text-center text-white my-auto">
                         <span class="price-number">{{ $whole }}</span>
@@ -94,8 +92,7 @@
                     <h3 class="pricelist-title text-center text-white">{{__('viena-stunda')}}</h3>
                     <h6 class="text-center text-white">{{__('brivdienas')}}</h6>
                     @php
-                        $price = $pricelist[10]->price;
-                        [$whole, $decimal] = explode('.', $price);
+                        [$whole, $decimal] = explode('.', $pricelist[10]->price);
                     @endphp
                     <h6 class="pricelist-price text-center text-white my-auto">
                         <span class="price-number">{{ $whole }}</span>
