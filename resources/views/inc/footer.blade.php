@@ -17,6 +17,7 @@
                                 href="tel:{{ $footer[0]['mobile_phone']}}">{{ $footer[0]['mobile_phone']}}</a></strong>
                     </h5>
                     <h6><strong><a href="mailto:info@adventures.zone">info@adventures.zone</a></strong></h6>
+                    <h5 class="mt-2"><strong>@lang('Uz drīzu tikšanos!')</strong></h5>
                     <p class="mt-4"><u><a
                                 href="/{{$locale}}/privatuma-politika">@lang('privacy policy')</a></u></p>
                 </div>

@@ -118,10 +118,10 @@
                                 <a class="nav-link text-white text-uppercase"
                                    href="/{{app()->getLocale()}}#cafe">{{__('kafejnica')}}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white text-uppercase"
-                                   href="/{{app()->getLocale()}}#pricelist">{{__('cenas')}}</a>
-                            </li>
+                            {{--                            <li class="nav-item">--}}
+                            {{--                                <a class="nav-link text-white text-uppercase"--}}
+                            {{--                                   href="/{{app()->getLocale()}}#pricelist">{{__('cenas')}}</a>--}}
+                            {{--                            </li>--}}
                         @else
                             <li class="nav-item">
                                 <a class="nav-link text-white text-uppercase"
@@ -136,27 +136,28 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white text-uppercase" href="#cafe">{{__('kafejnica')}}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white text-uppercase" href="#pricelist">{{__('cenas')}}</a>
-                            </li>
+                            {{--                            <li class="nav-item">--}}
+                            {{--                                <a class="nav-link text-white text-uppercase" href="#pricelist">{{__('cenas')}}</a>--}}
+                            {{--                            </li>--}}
                         @endif
                     </ul>
-                    <div class="navbar-contact-info text-center text-white text-uppercase pt-4">
-                        <h5>{{__('darba-laiks')}}</h5>
-                        <p>@if (app()->getLocale() == "en")
-                                {!! $footer[0]['working_hours_eng'] !!}
-                            @elseif (app()->getLocale() == "ru")
-                                {!! $footer[0]['working_hours_rus'] !!}
-                            @else
-                                {!! $footer[0]['working_hours_lat'] !!}
-                            @endif</p>
-                    </div>
-                    <h5 class="text-uppercase text-white text-center pt-3"><strong>{{__('adrese')}}:</strong></h5>
-                    <a class="text-uppercase text-white text-center pt-1" target="_blank"
-                       href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">
-                        <p><u>{{__('alfas-nosaukums')}}</u></p>
-                    </a>
-                    <h4 class="text-uppercase text-white text-center">
+                    <h5 class="text-center my-2 text-white">@lang('Uz drīzu tikšanos!')</h5>
+                    {{--                    <div class="navbar-contact-info text-center text-white text-uppercase pt-4">--}}
+                    {{--                        <h5>{{__('darba-laiks')}}</h5>--}}
+                    {{--                        <p>@if (app()->getLocale() == "en")--}}
+                    {{--                                {!! $footer[0]['working_hours_eng'] !!}--}}
+                    {{--                            @elseif (app()->getLocale() == "ru")--}}
+                    {{--                                {!! $footer[0]['working_hours_rus'] !!}--}}
+                    {{--                            @else--}}
+                    {{--                                {!! $footer[0]['working_hours_lat'] !!}--}}
+                    {{--                            @endif</p>--}}
+                    {{--                    </div>--}}
+                    {{--                    <h5 class="text-uppercase text-white text-center pt-3"><strong>{{__('adrese')}}:</strong></h5>--}}
+                    {{--                    <a class="text-uppercase text-white text-center pt-1" target="_blank"--}}
+                    {{--                       href="https://goo.gl/maps/WNHGu5m95zcy9pcq6">--}}
+                    {{--                        <p><u>{{__('alfas-nosaukums')}}</u></p>--}}
+                    {{--                    </a>--}}
+                    <h4 class="text-uppercase text-white text-center mt-2">
                         <a href="tel:+37122022333">+371 220 22 333</a>
                     </h4>
                     <ul class="d-flex justify-content-center">
