@@ -1,4 +1,11 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/fonts/DIN2014ExtraBold.woff2?5382a20d9c5567a85affd85fe4fb7252": "/fonts/DIN2014ExtraBold.woff2?5382a20d9c5567a85affd85fe4fb7252",
+    "/fonts/DIN2014ExtraBold.woff?120362ed7e980cc93753d0cf4b3a74e2": "/fonts/DIN2014ExtraBold.woff?120362ed7e980cc93753d0cf4b3a74e2",
+    "/images/ajax-loader.gif?fb6f3c230cb846e25247dfaa1da94d8f": "/images/ajax-loader.gif?fb6f3c230cb846e25247dfaa1da94d8f",
+    "/fonts/slick.eot?a4e97f5a2a64f0ab132323fbeb33ae29": "/fonts/slick.eot?a4e97f5a2a64f0ab132323fbeb33ae29",
+    "/fonts/slick.woff?295183786cd8a138986521d9f388a286": "/fonts/slick.woff?295183786cd8a138986521d9f388a286",
+    "/fonts/slick.ttf?c94f7671dcc99dce43e22a89f486f7c2": "/fonts/slick.ttf?c94f7671dcc99dce43e22a89f486f7c2",
+    "/fonts/slick.svg?2630a3e3eab21c607e21576571b95b9d": "/fonts/slick.svg?2630a3e3eab21c607e21576571b95b9d"
 }
