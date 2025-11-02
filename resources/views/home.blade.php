@@ -10,7 +10,8 @@
             <div class="row">
                 <div class="d-flex flex-column align-items-center">
                     <img class="az-title-main" src="/storage/img/main-title.png" alt="Adventures' Zone">
-                    <h3 class="az-title-second text-uppercase text-light">{{__('apaksvirsraksts')}}</h3>
+                    {{--                    <h3 class="az-title-second text-uppercase text-light">{{__('apaksvirsraksts')}}</h3>--}}
+                    <h1 class="az-title-second text-uppercase text-light">{{__('Parks uz nenoteiktu laiku slēgts!')}}</h1>
                 </div>
             </div>
         </div>
